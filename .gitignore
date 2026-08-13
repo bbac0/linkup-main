@@ -1,0 +1,17 @@
+# 파이썬 가상환경
+venv/
+.venv/
+env/
+
+# 보안 파일 
+.env
+
+# 데이터베이스 및 생성된 파일들
+chroma_db/
+__pycache__/
+*.sqlite3
+
+# OS 시스템 파일
+.DS_Store
+Thumbs.db
+temp_shot_0.png

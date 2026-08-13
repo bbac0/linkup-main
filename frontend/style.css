@@ -1,0 +1,135 @@
+/* 헤더 숨기기 */
+header[data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+}
+
+/* 로딩 스피너 숨기기 */
+[data-testid="stStatusWidget"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* 본문 영역 스타일 */
+.block-container {
+    background-color: #ffffff;
+    padding: 3rem 4rem !important;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(183, 194, 200, 0.7);
+    margin-top: 14vh;
+    margin-bottom: 14vh;
+    max-width: 800px;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(5, 195, 222, 0.2);
+    background: linear-gradient(90deg, #05C3DE, #79E5CB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    line-height: 1 !important;
+}
+
+/* url 입력창 & 시작 버튼 */
+[data-testid="stTextInput"] {
+    border-radius: 9px;
+    border: 1px solid #D4D4D7 !important;
+}
+
+[data-testid="stButton"] {
+    border-radius: 9px;
+    margin-left: -1px;
+    border: 1px solid #D4D4D7 !important;
+
+}
+
+/* 체크박스 하이라이트 */
+[data-testid="stCheckbox"]:has(input:checked) p {
+    display: inline;
+    background: linear-gradient(to top, rgba(5, 195, 222, 0.15) 30%, transparent 30%);
+    padding: 0 2px;
+    font-weight: 500;
+}
+/* 체크 해제 시 스타일 초기화 */
+[data-testid="stCheckbox"]:has(input:not(:checked)) p {
+    background: transparent;
+    font-weight: 400;
+}
+
+/* 마크다운 제목 스타일 */
+[data-testid="stMarkdownContainer"] h3 {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.02em;
+    margin-bottom: 5px !important;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 640px) {
+    .block-container {
+        padding: 1rem !important;
+        margin-top: 10vh;
+    }
+}
+
+/* 프로그레스 바 애니메이션 */
+[data-testid="stProgress"] div[role="progressbar"] > div {
+    transition: width 0.8s ease-out !important;
+}
+
+/* Altair 및 Vega-Lite 차트의 세부 정보 숨기기 */
+.stAltairChart details summary, 
+.stVegaLiteChart details summary {
+    display: none !important;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    height: 40px; 
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.summary_text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333333;
+    background-color: #F0F4F8; 
+    padding: 25px; 
+    border-radius: 15px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.pdf-tag-btn {
+    display: inline-block;
+    background-color: #F4F9FF;
+    color: #333333;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid #dcdfe6;
+    text-decoration : none;
+}
+
+.pdf-tag-btn:hover {
+    background-color: #E6F2FF;
+    border-color: #05C3DE;
+    color: #05C3DE;
+}
+
+.guide-title {
+    font-weight: 500;
+    color: #31333F;
+    margin-bottom: 10px !important;
+}
