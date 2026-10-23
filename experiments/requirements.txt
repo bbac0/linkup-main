@@ -1,0 +1,4 @@
+# 웹 서비스 의존성(../requirements.txt)에 더해 실험 스크립트에 필요한 패키지
+chromadb
+# semantic_issue_classifier.py --provider anthropic 사용 시에만 필요
+anthropic

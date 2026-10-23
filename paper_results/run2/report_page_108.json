@@ -1,0 +1,72 @@
+{
+  "status": "success",
+  "total_count": 4,
+  "design_faults": 0,
+  "ops_faults": 0,
+  "tech_faults": 4,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트는 기본적인 HTML 구조를 갖추고 있으나, 웹 접근성, 폼 기능성, 사용자 편의성 및 반응형 웹을 위한 필수적인 기술적 요소들이 누락되어 있습니다. 특히, 입력 필드의 레이블 연결, 데이터 전송을 위한 name 속성, 자동 완성 기능, 그리고 모바일 환경 대응을 위한 viewport 설정이 시급히 개선되어야 합니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_108.html] 레이블 '성명'이 입력 필드와 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 필드의 목적을 정확히 인지하기 어렵습니다.",
+      "suggestion": "입력 필드에 `id` 속성을 부여하고, `<label>` 태그에 해당 `id`를 참조하는 `for` 속성을 추가하여 명시적으로 연결하세요. 예: `<label for=\"userName\">성명</label><input type=\"text\" id=\"userName\">`",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        25,
+        26
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_108.html] 입력 필드에 `name` 속성이 누락되어 있어 폼 제출 시 해당 필드의 데이터가 서버로 전송되지 않습니다. 이는 폼의 핵심 기능에 영향을 미칩니다.",
+      "suggestion": "입력 필드에 고유한 `name` 속성을 추가하여 폼 데이터가 올바르게 전송되도록 하세요. 예: `<input type=\"text\" name=\"userName\">`",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        30
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_108.html] '성명' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(자동 완성) 및 보안(피싱 방지) 측면에서 개선이 필요합니다.",
+      "suggestion": "개인 정보 입력 필드에는 적절한 `autocomplete` 속성 값을 지정하여 사용자가 이전에 입력한 정보를 쉽게 활용하고, 필드의 목적을 명확히 하세요. 예: `<input type=\"text\" autocomplete=\"name\">`",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        32,
+        33
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_108.html] 모바일 기기에서 웹 페이지가 올바르게 렌더링되고 반응형 디자인이 적용되도록 하는 viewport meta 태그가 `<head>` 섹션에 누락되어 있습니다.",
+      "suggestion": "`<head>` 태그 내에 `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`를 추가하여 다양한 화면 크기에서 최적화된 사용자 경험을 제공하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15,
+        16
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 100,
+    "운영": 100,
+    "기술": 0
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_108.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_108.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

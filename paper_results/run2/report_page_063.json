@@ -1,0 +1,54 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 1,
+  "ops_faults": 0,
+  "tech_faults": 2,
+  "summary": "사이트 전체 분석 결과입니다. 전반적으로 텍스트와 배경의 명도 대비가 심각하게 낮아 가독성과 웹 접근성이 크게 저해됩니다. 입력 필드에 대한 접근성 및 보안 관련 기술적 개선이 필요합니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_063.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 매우 낮아 콘텐츠 가독성이 심각하게 저하됩니다.",
+      "suggestion": "WCAG 2.1 AA 기준(최소 4.5:1)을 충족하도록 텍스트 색상을 #333333과 같이 충분한 대비를 제공하는 색상으로 변경하세요. 현재 대비율은 1.07:1로 매우 낮습니다.",
+      "source_file": "정부 표준 가이드라인 (기본 지침)",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_063.html] 아이디 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+      "suggestion": "아이디 입력 필드에 `autocomplete=\"username\"` 속성을 추가하여 자동 완성 기능을 활성화하고 보안을 강화하세요.",
+      "source_file": "정부 표준 가이드라인 (기본 지침)",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_063.html] 아이디 입력 필드가 시각적 `placeholder`만 사용하고 있어 스크린 리더 사용자를 위한 명시적인 `<label>` 요소가 부족합니다.",
+      "suggestion": "입력 필드에 `<label for=\"id-input\">아이디</label>`와 같이 명시적인 레이블을 추가하고, `input` 태그에 `id=\"id-input\"`을 연결하여 웹 접근성을 개선하세요.",
+      "source_file": "정부 표준 가이드라인 (기본 지침)",
+      "page_number": []
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 100,
+    "기술": 93
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_063.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_063.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

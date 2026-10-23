@@ -1,0 +1,173 @@
+{
+  "per_category": {
+    "both": {
+      "Poor Contrast Ratio": {
+        "hits": 14,
+        "n": 14,
+        "ci": [
+          0.785,
+          1.0
+        ]
+      },
+      "Mobile Layout Breakage": {
+        "hits": 16,
+        "n": 16,
+        "ci": [
+          0.806,
+          1.0
+        ]
+      },
+      "Button Area Clipping": {
+        "hits": 11,
+        "n": 13,
+        "ci": [
+          0.578,
+          0.957
+        ]
+      },
+      "Standard Terminology Violation": {
+        "hits": 12,
+        "n": 16,
+        "ci": [
+          0.505,
+          0.898
+        ]
+      },
+      "Duplicate ID Markup Error": {
+        "hits": 6,
+        "n": 14,
+        "ci": [
+          0.214,
+          0.674
+        ]
+      }
+    },
+    "image_only": {
+      "Poor Contrast Ratio": {
+        "hits": 13,
+        "n": 14,
+        "ci": [
+          0.685,
+          0.987
+        ]
+      },
+      "Mobile Layout Breakage": {
+        "hits": 0,
+        "n": 16,
+        "ci": [
+          0.0,
+          0.194
+        ]
+      },
+      "Button Area Clipping": {
+        "hits": 0,
+        "n": 13,
+        "ci": [
+          0.0,
+          0.228
+        ]
+      },
+      "Standard Terminology Violation": {
+        "hits": 9,
+        "n": 16,
+        "ci": [
+          0.332,
+          0.769
+        ]
+      },
+      "Duplicate ID Markup Error": {
+        "hits": 0,
+        "n": 14,
+        "ci": [
+          0.0,
+          0.215
+        ]
+      }
+    },
+    "html_only": {
+      "Poor Contrast Ratio": {
+        "hits": 14,
+        "n": 14,
+        "ci": [
+          0.785,
+          1.0
+        ]
+      },
+      "Mobile Layout Breakage": {
+        "hits": 16,
+        "n": 16,
+        "ci": [
+          0.806,
+          1.0
+        ]
+      },
+      "Button Area Clipping": {
+        "hits": 13,
+        "n": 13,
+        "ci": [
+          0.772,
+          1.0
+        ]
+      },
+      "Standard Terminology Violation": {
+        "hits": 10,
+        "n": 16,
+        "ci": [
+          0.386,
+          0.815
+        ]
+      },
+      "Duplicate ID Markup Error": {
+        "hits": 9,
+        "n": 14,
+        "ci": [
+          0.388,
+          0.837
+        ]
+      }
+    }
+  },
+  "controls": {
+    "both": {
+      "fp": 7,
+      "n": 10,
+      "ci": [
+        0.397,
+        0.892
+      ]
+    },
+    "image_only": {
+      "fp": 0,
+      "n": 10,
+      "ci": [
+        0.0,
+        0.278
+      ]
+    },
+    "html_only": {
+      "fp": 7,
+      "n": 10,
+      "ci": [
+        0.397,
+        0.892
+      ]
+    }
+  },
+  "paired": {
+    "image_only": {
+      "both_only": 39,
+      "other_only": 2,
+      "p_mcnemar_exact": 7.839844329282641e-10
+    },
+    "html_only": {
+      "both_only": 5,
+      "other_only": 8,
+      "p_mcnemar_exact": 0.5810546875
+    }
+  },
+  "parse_fail": {
+    "both": 0,
+    "image_only": 0,
+    "html_only": 0
+  }
+}

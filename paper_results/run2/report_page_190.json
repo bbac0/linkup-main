@@ -1,0 +1,109 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 2,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트는 고정된 너비 설정으로 인해 심각한 반응형 및 웹 접근성 문제를 가지고 있습니다. 또한, 페이지 제목과 주 제목 간의 불일치와 '문의하기' 페이지로서의 정보 부족이 사용자 경험을 저해할 수 있습니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_190.html] 웹 페이지의 `html`, `body`, `div`, `main`, `header` 요소에 고정된 3000px 너비와 강제 가로 스크롤(`overflow-x: scroll !important;`)이 적용되어 있어, 모바일 및 작은 화면에서 콘텐츠가 잘리고 사용자가 가로 스크롤을 해야 하는 심각한 웹 접근성 및 반응형 디자인 문제가 발생합니다. 이는 2026년 기준 최신 웹 표준에 부합하지 않습니다.",
+      "suggestion": "모든 화면 크기에서 콘텐츠가 적절하게 표시되도록 `width` 및 `min-width` 속성을 제거하고, 반응형 웹 디자인 원칙에 따라 CSS를 재구성하세요. `overflow-x: scroll`은 특정 컴포넌트에만 필요한 경우에 한해 제한적으로 사용해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        1
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_190.html] HTML `<title>` 태그의 내용(\"고객센터\")과 페이지의 주 제목(`<h1>` \"문의하기\")이 일치하지 않아, 검색 엔진 최적화(SEO) 및 사용자 경험 측면에서 혼란을 줄 수 있습니다.",
+      "suggestion": "페이지의 주요 내용을 명확하게 반영하도록 `<title>` 태그의 내용을 `<h1>`과 일치시키거나, \"문의하기 | 고객센터\"와 같이 페이지의 계층 구조를 나타내는 방식으로 수정하여 일관성을 확보하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        1
+      ]
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/testbed_200/page_190.html] '문의하기' 페이지임에도 불구하고 전화번호 외에 추가적인 문의 방법(예: 이메일, 챗봇, FAQ 링크, 문의 양식)이나 운영 시간, 담당 부서 등의 정보가 매우 부족하여 사용자가 필요한 정보를 얻거나 문의를 진행하는 데 어려움을 겪을 수 있습니다.",
+      "suggestion": "사용자가 다양한 방법으로 문의하고 필요한 정보를 쉽게 찾을 수 있도록 이메일 주소, 운영 시간, 자주 묻는 질문(FAQ) 링크, 또는 직접 문의할 수 있는 양식 등을 추가하여 정보의 풍부성을 높이고 사용자 편의성을 개선하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        5
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 오류 페이지가 웹사이트의 전반적인 디자인 및 브랜딩과 일관성이 없습니다. 정부 웹사이트는 일관된 시각적 아이덴티티를 유지해야 합니다.",
+      "suggestion": "정부 웹사이트의 표준 디자인 가이드라인에 따라 로고, 색상, 레이아웃 등을 적용하여 사용자에게 일관된 경험을 제공해야 합니다. 최소한의 브랜딩 요소를 포함하여 사용자가 여전히 정부 웹사이트 내에 있음을 인지할 수 있도록 해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 오류 페이지가 사용자에게 다음 행동에 대한 명확한 안내나 유용한 링크(예: 홈페이지로 이동, 검색)를 제공하지 않아 사용자 경험이 저해됩니다.",
+      "suggestion": "사용자가 혼란을 겪지 않도록 홈페이지 링크, 검색 기능 또는 자주 묻는 질문(FAQ) 링크 등을 포함하여 안내를 강화해야 합니다. 이는 사용자가 웹사이트를 계속 탐색할 수 있도록 돕습니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 정부 웹사이트의 주 사용 언어가 한국어임을 고려할 때, 오류 메시지가 영어로만 제공되어 한국어 사용자에게 불편을 줄 수 있습니다.",
+      "suggestion": "오류 메시지를 한국어로 제공하거나, 다국어 지원 기능을 통해 사용자가 선호하는 언어로 메시지를 볼 수 있도록 해야 합니다. 이는 웹 접근성 및 사용자 편의성 측면에서 중요합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 모바일 기기에서의 적절한 화면 표시를 위한 viewport meta 태그가 HTML `<head>` 섹션에 누락되었습니다. 이는 다양한 기기에서 웹 페이지가 올바르게 렌더링되지 않을 수 있음을 의미합니다.",
+      "suggestion": "`<head>` 태그 내에 `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`를 추가하여 다양한 기기에서 최적화된 화면을 제공하고 반응형 웹 디자인의 기본을 준수해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 96,
+    "운영": 97,
+    "기술": 95
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_190.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_190.html",
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_190.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

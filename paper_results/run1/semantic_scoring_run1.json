@@ -1,0 +1,5094 @@
+{
+  "summary": {
+    "semantic": {
+      "tp": 151,
+      "fp": 7,
+      "fn": 10,
+      "tn": 32,
+      "cats": {
+        "Poor Contrast Ratio": [
+          44,
+          44
+        ],
+        "Mobile Layout Breakage": [
+          56,
+          56
+        ],
+        "Button Area Clipping": [
+          46,
+          46
+        ],
+        "Standard Terminology Violation": [
+          15,
+          45
+        ],
+        "Duplicate ID Markup Error": [
+          40,
+          40
+        ]
+      }
+    },
+    "keyword": {
+      "tp": 157,
+      "fp": 14,
+      "fn": 4,
+      "tn": 25,
+      "cats": {
+        "Poor Contrast Ratio": [
+          44,
+          44
+        ],
+        "Mobile Layout Breakage": [
+          56,
+          56
+        ],
+        "Button Area Clipping": [
+          42,
+          46
+        ],
+        "Standard Terminology Violation": [
+          17,
+          45
+        ],
+        "Duplicate ID Markup Error": [
+          35,
+          40
+        ]
+      }
+    },
+    "agreement": {
+      "Poor Contrast Ratio": {
+        "both": 44,
+        "semantic_only": 0,
+        "keyword_only": 0,
+        "neither": 0
+      },
+      "Mobile Layout Breakage": {
+        "both": 56,
+        "semantic_only": 0,
+        "keyword_only": 0,
+        "neither": 0
+      },
+      "Button Area Clipping": {
+        "both": 42,
+        "semantic_only": 4,
+        "keyword_only": 0,
+        "neither": 0
+      },
+      "Standard Terminology Violation": {
+        "both": 12,
+        "semantic_only": 3,
+        "keyword_only": 5,
+        "neither": 25
+      },
+      "Duplicate ID Markup Error": {
+        "both": 35,
+        "semantic_only": 5,
+        "keyword_only": 0,
+        "neither": 0
+      }
+    }
+  },
+  "pages": [
+    {
+      "page_id": "page_001",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_001.html] CSS 스타일로 인해 '신청하기' 버튼을 포함한 모든 버튼 요소가 화면에 거의 표시되지 않고 상호작용이 불가능합니다.",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_001.html] 버튼의 시각적 표현이 가이드라인에 명시된 최소 크기 및 가독성 기준을 충족하지 못하여 사용자 경험을 저해합니다.",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_001.html] 메인 배너 영역에 '배너'라는 임시 텍스트가 사용되어 있어, 실제 콘텐츠가 부재합니다. 이는 2026년 10월 20일 기준 운영 중인 서비스로 보기 어렵습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_002",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_002.html] 모든 텍스트(`color: #e5e5e5`)가 흰색 배경(`background-color: #ffffff`) 위에 표시되어 명도 대비가 심각하게 낮습니다. 이로 ",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_002.html] 전역 선택자(`*`)에 `!important`를 사용하여 모든 요소의 색상을 강제 지정하는 방식은 CSS의 우선순위 체계를 무너뜨리고, 스타일의 재정의를 어렵게 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_003",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_003.html] HTML 문서 내에 'main-banner' ID가 두 번 사용되어 중복되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_003.html] 아이디 입력 필드에 'autocomplete' 속성이 설정되어 있지 않아 사용자 편의성(브라우저 자동 완성) 및 보안 측면에서 개선이 필요합니다. 또한, 스크린 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_004",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_004.html] 모든 텍스트 요소(로그인, 제목, 설명, 버튼 텍스트)의 색상(#e5e5e5)이 흰색 배경(#ffffff)과 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다.",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_004.html] 전역 CSS(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)에서 `!impor",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_005",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_005.html] HTML 문서 내에서 'id' 속성 값 'main-banner'가 두 번 사용되어 중복됩니다. 'id' 속성 값은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_006",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_006.html] 검색 입력 필드(<input type=\"text\" value=\"민원\">)에 접근성을 위한 명시적인 레이블이 없습니다. 스크린 리더 사용자가 해당 필드의 목적을 정",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_006.html] 검색 입력 필드 옆에 검색 버튼이나 아이콘이 없어 사용자가 검색을 실행하기 위한 명확한 시각적 단서가 부족합니다. 이는 사용자 경험을 저해할 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_006.html] `<input>` 태그에 불필요한 빈 `style=\"\"` 속성이 포함되어 있습니다. 이는 코드의 가독성을 저해하고 불필요한 마크업을 추가합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_006.html] 웹사이트에 로고, 사이트명 등 정부 웹사이트로서의 명확한 시각적 아이덴티티가 부족하여 신뢰성 및 일관성이 떨어집니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_007",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_007.html] HTML `<style>` 태그 내에 `width: 3000px !important; min-width: 3000px !important; overflow-x: ",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_008",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_008.html] HTML `<style>` 태그 내에서 `html`, `body`, `main` 등의 요소에 `width: 3000px !important` 및 `overflow",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_008.html] `input` 태그에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 접근성이 저하됩니다. 2026년 10월 20일 기준으로 최신 웹 표준",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_008.html] `label` 태그가 `input` 태그와 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 폼 컨트롤의 목적을 정확히 이해하기 어렵습니다. 이는 웹 접근성 지",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_009",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_009.html] HTML, body, div, main, header 요소에 width: 3000px !important; min-width: 3000px !important; ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_009.html] button 태그 및 .btn, .login-btn, .apply-btn 클래스에 height: 2px !important; font-size: 0px !impo",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_010",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_010.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 1.12:1로 매우 낮아, WCAG 2.1 AA 기준(4.5:1)을 충족하지 못하여 가독성이 심각하게",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_010.html] HTML 문서 내에서 'main-banner' ID가 두 번 사용되어 ID 고유성 원칙을 위반하고 있습니다. ID는 문서 내에서 유일해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_011",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_011.html] HTML 문서 내에서 'main-banner' ID가 두 번 사용되어 중복됩니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_011.html] CSS 스타일(`height: 2px !important; font-size: 0px !important; line-height: 0 !important; pad",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_011.html] 버튼 텍스트('신청하기')가 CSS(`font-size: 0px`, `overflow: hidden`)로 인해 화면에 표시되지 않아 사용자가 버튼의 기능을 인지할",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_012",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_012.html] 텍스트와 배경의 명도 대비가 낮아 콘텐츠(공지사항 목록, 로그인, 번호, 제목, 서비스 안내 등)의 가독성이 매우 떨어집니다.",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_012.html] `id=\"main-banner\"`가 HTML 문서 내에서 두 번 사용되어 중복됩니다. HTML `id` 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_012.html] 전역 CSS(`*`)에 `!important` 키워드가 과도하게 사용되어 스타일 재정의 및 유지보수를 어렵게 합니다. 이는 향후 스타일 변경 시 충돌을 유발할 수",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_013",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_013.html] 전역 텍스트 색상(#e5e5e5)과 배경 색상(#ffffff)의 명도 대비가 매우 낮아 '로그인' 제목 및 '아이디' 플레이스홀더 텍스트의 가독성이 심각하게 저하",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_013.html] '로그인' 버튼의 높이, 글꼴 크기, 패딩 등이 0 또는 2px로 설정되어 버튼 텍스트가 보이지 않고 버튼 클릭 영역이 극도로 작아 사용자가 버튼을 인지하고 조작",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_013.html] '아이디' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_013.html] '로그인' 버튼에 `1px solid red` 테두리가 적용되어 있어 일반적인 버튼 디자인과 일치하지 않으며, 오류 상태로 오인될 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_014",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_014.html] HTML 문서 내에서 `id=\"main-banner\"` 속성이 두 번 사용되어 고유성 원칙을 위반합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_014.html] `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !important; min-width: 3000px !",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_015",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_015.html] 페이지 전체가 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !impor",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_016",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_016.html] HTML `<style>` 태그 내에서 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !importan",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_016.html] 검색 입력 필드(`input type=\"text\"`)에 스크린 리더 사용자를 위한 명확한 접근성 레이블(accessible name)이 제공되지 않아 웹 접근성 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_016.html] `input` 요소에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 잠재적인 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_016.html] `main` 영역의 검색 결과가 '검색 결과 항목 1'과 같은 일반적인 플레이스홀더 텍스트로만 구성되어 있어, 실제 운영 중인 서비스의 콘텐츠로 보기 어렵습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_017",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_017.html] HTML `<head>` 내부에 정의된 CSS 스타일이 `button` 태그 및 `.btn`, `.login-btn`, `.apply-btn` 클래스를 가진 요소",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_018",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_018.html] 웹사이트의 `html`, `body`, `main` 요소 등에 고정된 3000px 너비가 적용되어 있어, 모바일 및 작은 화면에서 가로 스크롤이 강제로 발생하고 ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_018.html] 모든 버튼(`button`, `.btn` 등)의 높이가 2px로 설정되어 있고 텍스트(`font-size: 0px`, `overflow: hidden`)가 보이지",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_018.html] `label` 요소(\"성명\")가 해당 `input` 요소와 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아, 스크린 리더 사용자가 폼 컨트롤의 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_018.html] 입력 필드(\"성명\" 옆)의 테두리가 빨간색으로 표시되어 있어, 사용자에게 오류가 발생했거나 필수 입력 필드임을 잘못 암시할 수 있습니다. 이는 사용자 경험에 혼란",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_019",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_019.html] 모든 텍스트의 색상(#e5e5e5)이 배경색(#ffffff)과 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다. 이는 시각 장애인뿐만 아니라 일반 사용자에게도",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_019.html] 페이지 전체 너비가 3000px로 고정되어 있으며, 강제로 가로 스크롤이 발생하여 모바일 및 작은 화면 기기에서 사용성이 매우 떨어집니다. 이는 반응형 웹 디자인",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_020",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_020.html] 웹 페이지의 `html`, `body`, `div`, `main`, `header` 요소에 고정된 3000px 너비와 강제 가로 스크롤(`overflow-x: s",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_020.html] HTML `<title>` 태그의 내용(\"고객센터\")과 페이지의 주 제목(`<h1>` \"문의하기\")이 일치하지 않아, 검색 엔진 최적화(SEO) 및 사용자 경험 ",
+          "semantic": "Standard Terminology Violation"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_020.html] '문의하기' 페이지임에도 불구하고 전화번호 외에 추가적인 문의 방법(예: 이메일, 챗봇, FAQ 링크, 문의 양식)이나 운영 시간, 담당 부서 등의 정보가 매우 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_021",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_021.html] `id=\"main-banner\"` 속성이 문서 내에서 세 번 중복 사용되었습니다. `id` 속성은 HTML 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_021.html] `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !important; min-width: 3000px !",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_021.html] 강제된 3000px 너비 스타일로 인해 웹사이트 레이아웃이 대부분의 화면에서 가로 스크롤을 유발하며 심각하게 깨져 보입니다. 이는 사용자 경험을 심각하게 저해합니",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_021.html] `id=\"main-banner\"`를 가진 `div` 요소에 '배너'라는 텍스트만 포함되어 있어, 실제 배너 콘텐츠가 누락되었거나 미완성 상태로 보입니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_022",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_022.html] HTML `<style>` 태그 내에서 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !importan",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_022.html] 공지사항 목록의 '서비스 안내' 항목에 게시일 정보가 없어 콘텐츠의 최신성을 사용자가 파악하기 어렵습니다. 이는 정보의 신뢰도와 유용성을 떨어뜨릴 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_023",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_023.html] HTML 소스 코드에 정의된 CSS 스타일(`height: 2px !important; font-size: 0px !important; line-height: 0",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_023.html] '아이디' 입력 필드에 'autocomplete' 속성이 설정되어 있지 않습니다. 이는 사용자의 자동 완성 기능을 방해하고, 일부 보안 취약점에 노출될 수 있습니",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_024",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_024.html] 주요 액션 버튼인 '발급 신청' 버튼의 색상이 정부 표준 가이드라인에 명시된 시각적 아이덴티티 및 주요 액션 버튼 색상 규격과 일치하지 않습니다. 현재는 일반적인",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_024.html] HTML `<title>` 태그의 내용이 '민원 안내 상세'로 설정되어 있어, 실제 페이지의 핵심 내용인 '주민등록표등본 발급'을 명확하게 반영하지 못하고 있습니",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_025",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_025.html] HTML, body, div, main, header 요소에 3000px의 고정 너비와 가로 스크롤이 강제 적용되어 모바일 및 태블릿 등 다양한 화면 크기에서 콘",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_026",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_026.html] HTML, body, div, main, header 요소에 3000px의 고정 너비가 강제 적용되어 가로 스크롤이 발생하며, 이는 반응형 디자인 원칙에 심각하게",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_026.html] 모바일 기기에서 올바른 화면 배율 및 반응형 동작을 위해 필수적인 `<meta name=\"viewport\">` 태그가 `<head>` 섹션에 누락되어 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_026.html] `<input type=\"text\" value=\"민원\">` 요소에 접근성을 위한 `<label>` 태그가 연결되어 있지 않아 스크린 리더 사용자가 입력 필드의 목",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_026.html] `button`, `.btn`, `.login-btn`, `.apply-btn` 요소에 `height: 2px`, `font-size: 0px`, `overflo",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_026.html] 전체 페이지에 3000px의 고정 너비가 적용되어 불필요한 가로 스크롤이 발생하며, 이는 사용자에게 불편함을 주고 시각적으로도 좋지 않은 경험을 제공합니다.",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_027",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_027.html] 페이지 내 '로그인' 링크가 일반 텍스트 링크 형태로 제공되어 시각적으로 중요한 행동임을 인지하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_027.html] FAQ 콘텐츠의 시각적 구분이 명확하지 않아 정보 탐색 효율성이 떨어질 수 있으며, 전반적인 페이지의 시각적 매력이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_027.html] '로그인' 링크가 FAQ 내용과 직접적인 연관성 없이 독립적으로 배치되어, 스크린 리더 사용자가 링크의 목적을 파악하기 어려울 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_028",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_028.html] `id=\"main-banner\"`가 HTML 문서 내에서 중복 사용되었습니다. `id` 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_028.html] `input` 태그에 `name` 속성이 누락되어 있습니다. `name` 속성은 폼 데이터 전송에 필수적입니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_028.html] `label` 태그가 `input` 태그와 `for` 속성을 통해 명시적으로 연결되어 있지 않습니다. 이는 `input` 태그에 `id` 속성이 없기 때문입니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_028.html] `input` 태그에 `autocomplete` 속성이 설정되어 있지 않습니다. 사용자 편의성 및 보안 강화를 위해 적절한 `autocomplete` 값을 설정하",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_028.html] `input` 태그에 빈 `style` 속성이 존재합니다. 이는 불필요하며 제거하는 것이 좋습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_029",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_029.html] HTML, body, div, main, header 요소에 width: 3000px !important; min-width: 3000px !important; ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_029.html] button 태그 및 .btn, .login-btn, .apply-btn 클래스에 height: 2px !important; font-size: 0px !impo",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_030",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_030.html] HTML 문서 내 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_031",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_031.html] 웹사이트의 모든 텍스트 요소(주요 서비스, 로그인, 신청하기, 배너 등)가 배경색(#ffffff)과 동일한 밝은 회색(#e5e5e5)으로 설정되어 명도 대비가 극",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_031.html] HTML `<style>` 태그 내에 `* { color: #e5e5e5 !important; background-color: #ffffff !important;",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_032",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_032.html] 모바일 기기에서 웹 페이지가 올바르게 표시되도록 하는 뷰포트 메타 태그가 `<head>` 섹션에 누락되었습니다. 이로 인해 모바일 환경에서 페이지가 축소되어 보이",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_032.html] 공지사항 테이블에 시각 장애인 사용자를 위한 `<caption>` 요소와 `<th>` 요소의 `scope` 속성이 누락되어 스크린 리더 사용자가 테이블 구조를 이",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_032.html] 공지사항 '서비스 안내'에 게시일 정보가 누락되어 콘텐츠의 최신성 및 유효 기간을 파악하기 어렵습니다. 정부 웹사이트의 공지사항은 일반적으로 게시일을 명시해야 합",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_033",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_033.html] 로그인 페이지에 비밀번호 입력 필드가 누락되어 있어 사용자 인증이 불가능합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_033.html] 로그인 입력 필드와 버튼이 `<form>` 태그로 감싸져 있지 않아 올바른 폼 제출 동작을 보장하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_033.html] '아이디' 입력 필드에 접근성을 위한 `<label>` 태그와 `id` 속성이 누락되어 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_033.html] '아이디' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_034",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_034.html] 페이지의 주요 콘텐츠 제목인 '주민등록표등본 발급'이 `<h2>` 태그로 마크업되어 있습니다. 일반적으로 페이지의 가장 중요한 제목은 `<h1>` 태그를 사용하는",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_034.html] '발급 신청' 버튼이 기본 브라우저 스타일을 따르고 있어, 정부 웹사이트의 통일된 디자인 시스템이나 브랜드 가이드라인에 부합하지 않을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_034.html] <header> 내의 '접속하기' 링크가 내비게이션 역할을 하는 경우, <nav> 요소로 감싸지 않아 의미론적 구조가 불분명할 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_035",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_035.html] HTML 문서 내에 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_035.html] CSS 규칙이 버튼 및 관련 요소(`button`, `.btn`, `.login-btn`, `.apply-btn`)의 높이, 글꼴 크기, 패딩을 극도로 작게 설정",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_036",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_036.html] 웹사이트의 모든 텍스트(예: '민원', '로그인', '검색 결과 항목 1')와 배경색 간의 명도 대비가 매우 낮아 콘텐츠 가독성이 심각하게 저하됩니다. 현재 텍스",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_036.html] 검색 입력 필드(<input type=\"text\">)에 `label` 요소나 `aria-label` 속성이 없어 스크린 리더 사용자가 해당 필드의 목적을 이해하기",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_036.html] 검색 입력 필드에 '민원'이라는 텍스트가 `value` 속성으로 설정되어 있어, 사용자가 입력 필드를 클릭했을 때 텍스트를 직접 지워야 하는 불편함이 있습니다. ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_036.html] 전역 CSS에서 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }`와 같이 `!im",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_037",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_037.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 매우 낮아 가독성이 심각하게 떨어집니다. 이는 시각 장애인뿐만 아니라 일반 사용자에게도 불편을 초래합",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_037.html] 버튼 및 관련 클래스(`button`, `.btn`, `.login-btn`, `.apply-btn`)에 적용된 CSS 스타일(`height: 2px`, `fon",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_037.html] 모든 요소에 `!important`를 사용하여 색상을 강제하는 `* { color: #e5e5e5 !important; background-color: #ffff",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_038",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_038.html] 레이블 '성명'이 입력 필드와 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 필드의 목적을 정확히 인지하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_038.html] 입력 필드에 `name` 속성이 누락되어 있어 폼 제출 시 해당 필드의 데이터가 서버로 전송되지 않습니다. 이는 폼의 핵심 기능에 영향을 미칩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_038.html] '성명' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(자동 완성) 및 보안(피싱 방지) 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_038.html] 모바일 기기에서 웹 페이지가 올바르게 렌더링되고 반응형 디자인이 적용되도록 하는 viewport meta 태그가 `<head>` 섹션에 누락되어 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_039",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_039.html] 페이지 제목은 '이용약관'이나, 실제 약관 전문이 페이지에 포함되어 있지 않고 약관에 대한 간략한 설명과 '로그인' 링크만 제공됩니다. 사용자는 '이용약관' 페이",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_040",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_040.html] HTML 요소의 `id` 속성 값 'main-banner'가 중복 사용되었습니다. `id`는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_040.html] `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !important; min-width: 3000px !",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_040.html] 웹사이트가 고정된 너비로 인해 모바일 및 태블릿 환경에서 콘텐츠가 제대로 표시되지 않고 과도한 가로 스크롤이 발생하여 사용자 경험이 저하됩니다. 이는 2026년 ",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_041",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_041.html] CSS 스타일로 인해 '신청하기' 버튼을 포함한 모든 버튼 요소가 화면에 거의 표시되지 않고 상호작용이 불가능합니다.",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_041.html] 버튼의 시각적 표현이 가이드라인에 명시된 최소 크기 및 가독성 기준을 충족하지 못하여 사용자 경험을 저해합니다.",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_041.html] 메인 배너 영역에 '배너'라는 임시 텍스트가 사용되어 있어, 실제 콘텐츠가 부재합니다. 이는 2026년 10월 20일 기준 운영 중인 서비스로 보기 어렵습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_042",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_042.html] HTML `<head>` 내 `<style>` 태그에서 `html, body, div, main, header` 요소에 `width: 3000px !importa",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_042.html] 페이지의 `<head>` 태그에 뷰포트 메타 태그(`meta name=\"viewport\"`)가 누락되어 모바일 기기에서 올바른 스케일링 및 반응형 동작을 기대하기",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_042.html] 전반적인 페이지 디자인이 매우 기본적인 형태로, 현대적인 사용자 인터페이스 및 경험을 위한 시각적 요소(폰트, 색상, 여백, 컴포넌트 스타일링 등)가 부족하여 사",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_042.html] 로그인 링크가 단순 `<a>` 태그로만 구성되어 있어, 내비게이션 또는 유틸리티 링크로서의 의미론적 구조가 부족하며 스크린 리더 사용자에게 명확한 컨텍스트를 제공",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_043",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_043.html] HTML 문서 내에 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_043.html] '아이디' 입력 필드에 스크린 리더 사용자를 위한 명시적인 레이블(label 태그 또는 aria-label 속성)이 없습니다. placeholder는 시각적 보조",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_043.html] '아이디' 입력 필드에 autocomplete 속성이 설정되어 있지 않아 사용자 편의성 및 보안(브라우저 자동 완성) 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_043.html] '로그인' 버튼에 type 속성이 명시적으로 지정되어 있지 않습니다. <form> 태그 내에 있지 않은 경우 기본 동작이 불분명할 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_044",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_044.html] HTML 문서 내에서 `id=\"main-banner\"`가 두 번 사용되어 ID 속성의 고유성 규칙을 위반합니다. 이는 DOM 조작 및 CSS 적용 시 예기치 않은",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_044.html] 모바일 기기에서의 반응형 웹 디자인을 위한 `viewport` meta 태그가 `<head>` 섹션에 선언되어 있지 않아, 다양한 화면 크기에서 최적화된 사용자 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_044.html] '발급 신청' 버튼의 시각적 디자인이 너무 평범하여 정부 서비스의 주요 행동 요소로서의 중요성이 충분히 강조되지 않습니다. 이는 사용자의 시선을 끌고 클릭을 유도",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_044.html] \"발급 수수료 안내입니다.\"라는 문구가 실제 수수료 정보를 제공하지 않고 단순히 '안내'임을 명시하여, 사용자가 수수료 정보를 기대했을 때 혼란을 주거나 추가적인",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_045",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_045.html] 텍스트(로그인, 신청 처리 내역)와 배경의 명도 대비가 WCAG 2.1 AA 최소 기준(4.5:1)에 현저히 미달하여 가독성이 매우 낮습니다. 현재 텍스트 색상(",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_045.html] CSS에서 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }`와 같이 `!impor",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_046",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_046.html] 텍스트와 배경의 명도 대비가 매우 낮아 콘텐츠 가독성이 심각하게 저하됩니다. 현재 #e5e5e5 (텍스트)와 #ffffff (배경)의 대비는 약 1.1:1입니다.",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_046.html] `html`, `body`, `div`, `main`, `header` 요소에 고정된 `width: 3000px !important`가 적용되어 모든 화면에서 강",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_046.html] 검색 입력 필드에 `value` 속성을 사용하여 플레이스홀더 역할을 하고 있으나, 이는 스크린 리더 사용자에게 적절히 전달되지 않을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_046.html] 검색 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자가 이전에 입력한 내용을 기반으로 자동 완성 기능을 제공하지 못하여 사용자 경험을 저",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_047",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_047.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 매우 낮아 콘텐츠의 가독성이 심각하게 떨어집니다. 현재 대비는 약 1.07:1로, WCAG 2.1 A",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_048",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_048.html] HTML 문서 내에서 `id=\"main-banner\"`가 두 번 사용되어 중복됩니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_048.html] `label` 태그 '성명'이 해당 `input` 태그와 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아 스크린 리더 사용자의 접근성을 저해합니",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_048.html] `input` 태그에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(자동 완성) 및 보안(피싱 방지) 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_048.html] `input` 태그에 빈 `style` 속성(`style=\"\"`)이 존재합니다. 이는 불필요하며 코드 가독성을 저해할 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_049",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_049.html] 모바일 기기에서 적절한 화면 배율 및 반응형 디자인 지원을 위한 viewport meta 태그가 누락되었습니다. 이는 다양한 기기에서의 접근성을 저해할 수 있습니",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_049.html] 검색 엔진 최적화(SEO) 및 소셜 미디어 공유 시 페이지 내용을 요약하여 보여주는 description meta 태그가 누락되었습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_050",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_050.html] HTML `<head>` 내부에 정의된 CSS 스타일이 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소의 `height`, ",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_050.html] 페이지의 콘텐츠가 '문의하기'라는 목적에 비해 매우 적고, 기본적인 레이아웃 구성이 부족하여 사용자에게 충분한 정보나 상호작용 요소를 제공하지 못하고 있습니다. ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_050.html] '문의하기' 페이지임에도 불구하고, 문의를 위한 구체적인 방법(예: 이메일, 채팅, 온라인 문의 양식)이나 추가적인 안내 없이 전화번호와 로그인 링크만 제공되어 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_050.html] HTML `<title>` 태그의 내용이 '고객센터'로 설정되어 있으나, 페이지의 주요 제목(`<h1>`)은 '문의하기'로 되어 있어 일관성이 부족합니다. 이는 ",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_051",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_051.html] HTML, body, div, main, header 요소에 고정된 3000px 너비와 강제 가로 스크롤(`overflow-x: scroll !important`",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_051.html] `id=\"main-banner\"` 속성이 여러 요소에 중복 사용되었습니다. HTML `id` 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_051.html] 웹사이트의 전체적인 레이아웃과 콘텐츠 구성이 매우 미니멀하여 2026년 기준 정부 서비스 포털로서의 정보 제공 및 사용자 경험이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_051.html] 제공된 HTML 코드만으로는 웹 접근성 표준(KWCAG 2.2 또는 WCAG 2.1/2.2) 준수 여부를 완전히 판단하기 어렵지만, `id` 중복과 같은 기본 마",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_051.html] 2026년 10월 20일 기준으로, '주요 서비스', '로그인', '신청하기', '배너'와 같은 최소한의 텍스트만으로는 정부 서비스 포털로서의 최신 정보 제공 및",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_052",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_052.html] 인라인 스타일 시트에서 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소에 `height: 2px`, `font-size: 0",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_052.html] HTML `<title>` 태그의 내용('공지사항 게시판')과 페이지 내 `<h1>` 태그의 내용('공지사항 목록')이 일치하지 않아 사용자에게 혼란을 줄 수 있",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_053",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_053.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 매우 낮아 '로그인' 제목, '아이디' 플레이스홀더, '로그인' 버튼 텍스트 등 모든 텍스트의 가독성",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_053.html] HTML 소스코드에 `html, body, div, main, header` 요소에 `width: 3000px !important; min-width: 3000p",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_053.html] '아이디' 입력 필드에 시각적인 플레이스홀더만 제공되고, 스크린 리더 사용자를 위한 `<label>` 요소가 누락되어 웹 접근성이 저해됩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_053.html] '아이디' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(브라우저 자동 완성) 및 보안 기능 활용이 어렵습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_054",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_054.html] 모든 텍스트 요소(링크, 제목, 본문, 버튼 텍스트)가 배경색과 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다. 이는 웹 접근성 지침(WCAG/KWCAG)의",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_054.html] `html, body, div, main, header` 요소에 `width: 3000px !important; min-width: 3000px !importan",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_054.html] CSS에서 `!important` 키워드가 전역적으로 과도하게 사용되어 스타일의 우선순위를 강제하고 있습니다. 이는 CSS 유지보수를 어렵게 만들고, 향후 스타일",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_055",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_055.html] 텍스트(로그인, 신청 처리 내역)와 배경의 명도 대비가 WCAG 2.1 AA 최소 기준(4.5:1)에 현저히 미달하여 가독성이 매우 낮습니다. 현재 텍스트 색상(",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_055.html] CSS에서 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }`와 같이 `!impor",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_056",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_056.html] HTML `<style>` 태그 내에서 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !importan",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_056.html] 검색 입력 필드(`input type=\"text\"`)에 스크린 리더 사용자를 위한 명확한 접근성 레이블(accessible name)이 제공되지 않아 웹 접근성 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_056.html] `input` 요소에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 잠재적인 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_056.html] `main` 영역의 검색 결과가 '검색 결과 항목 1'과 같은 일반적인 플레이스홀더 텍스트로만 구성되어 있어, 실제 운영 중인 서비스의 콘텐츠로 보기 어렵습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_057",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_057.html] 페이지 내 '로그인' 링크가 일반 텍스트 링크 형태로 제공되어 시각적으로 중요한 행동임을 인지하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_057.html] FAQ 콘텐츠의 시각적 구분이 명확하지 않아 정보 탐색 효율성이 떨어질 수 있으며, 전반적인 페이지의 시각적 매력이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_057.html] '로그인' 링크가 FAQ 내용과 직접적인 연관성 없이 독립적으로 배치되어, 스크린 리더 사용자가 링크의 목적을 파악하기 어려울 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_058",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_058.html] 성명 입력 필드의 <label> 요소가 <input> 요소와 'for' 및 'id' 속성을 사용하여 명시적으로 연결되어 있지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_058.html] 성명 입력 필드에 'autocomplete' 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_058.html] 웹사이트의 전반적인 디자인이 정부 표준 가이드라인에 명시된 시각적 일관성 및 브랜딩을 따르지 않고 기본 브라우저 스타일로 표시됩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_058.html] 버튼 및 입력 필드와 같은 대화형 요소에 대한 시각적 피드백(예: 호버, 포커스 상태)이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_058.html] 성명 입력 필드에 필수 입력 여부를 나타내는 'required' 속성이 없으며, 사용자에게 입력 요구사항에 대한 안내가 부족합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_059",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_059.html] HTML 소스 코드에 포함된 CSS 규칙(button, .btn, .login-btn, .apply-btn 선택자)이 해당 요소들의 높이, 글꼴 크기, 패딩 등을",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_060",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_060.html] HTML 문서 내 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_061",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_061.html] 웹사이트에 정부 표준 가이드라인에 명시된 시각적 디자인 및 브랜딩 요소가 적용되지 않아 일관성이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_061.html] '신청하기' 버튼이 브라우저 기본 스타일로 표시되어 정부 웹사이트의 디자인 일관성을 해칩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_061.html] '배너' 영역에 실제 콘텐츠 대신 플레이스홀더 텍스트만 표시되어 있어 정보 제공이 미흡합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_062",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_062.html] HTML `<style>` 태그 내에서 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !importan",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_062.html] 페이지의 고정된 3000px 너비 설정으로 인해 대부분의 화면에서 과도한 여백이 발생하고 콘텐츠가 화면 중앙에 정렬되지 않아 시각적으로 불안정하며, 가로 스크롤이",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_063",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_063.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 텍",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_063.html] 아이디 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_063.html] 아이디 입력 필드가 시각적 `placeholder`만 사용하고 있어 스크린 리더 사용자를 위한 명시적인 `<label>` 요소가 부족합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_064",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_064.html] 모바일 기기에서 적절한 화면 확대를 위해 viewport meta 태그가 누락되었습니다. 이는 다양한 기기에서의 접근성과 사용자 경험을 저해할 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_064.html] 헤더 영역이 최소한의 '로그인' 링크만 포함하고 있어, 정부 웹사이트의 표준적인 구성(로고, 사이트명, 주요 내비게이션, 검색 기능 등)에 미치지 못합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_064.html] '발급 신청' 버튼의 시각적 스타일이 정부 웹사이트 표준 디자인 가이드라인(색상, 크기, 폰트, 명도 대비 등)을 따르지 않고 기본 브라우저 스타일로 보입니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_065",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_065.html] HTML 요소의 'id' 속성 값이 중복되었습니다. 'id'는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_066",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_066.html] 웹사이트의 모든 텍스트(예: '민원', '로그인', '검색 결과 항목 1')와 배경색 간의 명도 대비가 매우 낮아 콘텐츠 가독성이 심각하게 저하됩니다. 현재 텍스",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_066.html] 검색 입력 필드(<input type=\"text\">)에 `label` 요소나 `aria-label` 속성이 없어 스크린 리더 사용자가 해당 필드의 목적을 이해하기",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_066.html] 검색 입력 필드에 '민원'이라는 텍스트가 `value` 속성으로 설정되어 있어, 사용자가 입력 필드를 클릭했을 때 텍스트를 직접 지워야 하는 불편함이 있습니다. ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_066.html] 전역 CSS에서 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }`와 같이 `!im",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_067",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_067.html] 모바일 기기에서 적절한 화면 확대를 위해 viewport meta 태그가 누락되었습니다. 이로 인해 모바일 환경에서 웹 페이지가 올바르게 렌더링되지 않거나 가독성",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_068",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_068.html] HTML/CSS에 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !imp",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_068.html] 성명 입력 필드의 `<label>` 요소가 `<input>` 요소와 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 입력 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_068.html] 성명 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아, 사용자가 이전에 입력한 정보를 자동으로 채울 수 없어 사용자 경험이 저하될 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_069",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_069.html] 페이지 제목은 '이용약관'이나, 실제 약관 전문이 페이지에 포함되어 있지 않고 약관에 대한 간략한 설명과 '로그인' 링크만 제공됩니다. 사용자는 '이용약관' 페이",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_070",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_070.html] 모바일 기기에서 적절한 화면 확대를 위해 viewport meta 태그가 누락되었습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_070.html] 링크 텍스트 '접속하기'가 연결될 페이지의 목적(로그인)을 명확하게 전달하지 못하며, '문의하기' 페이지의 맥락에서 혼란을 줄 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_070.html] 페이지의 `<title>` 태그 내용('고객센터')이 주 제목(`<h1>` '문의하기')과 일치하지 않아 사용자 경험의 일관성을 저해할 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_071",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_071.html] 웹사이트에 정부 표준 가이드라인에 명시된 시각적 디자인 및 브랜딩 요소가 적용되지 않아 일관성이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_071.html] '신청하기' 버튼이 브라우저 기본 스타일로 표시되어 정부 웹사이트의 디자인 일관성을 해칩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_071.html] '배너' 영역에 실제 콘텐츠 대신 플레이스홀더 텍스트만 표시되어 있어 정보 제공이 미흡합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_072",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_072.html] 공지사항 목록에 각 공지사항의 게시일 정보가 누락되어 있어, 사용자가 정보의 최신성을 파악하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_072.html] 테이블 헤더(<th>)에 'scope' 속성이 누락되어 있어, 스크린 리더 사용자가 테이블 데이터를 이해하는 데 어려움을 겪을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_072.html] '접속하기' 링크가 페이지의 주 제목 옆에 위치하여 공지사항 목록 페이지의 맥락과 다소 어울리지 않으며, 사용자 흐름을 방해할 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_073",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_073.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 텍",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_073.html] 아이디 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_073.html] 아이디 입력 필드가 시각적 `placeholder`만 사용하고 있어 스크린 리더 사용자를 위한 명시적인 `<label>` 요소가 부족합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_074",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_074.html] 모든 텍스트 요소(로그인, 제목, 설명, 버튼 텍스트)의 색상(#e5e5e5)이 흰색 배경(#ffffff)과 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다.",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_074.html] 전역 CSS(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)에서 `!impor",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_075",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_075.html] HTML `<style>` 태그 내에 `html, body, div, main, header` 요소에 고정된 3000px 너비와 `overflow-x: scrol",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_076",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_076.html] HTML/CSS에서 `html`, `body`, `div`, `main`, `header` 요소에 고정된 3000px 너비를 강제하고 `overflow-x: sc",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_076.html] 검색 입력 필드에 `value=\"민원\"`이 미리 채워져 있어 `placeholder`의 역할을 하지만, 실제로는 `value` 속성으로 설정되어 사용자가 내용을 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_076.html] 페이지 제목이 '통합 검색 결과'임에도 불구하고 '접속하기' 링크가 존재하여, 이 요소의 기능(검색 실행, 로그인, 다른 페이지 이동 등)이 명확하지 않아 사용자",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_077",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_077.html] 링크 텍스트 '접속하기'는 사용자가 연결될 페이지의 목적을 명확히 예측하기 어렵게 할 수 있습니다. 특히 FAQ 페이지에서 일반적인 '접속하기'는 어떤 서비스로 ",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_078",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_078.html] 레이블 '성명'이 입력 필드와 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 필드의 목적을 정확히 인지하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_078.html] 입력 필드에 `name` 속성이 누락되어 있어 폼 제출 시 해당 필드의 데이터가 서버로 전송되지 않습니다. 이는 폼의 핵심 기능에 영향을 미칩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_078.html] '성명' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(자동 완성) 및 보안(피싱 방지) 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_078.html] 모바일 기기에서 웹 페이지가 올바르게 렌더링되고 반응형 디자인이 적용되도록 하는 viewport meta 태그가 `<head>` 섹션에 누락되어 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_079",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_079.html] HTML `<head>` 내부에 정의된 CSS 스타일이 `button` 및 `.btn`, `.login-btn`, `.apply-btn` 클래스를 가진 요소들의 ",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_080",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_080.html] HTML 문서 내에서 'main-banner' ID가 두 번 사용되어 중복되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_080.html] HTML, body, div, main, header 요소에 `width: 3000px !important; min-width: 3000px !important;",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_080.html] 페이지의 `<title>` 태그 내용('고객센터')과 `<h1>` 태그 내용('문의하기')이 일치하지 않아 사용자에게 혼란을 줄 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_081",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_081.html] `id=\"main-banner\"` 속성이 HTML 문서 내에서 세 번 중복 사용되었습니다. `id` 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_081.html] \"신청하기\" 버튼이 기본 브라우저 스타일을 사용하고 있어, 정부 웹사이트의 통일된 디자인 가이드라인을 따르지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_081.html] 웹사이트의 전반적인 시각적 디자인이 매우 단순하며, 정부 웹사이트로서의 브랜드 아이덴티티와 시각적 계층 구조가 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_081.html] \"배너\" 텍스트는 실제 콘텐츠가 아닌 플레이스홀더로 보입니다. 현재 시점(2026년 10월 20일)을 기준으로 콘텐츠의 최신성 및 완성도가 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_081.html] 정부 웹사이트로서 웹 접근성 강화를 위한 WAI-ARIA 속성 및 역할 적용이 미흡합니다. 현재 마크업은 기본적인 구조만 포함하고 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_082",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_082.html] HTML `<style>` 태그 내에 정의된 CSS 규칙이 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소의 `height`",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_083",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_083.html] 로그인 페이지에 비밀번호 입력 필드가 누락되어 있어 사용자 인증이 불가능합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_083.html] 로그인 입력 필드와 버튼이 `<form>` 태그로 감싸져 있지 않아 올바른 폼 제출 동작을 보장하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_083.html] '아이디' 입력 필드에 접근성을 위한 `<label>` 태그와 `id` 속성이 누락되어 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_083.html] '아이디' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_084",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_084.html] 전체 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 명도 대비가 WCAG 2.1 AA 등급 기준(최소 4.5:1)에 훨씬 미달하여 텍스트를 읽기 매우 어",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_085",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_085.html] 페이지 전체가 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !impor",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_086",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_086.html] 검색 입력 필드(<input type=\"text\" value=\"민원\">)에 접근성을 위한 명시적인 레이블이 없습니다. 스크린 리더 사용자가 해당 필드의 목적을 정",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_086.html] 검색 입력 필드 옆에 검색 버튼이나 아이콘이 없어 사용자가 검색을 실행하기 위한 명확한 시각적 단서가 부족합니다. 이는 사용자 경험을 저해할 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_086.html] `<input>` 태그에 불필요한 빈 `style=\"\"` 속성이 포함되어 있습니다. 이는 코드의 가독성을 저해하고 불필요한 마크업을 추가합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_086.html] 웹사이트에 로고, 사이트명 등 정부 웹사이트로서의 명확한 시각적 아이덴티티가 부족하여 신뢰성 및 일관성이 떨어집니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_087",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_087.html] 모바일 기기에서 적절한 화면 확대를 위해 viewport meta 태그가 누락되었습니다. 이로 인해 모바일 환경에서 웹 페이지가 올바르게 렌더링되지 않거나 가독성",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_088",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_088.html] CSS에 정의된 텍스트 색상(#e5e5e5)과 배경 색상(#ffffff)의 명도 대비가 낮아 가독성이 매우 떨어집니다. (WCAG 2.1 AA 기준 미달) 현재 ",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_088.html] `html`, `body` 등 주요 요소에 고정된 3000px 너비가 `!important`로 적용되어 모바일 및 작은 화면에서 가로 스크롤이 발생하고 콘텐츠가 ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_088.html] '성명' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안(자동 완성 기능)이 저하될 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_088.html] `label` 태그가 `input` 태그와 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 어떤 레이블이 어떤 입력 필드에",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_089",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_089.html] HTML 문서 내 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_090",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_090.html] 문의하기 페이지임에도 불구하고 전화번호 외에 추가적인 문의 채널(이메일, FAQ, 온라인 양식 등)이나 상세 정보(운영 시간, 예상 답변 시간 등)가 부족하여 사",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_090.html] HTML의 <title> 태그 내용('고객센터')과 페이지의 메인 제목인 <h1> 태그 내용('문의하기')이 일치하지 않아 웹 접근성 및 검색 엔진 최적화(SEO",
+          "semantic": "Standard Terminology Violation"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_090.html] 페이지 레이아웃이 지나치게 단순하며, 정부 웹사이트에서 일반적으로 기대되는 일관된 헤더, 푸터, 내비게이션 요소가 부재하여 전체적인 사용자 경험과 정보 구조의 통",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_091",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_091.html] 버튼 및 관련 요소(`.btn`, `.login-btn`, `.apply-btn`)의 CSS 스타일이 `height: 2px`, `font-size: 0px`, ",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_091.html] `html`, `body`, `div`, `main`, `header` 요소에 고정된 3000px 너비가 `!important`로 적용되어 모바일 및 일반 데스크",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_091.html] '배너' 텍스트가 일반적인 플레이스홀더로 보이며, 2026년 10월 20일 기준으로 최신 정보가 반영되지 않은 것으로 판단됩니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_092",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_092.html] HTML, body, div, main, header 요소에 width: 3000px !important; min-width: 3000px !important; ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_092.html] button, .btn, .login-btn, .apply-btn 선택자에 height: 2px !important; font-size: 0px !importan",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_093",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_093.html] <style> 태그 내의 CSS 규칙으로 인해 모든 버튼(`button`, `.btn`, `.login-btn`, `.apply-btn`)이 `height: 2p",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_093.html] \"아이디\" 입력 필드에 시각적으로 숨겨지지 않은 `<label>` 요소가 없어 스크린 리더 사용자가 필드의 목적을 명확히 이해하기 어렵습니다. 이는 웹 접근성 지",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_093.html] \"아이디\" 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 경험 및 보안 측면에서 개선이 필요합니다. 최신 웹 표준에서는 사용자 편의를 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_094",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_094.html] 모든 텍스트 요소(로그인, 제목, 설명, 버튼 텍스트)의 색상(#e5e5e5)이 흰색 배경(#ffffff)과 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다.",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_094.html] 전역 CSS(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)에서 `!impor",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_095",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_095.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 모",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_096",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_096.html] 페이지 전체 너비가 3000px로 고정되어 있어, 대부분의 화면에서 불필요한 가로 스크롤이 발생하며 반응형 디자인 원칙을 위반합니다.",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_096.html] 전역 CSS에서 버튼 및 특정 클래스(.btn, .login-btn, .apply-btn) 요소의 높이, 글꼴 크기, 패딩을 극도로 작게 설정하여, 해당 요소들이",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_096.html] 검색 입력 필드에 힌트 텍스트로 '민원'이 value 속성으로 설정되어 있어, 사용자가 입력하기 전에 기존 텍스트를 수동으로 지워야 하는 불편함이 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_096.html] 검색 입력 필드에 시각적 레이블 외에 스크린 리더 사용자를 위한 접근성 레이블(예: <label> 태그 또는 aria-label 속성)이 제공되지 않아, 시각 장",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_096.html] 페이지의 주요 콘텐츠가 '검색 결과 항목 1'이라는 일반적인 텍스트로만 구성되어 있어, 실제 서비스 페이지로서의 정보 제공 기능이 미흡하며 개발 중인 페이지로 오",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_097",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_097.html] HTML 내부에 정의된 CSS 스타일이 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소의 `height`, `font-siz",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_097.html] FAQ 페이지에 단 하나의 질문만 존재하여 사용자에게 제공되는 정보가 매우 제한적입니다. 이는 FAQ 페이지의 목적에 부합하지 않으며, 사용자의 궁금증을 충분히 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_098",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_098.html] `id` 속성 'main-banner'가 문서 내에서 두 번 사용되었습니다. `id`는 HTML 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_098.html] `<button>` 요소 및 특정 클래스(`btn`, `login-btn`, `apply-btn`)에 적용된 CSS 스타일(`height: 2px`, `font-",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_098.html] '성명' 입력 필드에 `autocomplete` 속성이 누락되었습니다. 이는 사용자 편의성(자동 완성)을 저해하고, 민감 정보 입력 시 보안 측면에서 고려되어야 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_098.html] '성명' 입력 필드에 빨간색 테두리가 표시되어 오류 상태를 암시하지만, 사용자에게 오류의 원인이나 해결 방법을 알려주는 명확한 텍스트 피드백이 없습니다. 이는 사",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_099",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_099.html] HTML 문서 내 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_100",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_100.html] 웹 페이지의 `html`, `body`, `div`, `main`, `header` 요소에 고정된 3000px 너비가 강제 적용되어 가로 스크롤이 발생하며, 이는",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_100.html] 페이지의 `<title>` 태그 내용('고객센터')과 `<h1>` 태그 내용('문의하기')이 일치하지 않아 사용자에게 혼란을 줄 수 있으며, 검색 엔진 최적화(S",
+          "semantic": "Standard Terminology Violation"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_100.html] 제공된 전화번호 '110'이 단순 텍스트로만 표시되어 있어, 모바일 기기에서 사용자가 직접 탭하여 전화를 걸 수 있는 기능이 제공되지 않습니다. 이는 사용자 편의",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_101",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_101.html] `id=\"main-banner\"` 속성이 문서 내에서 세 번 중복 사용되었습니다. HTML `id` 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_101.html] `<head>` 섹션에 viewport meta 태그가 선언되어 있지 않아 모바일 기기에서 웹 페이지가 올바르게 렌더링되지 않을 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_102",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_102.html] 모바일 기기에서 웹 페이지가 올바르게 표시되도록 하는 뷰포트 메타 태그가 `<head>` 섹션에 누락되었습니다. 이로 인해 모바일 환경에서 페이지가 축소되어 보이",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_102.html] 공지사항 테이블에 시각 장애인 사용자를 위한 `<caption>` 요소와 `<th>` 요소의 `scope` 속성이 누락되어 스크린 리더 사용자가 테이블 구조를 이",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_102.html] 공지사항 '서비스 안내'에 게시일 정보가 누락되어 콘텐츠의 최신성 및 유효 기간을 파악하기 어렵습니다. 정부 웹사이트의 공지사항은 일반적으로 게시일을 명시해야 합",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_103",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_103.html] 로그인 버튼이 CSS 스타일링(height: 2px, font-size: 0px, overflow: hidden)으로 인해 시각적으로 거의 보이지 않고 클릭하기 ",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_103.html] '아이디' 입력 필드에 시각적 레이블(`label` 태그)이 없어 스크린 리더 사용자의 접근성이 저하될 수 있으며, `autocomplete` 속성이 설정되어 있",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_104",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_104.html] HTML 문서 내에서 'main-banner' ID가 중복 사용되었습니다. ID 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_105",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_105.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 모",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_106",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_106.html] 텍스트와 배경의 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다. 현재 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 대비는 1.07:1로, WCAG",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_106.html] `id=\"main-banner\"` 속성이 HTML 문서 내에서 두 번 사용되어 중복됩니다. ID는 문서 내에서 고유해야 하는 웹 표준을 위반합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_106.html] 검색 입력 필드에 접근성 강화를 위한 명시적인 레이블(`label` 요소 또는 `aria-label`/`aria-labelledby`)이 누락되었습니다. 이는 스",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_107",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_107.html] HTML 내부에 정의된 CSS 스타일이 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소의 `height`, `font-siz",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_107.html] FAQ 페이지에 단 하나의 질문만 존재하여 사용자에게 제공되는 정보가 매우 제한적입니다. 이는 FAQ 페이지의 목적에 부합하지 않으며, 사용자의 궁금증을 충분히 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_108",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_108.html] 성명 입력 필드의 <label> 요소가 <input> 요소와 'for' 및 'id' 속성을 사용하여 명시적으로 연결되어 있지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_108.html] 성명 입력 필드에 'autocomplete' 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_108.html] 웹사이트의 전반적인 디자인이 정부 표준 가이드라인에 명시된 시각적 일관성 및 브랜딩을 따르지 않고 기본 브라우저 스타일로 표시됩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_108.html] 버튼 및 입력 필드와 같은 대화형 요소에 대한 시각적 피드백(예: 호버, 포커스 상태)이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_108.html] 성명 입력 필드에 필수 입력 여부를 나타내는 'required' 속성이 없으며, 사용자에게 입력 요구사항에 대한 안내가 부족합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_109",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_109.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다. 이는 웹 콘텐츠 접근성 지침(WCAG) 2.1 AA 기준인 ",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_109.html] HTML 문서 내에 'main-banner' ID가 두 번 사용되어 중복됩니다. ID 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_110",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_110.html] 모바일 기기에서 적절한 화면 배율 및 반응형 동작을 위한 viewport meta 태그가 누락되었습니다. 이는 다양한 기기에서의 사용자 경험과 웹 접근성에 부정적",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_111",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_111.html] `id=\"main-banner\"` 속성이 문서 내에서 세 번 중복 사용되었습니다. HTML `id` 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_111.html] `<head>` 섹션에 viewport meta 태그가 선언되어 있지 않아 모바일 기기에서 웹 페이지가 올바르게 렌더링되지 않을 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_112",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_112.html] 모바일 기기에서 웹 페이지가 올바르게 표시되도록 하는 뷰포트 메타 태그가 `<head>` 섹션에 누락되었습니다. 이로 인해 모바일 환경에서 페이지가 축소되어 보이",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_112.html] 공지사항 테이블에 시각 장애인 사용자를 위한 `<caption>` 요소와 `<th>` 요소의 `scope` 속성이 누락되어 스크린 리더 사용자가 테이블 구조를 이",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_112.html] 공지사항 '서비스 안내'에 게시일 정보가 누락되어 콘텐츠의 최신성 및 유효 기간을 파악하기 어렵습니다. 정부 웹사이트의 공지사항은 일반적으로 게시일을 명시해야 합",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_113",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_113.html] 아이디 입력 필드에 접근성을 위한 `<label>` 요소가 없으며, `id` 속성이 누락되어 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_113.html] 아이디 입력 필드에 `autocomplete` 속성이 설정되어 있지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_113.html] 접속하기 `<button>` 요소에 `type` 속성이 명시되어 있지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_113.html] 입력 필드와 버튼이 `<form>` 태그로 묶여 있지 않습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_114",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_114.html] 주요 액션 버튼인 '발급 신청' 버튼의 색상이 정부 표준 가이드라인에 명시된 시각적 아이덴티티 및 주요 액션 버튼 색상 규격과 일치하지 않습니다. 현재는 일반적인",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_114.html] HTML `<title>` 태그의 내용이 '민원 안내 상세'로 설정되어 있어, 실제 페이지의 핵심 내용인 '주민등록표등본 발급'을 명확하게 반영하지 못하고 있습니",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_115",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_115.html] HTML `<style>` 태그 내에 정의된 CSS 규칙으로 인해 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소들이 `he",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_116",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_116.html] 웹사이트의 모든 텍스트 색상(#e5e5e5)과 배경 색상(#ffffff)의 명도 대비가 매우 낮아 텍스트 가독성이 현저히 떨어집니다. 이는 웹 접근성 가이드라인(",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_116.html] 검색 입력 필드(<input type=\"text\" value=\"민원\">)에 스크린 리더 사용자를 위한 명확한 레이블(`label` 요소 또는 `aria-label",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_116.html] 검색 입력 필드에 `autocomplete` 속성이 설정되어 있지 않습니다. 이는 사용자 편의성 저하 및 잠재적인 보안 취약점(민감 정보 입력 시)으로 이어질 수",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_117",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_117.html] HTML 문서 내에 'id=\"main-banner\"' 속성을 가진 요소가 두 개 존재하여 ID는 문서 내에서 고유해야 한다는 HTML 표준을 위반합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_117.html] 인라인 스타일로 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !important; min-width:",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_118",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_118.html] HTML `<style>` 태그 내에서 `html`, `body`, `main` 등의 요소에 `width: 3000px !important` 및 `overflow",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_118.html] `input` 태그에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 접근성이 저하됩니다. 2026년 10월 20일 기준으로 최신 웹 표준",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_118.html] `label` 태그가 `input` 태그와 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 폼 컨트롤의 목적을 정확히 이해하기 어렵습니다. 이는 웹 접근성 지",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_119",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_119.html] 모바일 기기에서 적절한 화면 배율 및 반응형 디자인 지원을 위한 viewport meta 태그가 누락되었습니다. 이는 다양한 기기에서의 접근성을 저해할 수 있습니",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_119.html] 검색 엔진 최적화(SEO) 및 소셜 미디어 공유 시 페이지 내용을 요약하여 보여주는 description meta 태그가 누락되었습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_120",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_120.html] 문의하기 페이지임에도 불구하고 전화번호 외에 추가적인 문의 채널(이메일, FAQ, 온라인 양식 등)이나 상세 정보(운영 시간, 예상 답변 시간 등)가 부족하여 사",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_120.html] HTML의 <title> 태그 내용('고객센터')과 페이지의 메인 제목인 <h1> 태그 내용('문의하기')이 일치하지 않아 웹 접근성 및 검색 엔진 최적화(SEO",
+          "semantic": "Standard Terminology Violation"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_120.html] 페이지 레이아웃이 지나치게 단순하며, 정부 웹사이트에서 일반적으로 기대되는 일관된 헤더, 푸터, 내비게이션 요소가 부재하여 전체적인 사용자 경험과 정보 구조의 통",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_121",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_121.html] HTML `<style>` 태그 내에서 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !importan",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_122",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_122.html] 공지사항 목록에 각 공지사항의 게시일 정보가 누락되어 있어, 사용자가 정보의 최신성을 파악하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_122.html] 테이블 헤더(<th>)에 'scope' 속성이 누락되어 있어, 스크린 리더 사용자가 테이블 데이터를 이해하는 데 어려움을 겪을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_122.html] '접속하기' 링크가 페이지의 주 제목 옆에 위치하여 공지사항 목록 페이지의 맥락과 다소 어울리지 않으며, 사용자 흐름을 방해할 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_123",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_123.html] HTML 요소의 'id' 속성 값 ('main-banner')이 중복됩니다. 'id'는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_123.html] 페이지 전체에 고정된 3000px 너비를 강제하는 스타일이 적용되어 모바일 및 일반 데스크톱 환경에서 가로 스크롤이 발생하고 레이아웃이 깨집니다. 이는 심각한 반",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_123.html] 아이디 입력 필드에 'autocomplete' 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_124",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_124.html] HTML 문서 내에서 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_124.html] 버튼 요소(button, .btn, .login-btn, .apply-btn)에 적용된 CSS 스타일(`height: 2px`, `padding: 0`, `bor",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_124.html] 버튼 요소에 적용된 CSS 스타일(`font-size: 0px`, `line-height: 0`, `overflow: hidden`)로 인해 '발급 신청' 버튼의",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_125",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_125.html] HTML `<style>` 태그 내에 `html, body, div, main, header` 요소에 고정된 3000px 너비와 `overflow-x: scrol",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_126",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_126.html] 검색 입력 필드에 스크린 리더를 위한 접근성 레이블(label 또는 aria-label)이 누락되어 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_126.html] 검색 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_126.html] 검색 입력 필드에 힌트 텍스트가 `value` 속성으로 설정되어 있어, 사용자가 입력 시 기존 텍스트를 수동으로 지워야 하는 불편함이 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_127",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_127.html] 모바일 기기에서 적절한 화면 확대를 위해 viewport meta 태그가 누락되었습니다. 이로 인해 모바일 환경에서 웹 페이지가 올바르게 렌더링되지 않거나 가독성",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_128",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_128.html] 버튼 요소에 적용된 CSS 스타일(height, font-size, line-height, padding, overflow)로 인해 버튼이 화면에 표시되지 않고 ",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_128.html] '성명' 레이블이 해당 입력 필드와 `for` 및 `id` 속성을 사용하여 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 입력 필드의 목적을 이해하기 어렵습",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_128.html] '성명' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자가 이전에 입력한 정보를 자동으로 채울 수 없어 사용자 경험이 저하될 수 있습니다",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_128.html] 입력 필드와 버튼에 빨간색 테두리가 적용되어 있어, 오류 상태가 아님에도 불구하고 사용자에게 혼란을 주거나 시각적으로 부적절할 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_129",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_129.html] HTML 문서 내에서 'main-banner' ID가 두 번 사용되어 ID는 고유해야 한다는 HTML 표준을 위반합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_129.html] 인라인 `<style>` 태그 내의 CSS 규칙이 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소의 높이, 글꼴 크기, 패딩",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_130",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_130.html] 버튼 및 버튼 역할을 하는 요소(`.btn`, `.login-btn`, `.apply-btn`)에 적용된 CSS 스타일이 요소의 높이, 글꼴 크기, 패딩을 극도로",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_131",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_131.html] 웹사이트에 정부 표준 가이드라인에 명시된 시각적 디자인 및 브랜딩 요소가 적용되지 않아 일관성이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_131.html] '신청하기' 버튼이 브라우저 기본 스타일로 표시되어 정부 웹사이트의 디자인 일관성을 해칩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_131.html] '배너' 영역에 실제 콘텐츠 대신 플레이스홀더 텍스트만 표시되어 있어 정보 제공이 미흡합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_132",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_132.html] 텍스트 색상(#e5e5e5)과 배경 색상(#ffffff)의 명도 대비가 매우 낮아 콘텐츠의 가독성이 심각하게 저하됩니다. 이는 웹 접근성 가이드라인(WCAG 2.",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_132.html] HTML 문서 내에 `id=\"main-banner\"`가 두 번 사용되어 ID의 고유성 원칙을 위반합니다. 이는 웹 표준에 어긋나며, JavaScript 동작 및 ",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_133",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_133.html] HTML 소스 코드에 정의된 CSS 스타일(`height: 2px !important; font-size: 0px !important; line-height: 0",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_133.html] '아이디' 입력 필드에 'autocomplete' 속성이 설정되어 있지 않습니다. 이는 사용자의 자동 완성 기능을 방해하고, 일부 보안 취약점에 노출될 수 있습니",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_134",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_134.html] 페이지의 주요 콘텐츠 제목인 '주민등록표등본 발급'이 `<h2>` 태그로 마크업되어 있습니다. 일반적으로 페이지의 가장 중요한 제목은 `<h1>` 태그를 사용하는",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_134.html] '발급 신청' 버튼이 기본 브라우저 스타일을 따르고 있어, 정부 웹사이트의 통일된 디자인 시스템이나 브랜드 가이드라인에 부합하지 않을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_134.html] <header> 내의 '접속하기' 링크가 내비게이션 역할을 하는 경우, <nav> 요소로 감싸지 않아 의미론적 구조가 불분명할 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_135",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_135.html] CSS 스타일 시트에 정의된 `button`, `.btn`, `.login-btn`, `.apply-btn` 요소에 `height: 2px`, `font-size",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_135.html] '로그인' 링크가 `<aside>` 태그 내에 위치해 있습니다. `<aside>`는 본문 내용과 간접적으로 관련된 콘텐츠에 사용되는 것이 일반적이므로, 주요 내비",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_135.html] '신청 처리 내역'이라는 제목은 존재하지만, 해당 제목 아래에 실제 처리 내역에 대한 어떠한 콘텐츠(목록, 표 등)도 제공되지 않아 페이지가 미완성 상태이거나 사",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_136",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_136.html] 검색 입력 필드에 스크린 리더를 위한 접근성 레이블(label 또는 aria-label)이 누락되어 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_136.html] 검색 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_136.html] 검색 입력 필드에 힌트 텍스트가 `value` 속성으로 설정되어 있어, 사용자가 입력 시 기존 텍스트를 수동으로 지워야 하는 불편함이 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_137",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_137.html] HTML `<style>` 태그 내에 정의된 CSS 규칙이 `button` 태그 및 `.btn`, `.login-btn`, `.apply-btn` 클래스에 대해 ",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_138",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_138.html] HTML 문서 내에서 'id' 속성 값 'main-banner'가 두 번 사용되어 중복되었습니다. 'id'는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_138.html] 입력 필드(<input type=\"text\">)에 'autocomplete' 속성이 설정되어 있지 않아 사용자 편의성 및 보안에 취약할 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_138.html] 버튼 요소의 CSS 스타일(height: 2px, font-size: 0px, overflow: hidden 등)이 버튼을 시각적으로 숨기고 텍스트를 읽을 수 없",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_138.html] 입력 필드의 테두리 색상이 빨간색으로 설정되어 있어, 오류 상태가 아님에도 불구하고 사용자에게 혼란을 줄 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_139",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_139.html] HTML 소스 코드에 포함된 CSS 규칙(button, .btn, .login-btn, .apply-btn 선택자)이 해당 요소들의 높이, 글꼴 크기, 패딩 등을",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_140",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_140.html] `button` 태그 및 특정 클래스(`.btn`, `.login-btn`, `.apply-btn`)에 적용된 CSS 스타일(`height: 2px`, `font",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_141",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_141.html] HTML `<head>` 내 `<style>` 태그에서 `html, body, div, main, header` 요소에 `width: 3000px !importa",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_141.html] `<div id=\"main-banner\">` 요소에 '배너'라는 플레이스홀더 텍스트만 존재하며, 실제 사용자에게 제공될 정보나 시각적 콘텐츠가 부재합니다. 이는 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_142",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_142.html] HTML, body, div, main, header 요소에 width: 3000px !important; min-width: 3000px !important; ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_142.html] button, .btn, .login-btn, .apply-btn 선택자에 height: 2px !important; font-size: 0px !importan",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_143",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_143.html] 로그인 버튼이 CSS 스타일링(height: 2px, font-size: 0px, overflow: hidden)으로 인해 시각적으로 거의 보이지 않고 클릭하기 ",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_143.html] '아이디' 입력 필드에 시각적 레이블(`label` 태그)이 없어 스크린 리더 사용자의 접근성이 저하될 수 있으며, `autocomplete` 속성이 설정되어 있",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_144",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_144.html] HTML 문서 내에서 'main-banner' ID가 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_144.html] 버튼 요소(button, .btn, .login-btn, .apply-btn)에 적용된 CSS 스타일(`height: 2px`, `padding: 0`, `bor",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_144.html] 버튼 요소에 적용된 CSS 스타일(`font-size: 0px`, `line-height: 0`, `overflow: hidden`)로 인해 '발급 신청' 버튼의",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_145",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_145.html] HTML, body 및 주요 레이아웃 요소에 `width: 3000px !important; min-width: 3000px !important; overflow",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_146",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_146.html] 웹사이트의 모든 텍스트(예: '민원', '로그인', '검색 결과 항목 1')와 배경색 간의 명도 대비가 매우 낮아 콘텐츠 가독성이 심각하게 저하됩니다. 현재 텍스",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_146.html] 검색 입력 필드(<input type=\"text\">)에 `label` 요소나 `aria-label` 속성이 없어 스크린 리더 사용자가 해당 필드의 목적을 이해하기",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_146.html] 검색 입력 필드에 '민원'이라는 텍스트가 `value` 속성으로 설정되어 있어, 사용자가 입력 필드를 클릭했을 때 텍스트를 직접 지워야 하는 불편함이 있습니다. ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_146.html] 전역 CSS에서 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }`와 같이 `!im",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_147",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_147.html] 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 명도 대비가 WCAG 2.1 AA 기준(4.5:1 이상)에 크게 미달하여 콘텐츠 가독성이 심각하게 저하됩니",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_147.html] HTML `<style>` 태그 내에 `html, body, div, main, header` 요소에 `width: 3000px !important; min-wi",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_147.html] CSS에서 `!important` 키워드를 과도하게 사용하여 스타일 우선순위를 강제하고 있습니다. 이는 코드의 유지보수성을 저해하고, 향후 스타일 변경 시 예상치",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_148",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_148.html] HTML/CSS에 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !imp",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_148.html] 성명 입력 필드의 `<label>` 요소가 `<input>` 요소와 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 입력 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_148.html] 성명 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아, 사용자가 이전에 입력한 정보를 자동으로 채울 수 없어 사용자 경험이 저하될 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_149",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": []
+    },
+    {
+      "page_id": "page_150",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_150.html] 모바일 기기에서 적절한 화면 배율 및 반응형 동작을 위한 viewport meta 태그가 누락되었습니다. 이는 다양한 기기에서의 사용자 경험과 웹 접근성에 부정적",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_151",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_151.html] '배너' 영역에 실제 콘텐츠(이미지, 정보 등)가 아닌 '배너'라는 텍스트만 표시되어 있습니다. 이는 사용자에게 혼란을 줄 수 있으며, 정보 전달의 목적을 달성하",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_152",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_152.html] 공지사항 목록에 각 공지사항의 게시일 정보가 누락되어 있어, 사용자가 정보의 최신성을 파악하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_152.html] 테이블 헤더(<th>)에 'scope' 속성이 누락되어 있어, 스크린 리더 사용자가 테이블 데이터를 이해하는 데 어려움을 겪을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_152.html] '접속하기' 링크가 페이지의 주 제목 옆에 위치하여 공지사항 목록 페이지의 맥락과 다소 어울리지 않으며, 사용자 흐름을 방해할 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_153",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_153.html] HTML, body, main 요소에 고정된 3000px 너비와 가로 스크롤이 강제 적용되어 있어, 모든 기기에서 심각한 반응형 웹 디자인 문제를 야기하고 사용자",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_153.html] 로그인 기능에 필수적인 비밀번호 입력 필드가 누락되어 있어, 사용자가 정상적으로 로그인할 수 없습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_153.html] 아이디 입력 필드에 시각적으로 숨겨진 레이블(`label` 요소) 또는 `aria-label`, `aria-labelledby` 속성이 없어 스크린 리더 사용자가",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_153.html] 아이디 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 브라우저의 자동 완성 기능을 활용할 수 없으며, 사용자 편의성 및 보안 측면에서 개선이 ",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_154",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_154.html] 전체 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 명도 대비가 WCAG 2.1 AA 등급 기준(최소 4.5:1)에 훨씬 미달하여 텍스트를 읽기 매우 어",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_155",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_155.html] 페이지 전체가 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !impor",
+          "semantic": "Mobile Layout Breakage"
+        }
+      ]
+    },
+    {
+      "page_id": "page_156",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_156.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 WCAG 2.1 AA 기준(최소 4.5:1)에 크게 미달하여 콘텐츠 가독성이 매우 낮습니다. (현재 ",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_156.html] 페이지 전체(`html`, `body`, `div`, `main`, `header`)에 3000px의 고정 너비가 적용되어 있으며, `overflow-x: scr",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_156.html] 검색 입력 필드(`input type=\"text\"`)에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_156.html] CSS 코드에서 `!important` 선언이 과도하게 사용되어 스타일 우선순위 관리를 어렵게 하고 코드 유지보수성을 저해합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_157",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_157.html] 링크 텍스트 '접속하기'는 사용자가 연결될 페이지의 목적을 명확히 예측하기 어렵게 할 수 있습니다. 특히 FAQ 페이지에서 일반적인 '접속하기'는 어떤 서비스로 ",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_158",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_158.html] 레이블 '성명'이 입력 필드와 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 필드의 목적을 정확히 인지하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_158.html] 입력 필드에 `name` 속성이 누락되어 있어 폼 제출 시 해당 필드의 데이터가 서버로 전송되지 않습니다. 이는 폼의 핵심 기능에 영향을 미칩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_158.html] '성명' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(자동 완성) 및 보안(피싱 방지) 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_158.html] 모바일 기기에서 웹 페이지가 올바르게 렌더링되고 반응형 디자인이 적용되도록 하는 viewport meta 태그가 `<head>` 섹션에 누락되어 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_159",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_159.html] HTML 문서 내에 `id=\"main-banner\"` 속성이 두 번 사용되어 중복됩니다. ID는 문서 내에서 고유해야 하는 웹 표준입니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_160",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_160.html] HTML `<style>` 태그 내에서 `html, body, div, main, header` 요소에 `width: 3000px !important; min-w",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_160.html] '전화번호: 110'이 단순 텍스트로 제공되어 모바일 기기에서 사용자가 직접 전화를 걸기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_160.html] '접속하기' 링크가 일반 텍스트 링크 형태로 제공되어, 사용자의 시선을 끌고 특정 행동을 유도하는 'Call to Action' 요소로서의 시각적 강조가 부족합니",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_160.html] '접속하기' 링크의 텍스트만으로는 사용자가 어떤 서비스나 페이지로 이동하게 될지 명확하게 예측하기 어렵습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_161",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_161.html] 버튼(button, .btn 등)에 적용된 CSS 스타일(height: 2px, font-size: 0px, overflow: hidden, padding: 0)",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_161.html] '신청하기'와 같은 중요한 기능 버튼이 시각적으로 존재하지 않아 사용자가 해당 기능을 찾거나 이용할 수 없습니다. 이는 사용자 경험(UX)에 치명적인 영향을 미칩",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_161.html] 핵심 서비스인 '신청하기' 버튼이 기능적으로 비활성화되어 있어 사용자가 웹사이트의 주요 목적을 달성할 수 없습니다. 이는 서비스 운영의 기본적인 오류입니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_162",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_162.html] HTML, body, div, main, header 요소에 width: 3000px !important; min-width: 3000px !important; ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_162.html] button, .btn, .login-btn, .apply-btn 선택자에 height: 2px !important; font-size: 0px !importan",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_163",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_163.html] 웹사이트의 전체 너비가 3000px로 고정되어 있어 모바일 및 다양한 화면 크기에서 가로 스크롤이 발생하고 레이아웃이 깨집니다.",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_163.html] 로그인 버튼을 포함한 모든 버튼의 높이가 2px, 글자 크기가 0px로 설정되어 있어 버튼이 거의 보이지 않고 클릭할 수 없습니다. 이는 심각한 사용자 경험 및 ",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_163.html] 아이디 입력 필드에 시각적으로는 placeholder가 있지만, 스크린 리더 사용자를 위한 명시적인 <label> 요소가 연결되어 있지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_163.html] 아이디 입력 필드에 autocomplete 속성이 설정되어 있지 않아 사용자가 이전에 입력한 정보를 자동으로 채울 수 없습니다. 이는 사용자 편의성을 저해하고, ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_163.html] <input type=\"text\" placeholder=\"아이디\" style=\"\">와 같이 빈 style 속성이 불필요하게 포함되어 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_164",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_164.html] HTML `<style>` 태그 내에 `html, body, div, main, header` 요소에 `width: 3000px !important; min-wi",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_164.html] \"로그인\" 링크와 \"발급 신청\" 버튼이 기본 브라우저 스타일을 따르고 있어, 정부 웹사이트의 통일된 시각적 디자인 가이드라인을 준수하지 않을 수 있습니다. 이는 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_164.html] \"발급 수수료 안내입니다.\"라는 문구만 제시되어 있을 뿐, 실제 주민등록표등본 발급에 필요한 수수료 정보, 구체적인 신청 절차, 필요 서류, 처리 기간 등 필수적",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_165",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_165.html] 페이지의 주요 제목을 나타내는 <h1> 요소가 누락되었습니다. '신청 처리 내역'이 페이지의 주요 내용이라면 <h1>으로 사용되어야 합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_165.html] '로그인' 링크가 <aside> 태그 내에 위치하여 콘텐츠의 주요 흐름과 관련 없는 보조 콘텐츠로 분류되었습니다. 이는 의미론적으로 적절하지 않을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_165.html] '마이페이지 대시보드'임에도 불구하고 '신청 처리 내역' 제목 외에 실제 대시보드 콘텐츠가 부족하여 사용자 경험이 저하될 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_166",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_166.html] HTML `<style>` 태그 내에서 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !importan",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_166.html] 검색 입력 필드(`input type=\"text\"`)에 스크린 리더 사용자를 위한 명확한 접근성 레이블(accessible name)이 제공되지 않아 웹 접근성 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_166.html] `input` 요소에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 잠재적인 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_166.html] `main` 영역의 검색 결과가 '검색 결과 항목 1'과 같은 일반적인 플레이스홀더 텍스트로만 구성되어 있어, 실제 운영 중인 서비스의 콘텐츠로 보기 어렵습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_167",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_167.html] 페이지 내 '로그인' 링크가 일반 텍스트 링크 형태로 제공되어 시각적으로 중요한 행동임을 인지하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_167.html] FAQ 콘텐츠의 시각적 구분이 명확하지 않아 정보 탐색 효율성이 떨어질 수 있으며, 전반적인 페이지의 시각적 매력이 부족합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_167.html] '로그인' 링크가 FAQ 내용과 직접적인 연관성 없이 독립적으로 배치되어, 스크린 리더 사용자가 링크의 목적을 파악하기 어려울 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_168",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_168.html] HTML에 정의된 전역 CSS(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_168.html] 폼 `<label>` 요소('성명')가 해당 `<input>` 요소와 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 폼 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_168.html] 개인 정보(성명)를 입력받는 `<input>` 요소에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(자동 완성) 및 보안 측면에서 개선이 필",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_169",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_169.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 WCAG 2.1 AA 기준(4.5:1)에 미달하여 가독성이 심각하게 저하됩니다. 이는 시각적으로 텍스",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_169.html] 전역 선택자(`*`)에 `!important`를 사용하여 텍스트 및 배경색을 지정하는 것은 스타일 우선순위를 예측하기 어렵게 만들고, 향후 스타일 변경 및 유지보",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_170",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_170.html] 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 명도 대비가 WCAG 2.1 AA 기준(4.5:1)에 미달하여 가독성이 매우 낮습니다. 이는 시각 장애가 ",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_170.html] 전역 CSS 선택자(`*`)에 `!important`를 사용하여 모든 요소의 색상과 배경색을 강제하고 있어, 스타일 재정의 및 유지보수를 어렵게 합니다. 이는 C",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_171",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_171.html] HTML 문서 내에서 'main-banner' ID가 세 번 중복 사용되었습니다. ID는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_171.html] `h1` 태그(\"주요 서비스\")와 \"접속하기\" 링크가 `main` 요소 외부에 위치하여 페이지의 주요 콘텐츠 구조가 시맨틱하게 올바르지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_171.html] '배너' 텍스트가 실제 콘텐츠가 아닌 placeholder로 보입니다. 이는 사용자에게 혼란을 줄 수 있으며, 운영 중인 서비스에서는 적절하지 않습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_172",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_172.html] 모바일 기기에서 적절한 화면 표시를 위한 viewport meta 태그가 누락되었습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_172.html] 정부 웹사이트로서의 일관된 디자인 가이드라인 및 브랜딩 요소가 부족하여 사용자에게 신뢰감을 주기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_172.html] 공지사항 목록에 각 공지사항의 게시일 정보가 누락되어 콘텐츠의 최신성을 파악하기 어렵습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_173",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_173.html] 전역 CSS 스타일(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)로 인해 모",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_173.html] 아이디 입력 필드에 `autocomplete` 속성이 누락되어 사용자 경험 및 보안 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_173.html] 아이디 입력 필드에 시각적으로 숨겨진 `<label>` 요소 또는 `aria-label` 속성이 없어 스크린 리더 사용자가 필드의 목적을 명확히 이해하기 어렵습니",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_174",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_174.html] HTML `<style>` 태그 내에 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !important",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_174.html] '발급 수수료 안내입니다.'라는 문구만으로는 실제 수수료에 대한 구체적인 정보(금액, 결제 방법 등)가 제공되지 않아, 사용자가 필요한 정보를 얻기 어렵습니다. ",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_175",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": []
+    },
+    {
+      "page_id": "page_176",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_176.html] 웹사이트의 모든 텍스트(예: '민원', '로그인', '검색 결과 항목 1')와 배경색 간의 명도 대비가 매우 낮아 콘텐츠 가독성이 심각하게 저하됩니다. 현재 텍스",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_176.html] 검색 입력 필드(<input type=\"text\">)에 `label` 요소나 `aria-label` 속성이 없어 스크린 리더 사용자가 해당 필드의 목적을 이해하기",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_176.html] 검색 입력 필드에 '민원'이라는 텍스트가 `value` 속성으로 설정되어 있어, 사용자가 입력 필드를 클릭했을 때 텍스트를 직접 지워야 하는 불편함이 있습니다. ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_176.html] 전역 CSS에서 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }`와 같이 `!im",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_177",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_177.html] 링크 텍스트 '접속하기'는 사용자가 연결될 페이지의 목적을 명확히 예측하기 어렵게 할 수 있습니다. 특히 FAQ 페이지에서 일반적인 '접속하기'는 어떤 서비스로 ",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_178",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_178.html] 레이블 '성명'이 입력 필드와 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 필드의 목적을 정확히 인지하기 어렵습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_178.html] 입력 필드에 `name` 속성이 누락되어 있어 폼 제출 시 해당 필드의 데이터가 서버로 전송되지 않습니다. 이는 폼의 핵심 기능에 영향을 미칩니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_178.html] '성명' 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(자동 완성) 및 보안(피싱 방지) 측면에서 개선이 필요합니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_178.html] 모바일 기기에서 웹 페이지가 올바르게 렌더링되고 반응형 디자인이 적용되도록 하는 viewport meta 태그가 `<head>` 섹션에 누락되어 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_179",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_179.html] HTML에 인라인 스타일로 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_179.html] '이용약관' 페이지임에도 불구하고 실제 약관 내용이 전혀 표시되어 있지 않습니다. 사용자는 약관을 읽고 동의할 수 없으며, 이는 정보 제공의 의무를 다하지 않는 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_179.html] '접속하기' 링크의 텍스트 레이블이 '이용약관' 페이지의 맥락에서 다소 모호합니다. 사용자가 약관을 읽은 후 '접속하기'를 클릭했을 때 어떤 동작이 일어나는지(예",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_180",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Standard Terminology Violation"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_180.html] <style> 태그 내의 CSS 규칙이 `button` 및 특정 클래스(`btn`, `login-btn`, `apply-btn`)에 대해 `height: 2px`",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_180.html] \"접속하기\" 링크 텍스트가 연결될 페이지의 목적(예: 로그인, 문의 양식)을 명확하게 전달하지 못하여 사용자가 링크의 기능을 예측하기 어렵습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_181",
+      "has_defect": true,
+      "gt_types": [
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_181.html] '배너' 영역에 실제 콘텐츠(이미지, 정보 등)가 아닌 '배너'라는 텍스트만 표시되어 있습니다. 이는 사용자에게 혼란을 줄 수 있으며, 정보 전달의 목적을 달성하",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_182",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_182.html] 웹사이트에 기본적인 스타일링(CSS)이 적용되어 있지 않아 브라우저 기본값으로 표시됩니다. 이는 사용자 경험을 저해하고 정부 웹사이트의 일관된 브랜드 아이덴티티를",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_182.html] 키보드 및 스크린 리더 사용자의 효율적인 콘텐츠 접근을 위해 '본문 바로가기'와 같은 건너뛰기 링크가 제공되지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_182.html] 테이블 헤더(<th>)에 'scope' 속성이 명시되어 있지 않아 스크린 리더 사용자가 테이블 구조를 이해하는 데 어려움을 겪을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_182.html] 공지사항 목록 페이지임에도 불구하고 단 하나의 공지사항만 표시되며, 공지일, 작성자, 페이지네이션 등 일반적인 게시판 기능이 부재합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_183",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_183.html] HTML, body, div, main, header 요소에 고정된 3000px 너비가 강제되어 있어, 대부분의 화면에서 가로 스크롤이 발생하고 반응형 디자인이 ",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_183.html] 전체 요소(*)에 적용된 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 명도 대비가 1.07:1로, WCAG 2.1 AA 기준(일반 텍스트 4.5:1)에",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_183.html] 아이디 입력 필드(<input type=\"text\" placeholder=\"아이디\">)에 시각적으로 숨겨진 레이블이나 aria-label 속성이 없어 스크린 리더",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_183.html] 아이디 입력 필드에 autocomplete 속성이 설정되어 있지 않아, 브라우저의 자동 완성 기능을 활용할 수 없어 사용자 편의성이 저하될 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_184",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_184.html] 전체 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 명도 대비가 WCAG 2.1 AA 등급 기준(최소 4.5:1)에 훨씬 미달하여 텍스트를 읽기 매우 어",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_185",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_185.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 모",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_186",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_186.html] 웹페이지의 `html`, `body`, `div`, `main`, `header` 요소에 고정된 너비(3000px)와 가로 스크롤(`overflow-x: scro",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_186.html] 검색 입력 필드(`input type=\"text\"`)에 접근성을 위한 `label` 또는 `aria-label` 속성이 누락되어 있으며, `autocomplete",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_186.html] 입력 필드에 '민원'이라는 `value`가 기본으로 채워져 있으나, 이것이 검색어인지, 검색 필드의 레이블인지 명확하지 않아 사용자에게 혼란을 줄 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_187",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_187.html] HTML 문서 내에서 'id' 속성 값 'main-banner'가 중복 사용되었습니다. 'id'는 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        }
+      ]
+    },
+    {
+      "page_id": "page_188",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_188.html] `id` 속성 'main-banner'가 문서 내에서 두 번 사용되었습니다. `id`는 HTML 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_188.html] `<button>` 요소 및 특정 클래스(`btn`, `login-btn`, `apply-btn`)에 적용된 CSS 스타일(`height: 2px`, `font-",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_188.html] '성명' 입력 필드에 `autocomplete` 속성이 누락되었습니다. 이는 사용자 편의성(자동 완성)을 저해하고, 민감 정보 입력 시 보안 측면에서 고려되어야 ",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_188.html] '성명' 입력 필드에 빨간색 테두리가 표시되어 오류 상태를 암시하지만, 사용자에게 오류의 원인이나 해결 방법을 알려주는 명확한 텍스트 피드백이 없습니다. 이는 사",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_189",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": []
+    },
+    {
+      "page_id": "page_190",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_190.html] 웹 페이지의 `html`, `body`, `div`, `main`, `header` 요소에 고정된 3000px 너비가 강제 적용되어 가로 스크롤이 발생하며, 이는",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_190.html] 페이지의 `<title>` 태그 내용('고객센터')과 `<h1>` 태그 내용('문의하기')이 일치하지 않아 사용자에게 혼란을 줄 수 있으며, 검색 엔진 최적화(S",
+          "semantic": "Standard Terminology Violation"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_190.html] 제공된 전화번호 '110'이 단순 텍스트로만 표시되어 있어, 모바일 기기에서 사용자가 직접 탭하여 전화를 걸 수 있는 기능이 제공되지 않습니다. 이는 사용자 편의",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_191",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_191.html] `id=\"main-banner\"` 속성이 문서 내에서 세 번 중복 사용되었습니다. HTML `id` 속성은 문서 내에서 고유해야 합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_191.html] `<head>` 섹션에 viewport meta 태그가 선언되어 있지 않아 모바일 기기에서 웹 페이지가 올바르게 렌더링되지 않을 수 있습니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_192",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_192.html] 웹사이트에 기본적인 스타일링(CSS)이 적용되어 있지 않아 브라우저 기본값으로 표시됩니다. 이는 사용자 경험을 저해하고 정부 웹사이트의 일관된 브랜드 아이덴티티를",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_192.html] 키보드 및 스크린 리더 사용자의 효율적인 콘텐츠 접근을 위해 '본문 바로가기'와 같은 건너뛰기 링크가 제공되지 않습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_192.html] 테이블 헤더(<th>)에 'scope' 속성이 명시되어 있지 않아 스크린 리더 사용자가 테이블 구조를 이해하는 데 어려움을 겪을 수 있습니다.",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_192.html] 공지사항 목록 페이지임에도 불구하고 단 하나의 공지사항만 표시되며, 공지일, 작성자, 페이지네이션 등 일반적인 게시판 기능이 부재합니다.",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_193",
+      "has_defect": true,
+      "gt_types": [
+        "Mobile Layout Breakage",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Mobile Layout Breakage"
+      ],
+      "pred_kw": [
+        "Mobile Layout Breakage"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_193.html] HTML `head` 태그 내 인라인 스타일로 `html`, `body`, `div`, `main`, `header` 요소에 `width: 3000px !impo",
+          "semantic": "Mobile Layout Breakage"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_193.html] '아이디' 입력 필드에 시각적으로는 플레이스홀더가 있지만, 스크린 리더 사용자를 위한 명시적인 `<label>` 요소가 없으며, 사용자 편의성 및 보안 강화를 위",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_194",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_194.html] 주요 액션 버튼인 '발급 신청' 버튼의 색상이 정부 표준 가이드라인에 명시된 시각적 아이덴티티 및 주요 액션 버튼 색상 규격과 일치하지 않습니다. 현재는 일반적인",
+          "semantic": "None"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_194.html] HTML `<title>` 태그의 내용이 '민원 안내 상세'로 설정되어 있어, 실제 페이지의 핵심 내용인 '주민등록표등본 발급'을 명확하게 반영하지 못하고 있습니",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    },
+    {
+      "page_id": "page_195",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_195.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 모",
+          "semantic": "Poor Contrast Ratio"
+        }
+      ]
+    },
+    {
+      "page_id": "page_196",
+      "has_defect": true,
+      "gt_types": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Duplicate ID Markup Error",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_196.html] 텍스트와 배경의 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다. 현재 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 대비는 1.07:1로, WCAG",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_196.html] `id=\"main-banner\"` 속성이 HTML 문서 내에서 두 번 사용되어 중복됩니다. ID는 문서 내에서 고유해야 하는 웹 표준을 위반합니다.",
+          "semantic": "Duplicate ID Markup Error"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_196.html] 검색 입력 필드에 접근성 강화를 위한 명시적인 레이블(`label` 요소 또는 `aria-label`/`aria-labelledby`)이 누락되었습니다. 이는 스",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_197",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping"
+      ],
+      "pred_sem": [
+        "Button Area Clipping"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_197.html] HTML `<style>` 태그 내에 정의된 CSS 규칙이 `button` 태그 및 `.btn`, `.login-btn`, `.apply-btn` 클래스에 대해 ",
+          "semantic": "Button Area Clipping"
+        }
+      ]
+    },
+    {
+      "page_id": "page_198",
+      "has_defect": true,
+      "gt_types": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "pred_sem": [
+        "Button Area Clipping",
+        "Poor Contrast Ratio"
+      ],
+      "pred_kw": [
+        "Button Area Clipping",
+        "Mobile Layout Breakage",
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_198.html] 전역 CSS 설정(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)으로 인해 텍",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_198.html] 버튼 요소에 적용된 CSS 스타일(`height: 2px !important; font-size: 0px !important; line-height: 0 !imp",
+          "semantic": "Button Area Clipping"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_198.html] 입력 필드에 빨간색 테두리가 표시되어 있지만(스크린샷 참조), 이것이 필수 입력 필드인지, 유효성 검사 오류인지에 대한 명확한 시각적 또는 텍스트 피드백이 없습니",
+          "semantic": "None"
+        }
+      ]
+    },
+    {
+      "page_id": "page_199",
+      "has_defect": false,
+      "gt_types": [],
+      "pred_sem": [],
+      "pred_kw": [],
+      "issues": []
+    },
+    {
+      "page_id": "page_200",
+      "has_defect": true,
+      "gt_types": [
+        "Poor Contrast Ratio",
+        "Standard Terminology Violation"
+      ],
+      "pred_sem": [
+        "Poor Contrast Ratio",
+        "Standard Terminology Violation"
+      ],
+      "pred_kw": [
+        "Poor Contrast Ratio"
+      ],
+      "issues": [
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_200.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 WCAG 2.1 AA 기준(4.5:1)에 크게 미달하여 가독성이 매우 낮습니다. 현재 대비율은 약 1",
+          "semantic": "Poor Contrast Ratio"
+        },
+        {
+          "desc": "[http://localhost:8080/testbed_200/page_200.html] 페이지의 `<title>` 태그 내용('고객센터')과 `<h1>` 태그 내용('문의하기')이 일치하지 않아 페이지의 주요 내용에 대한 혼란을 줄 수 있습니다.",
+          "semantic": "Standard Terminology Violation"
+        }
+      ]
+    }
+  ],
+  "prompt_version": "v1",
+  "provider": "gemini",
+  "dry_run": false
+}

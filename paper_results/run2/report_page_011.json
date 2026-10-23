@@ -1,0 +1,95 @@
+{
+  "status": "success",
+  "total_count": 45,
+  "design_faults": 2,
+  "ops_faults": 2,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_011.html] HTML 문서 내에서 'id' 속성 값 'main-banner'가 세 번 중복 사용되었습니다. 'id' 속성 값은 문서 내에서 고유해야 합니다.",
+      "suggestion": "각 'id' 속성 값은 문서 내에서 고유해야 합니다. 'main-banner' ID를 고유하게 수정하거나, 여러 요소에 적용해야 하는 경우 'class' 속성을 사용하세요.",
+      "source_file": "N/A",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_011.html] 버튼 및 '.btn', '.login-btn', '.apply-btn' 클래스에 적용된 CSS 스타일(`height: 2px !important; font-size: 0px !important; line-height: 0 !important; padding: 0 !important; overflow: hidden !important;`)로 인해 버튼이 시각적으로 숨겨지고 클릭할 수 없게 됩니다. 이는 심각한 웹 접근성 및 사용성 문제입니다.",
+      "suggestion": "버튼의 'height', 'font-size', 'line-height', 'padding', 'overflow' 속성을 정상적인 값으로 수정하여 사용자가 버튼을 인지하고 상호작용할 수 있도록 하세요. 특히 `!important` 사용은 꼭 필요한 경우에만 최소한으로 사용해야 합니다.",
+      "source_file": "N/A",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/testbed_200/page_011.html] 페이지 제목이 '주요 서비스'임에도 불구하고, 실제 콘텐츠는 '로그인' 링크와 '배너' 텍스트만 존재하여 내용이 매우 부족하고 미완성 상태로 보입니다.",
+      "suggestion": "사용자에게 제공할 '주요 서비스' 콘텐츠를 추가하고, 페이지의 목적에 맞는 충분한 정보를 제공하여 사용자가 기대하는 내용을 충족시키세요. 현재 상태는 사용자에게 혼란을 줄 수 있습니다.",
+      "source_file": "N/A",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_011.html] 전체적인 페이지 디자인이 매우 미니멀하며, 시각적 계층 구조나 사용자 인터페이스 요소(버튼, 배너 등)의 스타일링이 거의 없어 완성도가 낮아 보입니다.",
+      "suggestion": "정부 표준 가이드라인(PDF 미제공으로 일반적인 기준 적용)에 따라 시각적 디자인 요소를 강화하고, 명확한 시각적 계층 구조를 구축하여 사용자가 정보를 쉽게 인지하고 상호작용할 수 있도록 개선하세요.",
+      "source_file": "N/A",
+      "page_number": []
+    }
+  ],
+  "scores": {
+    "디자인": 95,
+    "운영": 95,
+    "기술": 92
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_011.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 4
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_011.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_011.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

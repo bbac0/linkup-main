@@ -1,0 +1,52 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 0,
+  "ops_faults": 0,
+  "tech_faults": 2,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트 스크린샷과 HTML 소스 코드를 분석한 결과, '접속하기' 버튼이 심각하게 오작동하여 사용자 접근성과 사용성이 저해되고 있습니다. 또한, 아이디 입력 필드에 'autocomplete' 속성이 누락되어 사용자 경험 및 보안 측면에서 개선이 필요합니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_023.html] HTML 소스 코드에 정의된 CSS 스타일(`height: 2px !important; font-size: 0px !important; line-height: 0 !important; padding: 0 !important; overflow: hidden !important; border: 1px solid red !important;`)로 인해 '접속하기' 버튼이 시각적으로 보이지 않고 클릭할 수 없는 상태입니다. 이는 웹 접근성 및 사용자 경험에 심각한 문제를 야기합니다.",
+      "suggestion": "버튼의 높이, 글꼴 크기, 패딩, 오버플로우 및 테두리 스타일을 정상적으로 보이도록 수정하여 사용자가 버튼을 명확하게 인지하고 상호작용할 수 있도록 해야 합니다. 최소 터치 대상 크기(예: 44x44 CSS 픽셀)를 확보하고 텍스트가 명확하게 보이도록 조정하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        25,
+        30
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_023.html] '아이디' 입력 필드에 'autocomplete' 속성이 설정되어 있지 않습니다. 이는 사용자의 자동 완성 기능을 방해하고, 일부 보안 취약점에 노출될 수 있습니다.",
+      "suggestion": "아이디 입력 필드에 `autocomplete=\"username\"` 속성을 추가하여 사용자의 편의성을 높이고 보안을 강화하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        40
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 100,
+    "운영": 100,
+    "기술": 93
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_023.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 2
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_023.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

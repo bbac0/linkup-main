@@ -1,0 +1,85 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 1,
+  "tech_faults": 2,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_194.html] 주요 액션 버튼인 '발급 신청' 버튼의 색상이 정부 표준 가이드라인에 명시된 시각적 아이덴티티 및 주요 액션 버튼 색상 규격과 일치하지 않습니다. 현재는 일반적인 회색 버튼으로, 사용자의 시선을 유도하고 중요도를 강조하기에 부족할 수 있습니다.",
+      "suggestion": "정부 표준 가이드라인(gov_guide.pdf p.25)에 명시된 주요 액션 버튼 색상(예: 파란색 계열 또는 지정된 브랜드 색상)으로 변경하여 시각적 일관성을 확보하고 사용자의 행동을 명확하게 유도하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        25
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_194.html] HTML `<title>` 태그의 내용이 '민원 안내 상세'로 설정되어 있어, 실제 페이지의 핵심 내용인 '주민등록표등본 발급'을 명확하게 반영하지 못하고 있습니다. 이는 웹 접근성(스크린 리더 사용자) 및 검색 엔진 최적화(SEO)에 부정적인 영향을 줄 수 있습니다.",
+      "suggestion": "페이지의 `<title>` 태그를 '주민등록표등본 발급 | 민원 안내 상세' 또는 '주민등록표등본 발급 신청'과 같이 페이지의 주요 목적과 내용을 명확히 나타내도록 수정하여 웹 접근성과 SEO를 개선하세요. (gov_guide.pdf p.15 참조)",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 98,
+    "기술": 97
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_194.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 2
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_194.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_194.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

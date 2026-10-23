@@ -1,0 +1,94 @@
+{
+  "status": "success",
+  "total_count": 40,
+  "design_faults": 3,
+  "ops_faults": 2,
+  "tech_faults": 1,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_071.html] 웹사이트에 정부 표준 가이드라인에 명시된 시각적 디자인 및 브랜딩 요소가 적용되지 않아 일관성이 부족합니다.",
+      "suggestion": "정부 표준 가이드라인에 따라 색상, 폰트, 아이콘 등 시각적 요소를 적용하여 통일된 사용자 경험을 제공하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_071.html] '신청하기' 버튼이 브라우저 기본 스타일로 표시되어 정부 웹사이트의 디자인 일관성을 해칩니다.",
+      "suggestion": "정부 표준 가이드라인에 맞춰 버튼의 시각적 스타일(색상, 크기, 테두리 등)을 적용하여 통일된 디자인을 구현하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/testbed_200/page_071.html] '배너' 영역에 실제 콘텐츠 대신 플레이스홀더 텍스트만 표시되어 있어 정보 제공이 미흡합니다.",
+      "suggestion": "사용자에게 유용한 정보나 시각적 요소를 포함한 실제 배너 콘텐츠를 제공하여 페이지의 완성도를 높이세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 88,
+    "운영": 93,
+    "기술": 98
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_071.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_071.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_071.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

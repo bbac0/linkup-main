@@ -1,0 +1,464 @@
+[
+  {
+    "page_id": "page_001",
+    "html_file": "page_001.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping"
+    ]
+  },
+  {
+    "page_id": "page_004",
+    "html_file": "page_004.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_008",
+    "html_file": "page_008.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_009",
+    "html_file": "page_009.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_010",
+    "html_file": "page_010.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_016",
+    "html_file": "page_016.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_019",
+    "html_file": "page_019.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage",
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_021",
+    "html_file": "page_021.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_027",
+    "html_file": "page_027.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_028",
+    "html_file": "page_028.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_029",
+    "html_file": "page_029.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_031",
+    "html_file": "page_031.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_033",
+    "html_file": "page_033.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_034",
+    "html_file": "page_034.html",
+    "has_defect": true,
+    "gt_types": [
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_036",
+    "html_file": "page_036.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_037",
+    "html_file": "page_037.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_038",
+    "html_file": "page_038.html",
+    "has_defect": true,
+    "gt_types": [
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_040",
+    "html_file": "page_040.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_044",
+    "html_file": "page_044.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error"
+    ]
+  },
+  {
+    "page_id": "page_050",
+    "html_file": "page_050.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping"
+    ]
+  },
+  {
+    "page_id": "page_055",
+    "html_file": "page_055.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_059",
+    "html_file": "page_059.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping"
+    ]
+  },
+  {
+    "page_id": "page_062",
+    "html_file": "page_062.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_063",
+    "html_file": "page_063.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_065",
+    "html_file": "page_065.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_071",
+    "html_file": "page_071.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_073",
+    "html_file": "page_073.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_076",
+    "html_file": "page_076.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_080",
+    "html_file": "page_080.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_083",
+    "html_file": "page_083.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_091",
+    "html_file": "page_091.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_102",
+    "html_file": "page_102.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_104",
+    "html_file": "page_104.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_120",
+    "html_file": "page_120.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_121",
+    "html_file": "page_121.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_122",
+    "html_file": "page_122.html",
+    "has_defect": true,
+    "gt_types": [
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_124",
+    "html_file": "page_124.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Duplicate ID Markup Error"
+    ]
+  },
+  {
+    "page_id": "page_129",
+    "html_file": "page_129.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Duplicate ID Markup Error"
+    ]
+  },
+  {
+    "page_id": "page_132",
+    "html_file": "page_132.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_136",
+    "html_file": "page_136.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_139",
+    "html_file": "page_139.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping"
+    ]
+  },
+  {
+    "page_id": "page_140",
+    "html_file": "page_140.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_143",
+    "html_file": "page_143.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping"
+    ]
+  },
+  {
+    "page_id": "page_145",
+    "html_file": "page_145.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_147",
+    "html_file": "page_147.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage",
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_152",
+    "html_file": "page_152.html",
+    "has_defect": true,
+    "gt_types": [
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_159",
+    "html_file": "page_159.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_163",
+    "html_file": "page_163.html",
+    "has_defect": true,
+    "gt_types": [
+      "Button Area Clipping",
+      "Mobile Layout Breakage"
+    ]
+  },
+  {
+    "page_id": "page_170",
+    "html_file": "page_170.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_171",
+    "html_file": "page_171.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error",
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_178",
+    "html_file": "page_178.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_181",
+    "html_file": "page_181.html",
+    "has_defect": true,
+    "gt_types": [
+      "Standard Terminology Violation"
+    ]
+  },
+  {
+    "page_id": "page_183",
+    "html_file": "page_183.html",
+    "has_defect": true,
+    "gt_types": [
+      "Mobile Layout Breakage",
+      "Poor Contrast Ratio"
+    ]
+  },
+  {
+    "page_id": "page_189",
+    "html_file": "page_189.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_191",
+    "html_file": "page_191.html",
+    "has_defect": true,
+    "gt_types": [
+      "Duplicate ID Markup Error"
+    ]
+  },
+  {
+    "page_id": "page_194",
+    "html_file": "page_194.html",
+    "has_defect": false,
+    "gt_types": []
+  },
+  {
+    "page_id": "page_195",
+    "html_file": "page_195.html",
+    "has_defect": true,
+    "gt_types": [
+      "Poor Contrast Ratio"
+    ]
+  }
+]

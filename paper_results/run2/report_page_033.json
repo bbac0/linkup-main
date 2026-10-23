@@ -1,0 +1,78 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 0,
+  "ops_faults": 0,
+  "tech_faults": 5,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 로그인 인터페이스는 기본적인 시각적 요소를 갖추고 있으나, HTML 마크업에서 웹 접근성, 사용자 편의성 및 견고한 폼 처리를 위한 필수 속성들이 다수 누락되어 있습니다. 이는 사용자 경험 저하 및 잠재적인 기능 오류로 이어질 수 있으므로 즉각적인 개선이 필요합니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_033.html] 로그인 입력 필드에 접근성을 위한 `<label>` 요소가 누락되어 있습니다. `placeholder`만으로는 스크린 리더 사용자가 필드의 목적을 명확히 이해하기 어렵습니다.",
+      "suggestion": "`<input>` 요소에 고유한 `id`를 부여하고, 해당 `id`와 연결되는 `<label for=\"[id]\">아이디</label>` 요소를 추가하여 접근성을 개선하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        20
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_033.html] 로그인 입력 필드에 `name` 속성이 누락되어 있어 서버로 데이터 전송 시 문제가 발생할 수 있습니다.",
+      "suggestion": "`<input>` 요소에 `name=\"username\"` 또는 적절한 `name` 속성을 추가하여 폼 데이터 전송을 가능하게 하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        30
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_033.html] 로그인 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다. 2026년 기준으로 최신 웹 표준은 이 속성 사용을 권장합니다.",
+      "suggestion": "`<input>` 요소에 `autocomplete=\"username\"` 속성을 추가하여 브라우저의 자동 완성 기능을 활성화하고 사용자 경험을 향상시키세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        40
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_033.html] 로그인 입력 필드와 버튼이 `<form>` 태그로 감싸져 있지 않아, 폼 제출의 의미론적 구조가 부족하고 기본 폼 동작(예: Enter 키로 제출)이 작동하지 않을 수 있습니다.",
+      "suggestion": "`<input>`과 `<button>` 요소를 `<form>` 태그로 감싸서 폼의 의미론적 구조를 명확히 하고, 웹 접근성 및 사용자 경험을 개선하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        30
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_033.html] 로그인 버튼에 `type` 속성이 명시되어 있지 않습니다. `<form>` 태그 내부에 있지 않으므로 기본적으로 `type=\"button\"`으로 동작하지만, 명시적으로 `type=\"submit\"`으로 설정하여 폼 제출 의도를 명확히 하는 것이 좋습니다.",
+      "suggestion": "`<button>` 요소에 `type=\"submit\"` 속성을 추가하여 폼 제출 버튼임을 명확히 하세요. (만약 `<form>` 태그로 감쌀 경우)",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        35
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 100,
+    "운영": 100,
+    "기술": 83
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_033.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 5
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_033.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

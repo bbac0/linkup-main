@@ -1,0 +1,94 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 1,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_054.html] 모든 텍스트 요소(링크, 제목, 본문, 버튼 텍스트)가 배경색과 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다. 이는 웹 접근성 지침(WCAG/KWCAG)의 최소 명도 대비 기준(4.5:1)을 충족하지 못합니다.",
+      "suggestion": "텍스트 색상(`#e5e5e5`)을 배경색(`#ffffff`)과 충분한 명도 대비를 확보할 수 있는 색상(예: `#333333` 또는 `#000000`)으로 변경하여 모든 사용자가 콘텐츠를 명확하게 읽을 수 있도록 개선해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_054.html] `html, body, div, main, header` 요소에 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !important;` 속성이 적용되어 페이지가 고정된 3000px 너비로 렌더링되고 강제로 가로 스크롤이 발생합니다. 이는 모바일 및 태블릿 등 다양한 화면 크기에서 웹사이트를 사용할 수 없게 만들며, 반응형 웹 디자인 원칙을 심각하게 위반합니다.",
+      "suggestion": "고정된 `width`, `min-width`, `overflow-x: scroll` 속성을 제거하고, 상대적인 단위(%, vw, rem)와 미디어 쿼리를 활용하여 모든 기기에서 최적화된 레이아웃을 제공하는 반응형 웹 디자인을 구현해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        13
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_054.html] CSS에서 `!important` 키워드가 전역적으로 과도하게 사용되어 스타일의 우선순위를 강제하고 있습니다. 이는 CSS 유지보수를 어렵게 만들고, 향후 스타일 변경이나 확장을 복잡하게 하며, 예상치 못한 스타일 충돌을 유발할 수 있습니다.",
+      "suggestion": "`!important` 사용을 최소화하고, CSS 선택자의 명확성과 우선순위 규칙을 활용하여 스타일을 관리해야 합니다. 꼭 필요한 경우에만 제한적으로 사용하고, 전역적인 적용은 피해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        20
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 98,
+    "기술": 95
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_054.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_054.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_054.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

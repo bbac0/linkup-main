@@ -1,0 +1,85 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 1,
+  "tech_faults": 2,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_094.html] 모든 텍스트 요소(로그인, 제목, 설명, 버튼 텍스트)의 색상(#e5e5e5)이 흰색 배경(#ffffff)과 명도 대비가 매우 낮아 가독성이 심각하게 저하됩니다. 이는 웹 콘텐츠 접근성 지침(WCAG 2.1) AA 레벨의 최소 명도 대비 기준(4.5:1)을 충족하지 못합니다.",
+      "suggestion": "WCAG 2.1 AA 기준에 따라 일반 텍스트는 최소 4.5:1 이상의 명도 대비를 확보해야 합니다. 현재 대비는 약 1.07:1로 매우 낮으므로, 텍스트 색상을 #333333 또는 그 이상으로 어둡게 조정하여 가독성을 개선해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_094.html] 전역 CSS(`* { color: #e5e5e5 !important; background-color: #ffffff !important; }`)에서 `!important`를 사용하여 모든 요소의 색상을 강제하고 있습니다. 이는 스타일 재정의를 어렵게 하고 CSS 우선순위 체계를 무너뜨려 유지보수성을 저해합니다.",
+      "suggestion": "`!important` 사용은 꼭 필요한 경우에만 제한적으로 사용하고, 전역 스타일에는 적용하지 않는 것이 좋습니다. CSS 우선순위를 고려하여 명확한 선택자를 사용하거나, 특정 요소에만 스타일을 적용하도록 수정하여 코드의 유연성과 유지보수성을 높이세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 98,
+    "기술": 97
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_094.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 2
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_094.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_094.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

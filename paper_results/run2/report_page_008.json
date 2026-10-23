@@ -1,0 +1,61 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 0,
+  "ops_faults": 0,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트는 기본적인 기능은 갖추고 있으나, 심각한 반응형 디자인 문제와 웹 접근성 기술 표준 위반 사항이 발견되었습니다. 특히 고정된 너비 설정은 모바일 환경에서의 사용성을 크게 저해하며, 입력 필드의 접근성 개선이 시급합니다. 전반적인 기술적 개선을 통해 사용자 경험과 접근성을 향상시켜야 합니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_008.html] HTML/CSS에 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !important;` 속성이 적용되어 있어, 화면 크기에 관계없이 가로 스크롤이 발생하며 반응형 디자인을 심각하게 저해합니다.",
+      "suggestion": "고정된 너비 설정을 제거하고, 유동적인 레이아웃을 위한 반응형 CSS를 적용하여 모든 기기에서 최적화된 사용자 경험을 제공해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15,
+        16
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_008.html] 성명 입력 필드의 `<label>` 요소가 `<input>` 요소와 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아 스크린 리더 사용자가 입력 필드의 목적을 정확히 이해하기 어렵습니다.",
+      "suggestion": "`<input>` 요소에 고유한 `id`를 부여하고, `<label>` 요소의 `for` 속성 값을 해당 `id`와 일치시켜 명시적인 연결을 설정해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        20
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_008.html] 성명 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아, 사용자가 이전에 입력한 정보를 자동으로 채울 수 없어 사용자 경험이 저하될 수 있습니다.",
+      "suggestion": "`<input type=\"text\">` 요소에 `autocomplete=\"name\"` 속성을 추가하여 사용자가 더 빠르고 편리하게 정보를 입력할 수 있도록 지원해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        25
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 100,
+    "운영": 100,
+    "기술": 90
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_008.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_008.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

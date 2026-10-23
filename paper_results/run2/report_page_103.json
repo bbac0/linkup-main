@@ -1,0 +1,54 @@
+{
+  "status": "success",
+  "total_count": 10,
+  "design_faults": 1,
+  "ops_faults": 0,
+  "tech_faults": 1,
+  "summary": "사이트 전체 분석 결과입니다. 로그인 페이지의 버튼 스타일링에 심각한 문제가 있어 사용자 접근성과 사용성이 크게 저해됩니다. 즉각적인 수정이 필요합니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_103.html] 로그인 버튼이 CSS 스타일링(`height: 2px !important; font-size: 0px !important; padding: 0 !important; overflow: hidden !important;`)으로 인해 시각적으로 인지 불가능하며 클릭할 수 없는 상태입니다. 이는 웹 접근성(WCAG 2.1, KWCAG 2.2) 및 사용자 경험을 심각하게 저해합니다.",
+      "suggestion": "버튼의 `height`, `font-size`, `line-height`, `padding`, `overflow` 속성을 사용자에게 명확하게 보이고 상호작용할 수 있도록 적절한 값으로 수정해야 합니다. 특히 `!important` 선언을 제거하고 표준적인 버튼 스타일을 적용하여 웹 접근성을 확보하세요. 최소한의 터치 타겟 크기(44x44px)를 고려하여 버튼 크기를 조정하는 것이 좋습니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        10,
+        15,
+        22
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_103.html] 로그인 버튼의 시각적 디자인이 파손되어 사용자가 버튼임을 인지하기 어렵고, 인터랙티브 요소로서의 역할을 수행하지 못합니다.",
+      "suggestion": "버튼의 시각적 요소를 표준 UI/UX 가이드라인에 맞춰 명확하게 디자인해야 합니다. 버튼 텍스트 '로그인'이 보이도록 하고, 적절한 배경색, 테두리, 패딩을 적용하여 클릭 가능한 요소임을 명확히 표현하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12,
+        18
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 90,
+    "운영": 100,
+    "기술": 90
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_103.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 2
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_103.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

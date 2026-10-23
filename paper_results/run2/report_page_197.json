@@ -1,0 +1,74 @@
+{
+  "status": "success",
+  "total_count": 45,
+  "design_faults": 1,
+  "ops_faults": 1,
+  "tech_faults": 2,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_197.html] HTML `<style>` 태그 내에 정의된 CSS 규칙이 `button` 태그 및 `.btn`, `.login-btn`, `.apply-btn` 클래스에 대해 `height: 2px`, `font-size: 0px`, `padding: 0` 등의 속성을 강제하여 해당 요소들을 시각적으로 숨기거나 클릭 불가능하게 만듭니다. 이는 웹 접근성(WCAG 2.1) 및 사용자 경험에 심각한 문제를 야기하며, 잠재적으로 모든 버튼 요소를 사용할 수 없게 만들 수 있습니다.",
+      "suggestion": "해당 CSS 규칙을 즉시 제거하거나, 의도된 목적에 맞게 올바른 스타일로 수정해야 합니다. 특히 `!important` 플래그와 함께 사용된 `height`, `font-size`, `line-height`, `padding`, `overflow` 속성을 기본값 또는 적절한 값으로 복원하여 버튼이 정상적으로 표시되고 상호작용할 수 있도록 해야 합니다. `!important` 사용은 최소화하는 것이 좋습니다.",
+      "source_file": "HTML 소스코드",
+      "page_number": []
+    }
+  ],
+  "scores": {
+    "디자인": 98,
+    "운영": 98,
+    "기술": 95
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_197.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 1
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_197.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_197.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

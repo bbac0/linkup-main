@@ -1,0 +1,120 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 3,
+  "ops_faults": 2,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트는 전반적으로 심각한 명도 대비 문제를 가지고 있어 콘텐츠 가독성이 매우 낮습니다. 또한, 입력 필드의 접근성 및 사용성 측면에서 개선이 필요하며, CSS 코드의 유지보수성도 고려해야 합니다. 정부 표준 가이드라인의 핵심 원칙인 접근성과 사용성을 준수하기 위한 즉각적인 수정이 요구됩니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_116.html] 웹사이트의 모든 텍스트(예: '민원', '로그인', '검색 결과 항목 1')와 배경색 간의 명도 대비가 매우 낮아 콘텐츠 가독성이 심각하게 저하됩니다. 현재 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 대비는 WCAG 2.1 AA 등급 기준인 4.5:1에 훨씬 미치지 못합니다.",
+      "suggestion": "텍스트 색상을 배경색과 충분한 대비를 이루는 색상(예: #333333 또는 #000000)으로 변경하여 명도 대비를 최소 4.5:1 이상으로 높이세요. 이는 시각 장애인뿐만 아니라 일반 사용자에게도 필수적인 개선 사항입니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12,
+        13
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_116.html] 검색 입력 필드(<input type=\"text\">)에 `label` 요소나 `aria-label` 속성이 없어 스크린 리더 사용자가 해당 필드의 목적을 이해하기 어렵습니다. 이는 웹 접근성 표준(WAI-ARIA) 위반에 해당합니다.",
+      "suggestion": "입력 필드에 시각적으로 숨겨진 `<label>`을 연결하거나 `aria-label=\"검색어 입력\"`과 같은 속성을 추가하여 스크린 리더 사용자가 필드의 역할을 명확히 인지할 수 있도록 개선하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        20,
+        21
+      ]
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/testbed_200/page_116.html] 검색 입력 필드에 '민원'이라는 텍스트가 `value` 속성으로 설정되어 있어, 사용자가 입력 필드를 클릭했을 때 텍스트를 직접 지워야 하는 불편함이 있습니다. 이는 일반적으로 안내 텍스트를 제공하는 `placeholder` 속성의 사용 방식과 다릅니다.",
+      "suggestion": "안내 텍스트를 제공하려면 `value=\"민원\"` 대신 `placeholder=\"검색어를 입력하세요\"`와 같이 `placeholder` 속성을 사용하고, 실제 검색어가 미리 채워져야 하는 경우가 아니라면 `value` 속성을 제거하여 사용자 경험을 개선하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_116.html] 전역 CSS에서 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }`와 같이 `!important` 키워드를 사용하여 모든 요소의 색상과 배경색을 강제로 지정하고 있습니다. 이는 CSS 우선순위를 복잡하게 만들고 향후 스타일 변경 및 유지보수를 어렵게 할 수 있습니다.",
+      "suggestion": "`!important` 사용을 최소화하고, CSS 선택자 우선순위 또는 더 구체적인 선택자를 사용하여 스타일을 적용하는 방식을 고려하세요. 이는 코드의 예측 가능성과 유지보수성을 높이는 데 기여합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        25
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 오류 페이지가 웹사이트의 전반적인 디자인 및 브랜딩과 일관성이 없습니다. 정부 웹사이트는 일관된 시각적 아이덴티티를 유지해야 합니다.",
+      "suggestion": "정부 웹사이트의 표준 디자인 가이드라인에 따라 로고, 색상, 레이아웃 등을 적용하여 사용자에게 일관된 경험을 제공해야 합니다. 최소한의 브랜딩 요소를 포함하여 사용자가 여전히 정부 웹사이트 내에 있음을 인지할 수 있도록 해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 오류 페이지가 사용자에게 다음 행동에 대한 명확한 안내나 유용한 링크(예: 홈페이지로 이동, 검색)를 제공하지 않아 사용자 경험이 저해됩니다.",
+      "suggestion": "사용자가 혼란을 겪지 않도록 홈페이지 링크, 검색 기능 또는 자주 묻는 질문(FAQ) 링크 등을 포함하여 안내를 강화해야 합니다. 이는 사용자가 웹사이트를 계속 탐색할 수 있도록 돕습니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 정부 웹사이트의 주 사용 언어가 한국어임을 고려할 때, 오류 메시지가 영어로만 제공되어 한국어 사용자에게 불편을 줄 수 있습니다.",
+      "suggestion": "오류 메시지를 한국어로 제공하거나, 다국어 지원 기능을 통해 사용자가 선호하는 언어로 메시지를 볼 수 있도록 해야 합니다. 이는 웹 접근성 및 사용자 편의성 측면에서 중요합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 모바일 기기에서의 적절한 화면 표시를 위한 viewport meta 태그가 HTML `<head>` 섹션에 누락되었습니다. 이는 다양한 기기에서 웹 페이지가 올바르게 렌더링되지 않을 수 있음을 의미합니다.",
+      "suggestion": "`<head>` 태그 내에 `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`를 추가하여 다양한 기기에서 최적화된 화면을 제공하고 반응형 웹 디자인의 기본을 준수해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 95,
+    "운영": 97,
+    "기술": 95
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_116.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 4
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_116.html",
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_116.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

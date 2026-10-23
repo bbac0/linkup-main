@@ -3,7 +3,7 @@ venv/
 .venv/
 env/
 
-# 보안 파일 
+# 보안 파일
 .env
 
 # 데이터베이스 및 생성된 파일들
@@ -15,56 +15,47 @@ __pycache__/
 .DS_Store
 Thumbs.db
 temp_shot_0.png
-
-results/
-testbed/
-testbed_200/
 temp/
 
-aggregate_results.py
-analyze_fn.py
-audit_report.json
-axe.min.js
-check_term.py
-cli.py
-collection_dump.json
-diagnose_axe_duplicate_id.py
-diagnose_chroma.py
-dump.py
-evaluate_rag.py
-evaluate_axe.py
-export_for_human.py
-export_rag_ablation_review.py
-generate_200_testbed.py
-generate_chart.py
-Inspect_collection.py
-inspect_unmatched_defects.py
-latency_breakdown_chart.png
-latency_breakdown_chart.pdf
-make_testbed.py
-measure_latency.py
-paper_stats.csv
-rag_ablation
-run_axe_core_scan.py
-run_batch_experiment.py
-score_humnan_grading.py
-score_rag_ablation.py
-
-# 실험/분석용 스크립트 및 결과물 (웹 서비스 구동과 무관)
-_archive/
+# 실험 작업 폴더 (논문에 쓴 결과는 paper_results/ 에 정리되어 있음)
+results/
 results_run2/
-adjudicate_disagreements.py
-audit_contrast_ratios.py
-audit_pipeline_artifacts.py
-contrast_audit_run1.csv
-evaluate_performance_v5.py
-index.html
-kappa_validation.py
-modality_ablation.py
-run_batch_v2.py
-semantic_issue_classifier.py
-semantic_rescore_modality.py
-semantic_scoring_run1.json
-show_fixed_retrieval.py
-test.json
-uiux.png
+_archive/
+*.dryrun
+
+# 외부 라이브러리 (README의 다운로드 안내 참고)
+/axe.min.js
+
+# 논문에 쓰지 않은 실험/디버깅 파일
+/adjudicate_disagreements.py
+/kappa_validation.py
+/semantic_rescore_modality.py
+/aggregate_results.py
+/analyze_fn.py
+/check_term.py
+/diagnose_chroma.py
+/dump.py
+/evaluate_rag.py
+/evaluate_axe.py
+/export_for_human.py
+/export_rag_ablation_review.py
+/generate_chart.py
+/Inspect_collection.py
+/inspect_unmatched_defects.py
+/make_testbed.py
+/run_batch_experiment.py
+/score_humnan_grading.py
+/score_rag_ablation.py
+
+# 작업 중 생성된 결과물 (paper_results/ 에 사본 보관)
+/audit_report.json
+/collection_dump.json
+/contrast_audit_run1.csv
+/semantic_scoring_run1.json
+/latency_breakdown_chart.png
+/latency_breakdown_chart.pdf
+/paper_stats.csv
+/test.json
+/index.html
+/uiux.png
+/readme.txt

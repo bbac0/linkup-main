@@ -1,0 +1,1227 @@
+{
+  "summary": {
+    "timestamp": "2026-09-22T22:50:35.131750",
+    "n_urls": 50,
+    "n_repeats_per_url": 3,
+    "n_valid_measurements": 150,
+    "n_failed_measurements": 0,
+    "data_acquisition_sec": {
+      "mean": 0.604,
+      "std": 0.052
+    },
+    "rag_retrieval_sec": {
+      "mean": 0.438,
+      "std": 0.075
+    },
+    "llm_inference_sec": {
+      "mean": 23.059,
+      "std": 8.326
+    },
+    "total_sec": {
+      "mean": 24.101,
+      "std": 8.349
+    }
+  },
+  "records": [
+    {
+      "url": "file:///<repo>/testbed/page_01.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.599,
+      "rag_retrieval_sec": 0.364,
+      "llm_inference_sec": 22.215,
+      "total_sec": 23.178
+    },
+    {
+      "url": "file:///<repo>/testbed/page_01.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.573,
+      "rag_retrieval_sec": 0.377,
+      "llm_inference_sec": 25.982,
+      "total_sec": 26.933
+    },
+    {
+      "url": "file:///<repo>/testbed/page_01.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.581,
+      "rag_retrieval_sec": 0.41,
+      "llm_inference_sec": 18.718,
+      "total_sec": 19.708
+    },
+    {
+      "url": "file:///<repo>/testbed/page_02.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.597,
+      "rag_retrieval_sec": 0.389,
+      "llm_inference_sec": 24.865,
+      "total_sec": 25.851
+    },
+    {
+      "url": "file:///<repo>/testbed/page_02.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.585,
+      "rag_retrieval_sec": 0.367,
+      "llm_inference_sec": 17.505,
+      "total_sec": 18.457
+    },
+    {
+      "url": "file:///<repo>/testbed/page_02.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.58,
+      "rag_retrieval_sec": 0.389,
+      "llm_inference_sec": 14.536,
+      "total_sec": 15.505
+    },
+    {
+      "url": "file:///<repo>/testbed/page_03.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.403,
+      "llm_inference_sec": 16.026,
+      "total_sec": 17.006
+    },
+    {
+      "url": "file:///<repo>/testbed/page_03.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.437,
+      "llm_inference_sec": 20.774,
+      "total_sec": 21.788
+    },
+    {
+      "url": "file:///<repo>/testbed/page_03.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.576,
+      "rag_retrieval_sec": 0.397,
+      "llm_inference_sec": 20.383,
+      "total_sec": 21.356
+    },
+    {
+      "url": "file:///<repo>/testbed/page_04.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.572,
+      "rag_retrieval_sec": 0.402,
+      "llm_inference_sec": 22.545,
+      "total_sec": 23.519
+    },
+    {
+      "url": "file:///<repo>/testbed/page_04.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.583,
+      "rag_retrieval_sec": 0.457,
+      "llm_inference_sec": 17.968,
+      "total_sec": 19.008
+    },
+    {
+      "url": "file:///<repo>/testbed/page_04.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.569,
+      "rag_retrieval_sec": 0.414,
+      "llm_inference_sec": 14.855,
+      "total_sec": 15.838
+    },
+    {
+      "url": "file:///<repo>/testbed/page_05.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.567,
+      "rag_retrieval_sec": 0.408,
+      "llm_inference_sec": 23.212,
+      "total_sec": 24.186
+    },
+    {
+      "url": "file:///<repo>/testbed/page_05.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.576,
+      "rag_retrieval_sec": 0.404,
+      "llm_inference_sec": 24.121,
+      "total_sec": 25.101
+    },
+    {
+      "url": "file:///<repo>/testbed/page_05.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.584,
+      "rag_retrieval_sec": 0.379,
+      "llm_inference_sec": 24.661,
+      "total_sec": 25.624
+    },
+    {
+      "url": "file:///<repo>/testbed/page_06.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.58,
+      "rag_retrieval_sec": 0.409,
+      "llm_inference_sec": 22.428,
+      "total_sec": 23.417
+    },
+    {
+      "url": "file:///<repo>/testbed/page_06.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.389,
+      "llm_inference_sec": 18.716,
+      "total_sec": 19.682
+    },
+    {
+      "url": "file:///<repo>/testbed/page_06.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.59,
+      "rag_retrieval_sec": 0.379,
+      "llm_inference_sec": 16.499,
+      "total_sec": 17.469
+    },
+    {
+      "url": "file:///<repo>/testbed/page_07.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.466,
+      "llm_inference_sec": 24.944,
+      "total_sec": 25.981
+    },
+    {
+      "url": "file:///<repo>/testbed/page_07.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.581,
+      "rag_retrieval_sec": 0.371,
+      "llm_inference_sec": 20.009,
+      "total_sec": 20.96
+    },
+    {
+      "url": "file:///<repo>/testbed/page_07.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.4,
+      "llm_inference_sec": 24.584,
+      "total_sec": 25.562
+    },
+    {
+      "url": "file:///<repo>/testbed/page_08.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.424,
+      "llm_inference_sec": 19.703,
+      "total_sec": 20.704
+    },
+    {
+      "url": "file:///<repo>/testbed/page_08.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.575,
+      "rag_retrieval_sec": 0.378,
+      "llm_inference_sec": 15.862,
+      "total_sec": 16.815
+    },
+    {
+      "url": "file:///<repo>/testbed/page_08.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.582,
+      "rag_retrieval_sec": 0.396,
+      "llm_inference_sec": 18.558,
+      "total_sec": 19.535
+    },
+    {
+      "url": "file:///<repo>/testbed/page_09.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.574,
+      "rag_retrieval_sec": 0.376,
+      "llm_inference_sec": 23.264,
+      "total_sec": 24.215
+    },
+    {
+      "url": "file:///<repo>/testbed/page_09.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.573,
+      "rag_retrieval_sec": 0.41,
+      "llm_inference_sec": 21.917,
+      "total_sec": 22.9
+    },
+    {
+      "url": "file:///<repo>/testbed/page_09.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.576,
+      "rag_retrieval_sec": 0.412,
+      "llm_inference_sec": 24.744,
+      "total_sec": 25.731
+    },
+    {
+      "url": "file:///<repo>/testbed/page_10.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.581,
+      "rag_retrieval_sec": 0.395,
+      "llm_inference_sec": 23.054,
+      "total_sec": 24.03
+    },
+    {
+      "url": "file:///<repo>/testbed/page_10.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.578,
+      "rag_retrieval_sec": 0.396,
+      "llm_inference_sec": 18.121,
+      "total_sec": 19.095
+    },
+    {
+      "url": "file:///<repo>/testbed/page_10.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.592,
+      "rag_retrieval_sec": 0.39,
+      "llm_inference_sec": 21.811,
+      "total_sec": 22.794
+    },
+    {
+      "url": "file:///<repo>/testbed/page_11.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.579,
+      "rag_retrieval_sec": 0.403,
+      "llm_inference_sec": 20.889,
+      "total_sec": 21.87
+    },
+    {
+      "url": "file:///<repo>/testbed/page_11.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.401,
+      "llm_inference_sec": 18.927,
+      "total_sec": 19.905
+    },
+    {
+      "url": "file:///<repo>/testbed/page_11.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.403,
+      "llm_inference_sec": 25.642,
+      "total_sec": 26.616
+    },
+    {
+      "url": "file:///<repo>/testbed/page_12.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.582,
+      "rag_retrieval_sec": 0.422,
+      "llm_inference_sec": 12.122,
+      "total_sec": 13.127
+    },
+    {
+      "url": "file:///<repo>/testbed/page_12.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.579,
+      "rag_retrieval_sec": 0.402,
+      "llm_inference_sec": 21.29,
+      "total_sec": 22.271
+    },
+    {
+      "url": "file:///<repo>/testbed/page_12.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.57,
+      "rag_retrieval_sec": 0.403,
+      "llm_inference_sec": 16.872,
+      "total_sec": 17.844
+    },
+    {
+      "url": "file:///<repo>/testbed/page_13.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.569,
+      "rag_retrieval_sec": 0.387,
+      "llm_inference_sec": 21.142,
+      "total_sec": 22.099
+    },
+    {
+      "url": "file:///<repo>/testbed/page_13.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.576,
+      "rag_retrieval_sec": 0.42,
+      "llm_inference_sec": 20.276,
+      "total_sec": 21.273
+    },
+    {
+      "url": "file:///<repo>/testbed/page_13.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.396,
+      "llm_inference_sec": 21.224,
+      "total_sec": 22.19
+    },
+    {
+      "url": "file:///<repo>/testbed/page_14.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.567,
+      "rag_retrieval_sec": 0.4,
+      "llm_inference_sec": 23.717,
+      "total_sec": 24.684
+    },
+    {
+      "url": "file:///<repo>/testbed/page_14.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.581,
+      "rag_retrieval_sec": 0.412,
+      "llm_inference_sec": 20.373,
+      "total_sec": 21.367
+    },
+    {
+      "url": "file:///<repo>/testbed/page_14.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.58,
+      "rag_retrieval_sec": 0.431,
+      "llm_inference_sec": 27.132,
+      "total_sec": 28.143
+    },
+    {
+      "url": "file:///<repo>/testbed/page_15.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.584,
+      "rag_retrieval_sec": 0.385,
+      "llm_inference_sec": 19.003,
+      "total_sec": 19.973
+    },
+    {
+      "url": "file:///<repo>/testbed/page_15.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.582,
+      "rag_retrieval_sec": 0.405,
+      "llm_inference_sec": 26.028,
+      "total_sec": 27.016
+    },
+    {
+      "url": "file:///<repo>/testbed/page_15.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.575,
+      "rag_retrieval_sec": 0.407,
+      "llm_inference_sec": 19.401,
+      "total_sec": 20.383
+    },
+    {
+      "url": "file:///<repo>/testbed/page_16.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.562,
+      "rag_retrieval_sec": 0.402,
+      "llm_inference_sec": 17.181,
+      "total_sec": 18.145
+    },
+    {
+      "url": "file:///<repo>/testbed/page_16.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.578,
+      "rag_retrieval_sec": 0.359,
+      "llm_inference_sec": 23.292,
+      "total_sec": 24.228
+    },
+    {
+      "url": "file:///<repo>/testbed/page_16.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.587,
+      "rag_retrieval_sec": 0.376,
+      "llm_inference_sec": 16.668,
+      "total_sec": 17.631
+    },
+    {
+      "url": "file:///<repo>/testbed/page_17.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.567,
+      "rag_retrieval_sec": 0.412,
+      "llm_inference_sec": 17.616,
+      "total_sec": 18.595
+    },
+    {
+      "url": "file:///<repo>/testbed/page_17.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.57,
+      "rag_retrieval_sec": 0.439,
+      "llm_inference_sec": 31.717,
+      "total_sec": 32.726
+    },
+    {
+      "url": "file:///<repo>/testbed/page_17.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.567,
+      "rag_retrieval_sec": 0.37,
+      "llm_inference_sec": 27.176,
+      "total_sec": 28.113
+    },
+    {
+      "url": "file:///<repo>/testbed/page_18.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.578,
+      "rag_retrieval_sec": 0.394,
+      "llm_inference_sec": 16.806,
+      "total_sec": 17.778
+    },
+    {
+      "url": "file:///<repo>/testbed/page_18.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.581,
+      "rag_retrieval_sec": 0.417,
+      "llm_inference_sec": 22.291,
+      "total_sec": 23.289
+    },
+    {
+      "url": "file:///<repo>/testbed/page_18.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.4,
+      "llm_inference_sec": 32.658,
+      "total_sec": 33.628
+    },
+    {
+      "url": "file:///<repo>/testbed/page_19.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.567,
+      "rag_retrieval_sec": 0.404,
+      "llm_inference_sec": 24.289,
+      "total_sec": 25.26
+    },
+    {
+      "url": "file:///<repo>/testbed/page_19.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.575,
+      "rag_retrieval_sec": 0.416,
+      "llm_inference_sec": 22.425,
+      "total_sec": 23.416
+    },
+    {
+      "url": "file:///<repo>/testbed/page_19.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.416,
+      "llm_inference_sec": 25.871,
+      "total_sec": 26.864
+    },
+    {
+      "url": "file:///<repo>/testbed/page_20.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.583,
+      "rag_retrieval_sec": 0.463,
+      "llm_inference_sec": 26.0,
+      "total_sec": 27.047
+    },
+    {
+      "url": "file:///<repo>/testbed/page_20.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.572,
+      "rag_retrieval_sec": 0.401,
+      "llm_inference_sec": 25.985,
+      "total_sec": 26.958
+    },
+    {
+      "url": "file:///<repo>/testbed/page_20.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.599,
+      "rag_retrieval_sec": 0.364,
+      "llm_inference_sec": 28.497,
+      "total_sec": 29.46
+    },
+    {
+      "url": "file:///<repo>/testbed/page_21.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.581,
+      "rag_retrieval_sec": 0.398,
+      "llm_inference_sec": 27.942,
+      "total_sec": 28.921
+    },
+    {
+      "url": "file:///<repo>/testbed/page_21.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.566,
+      "rag_retrieval_sec": 0.394,
+      "llm_inference_sec": 21.928,
+      "total_sec": 22.889
+    },
+    {
+      "url": "file:///<repo>/testbed/page_21.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.568,
+      "rag_retrieval_sec": 0.408,
+      "llm_inference_sec": 22.894,
+      "total_sec": 23.87
+    },
+    {
+      "url": "file:///<repo>/testbed/page_22.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.564,
+      "rag_retrieval_sec": 0.387,
+      "llm_inference_sec": 17.017,
+      "total_sec": 17.968
+    },
+    {
+      "url": "file:///<repo>/testbed/page_22.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.584,
+      "rag_retrieval_sec": 0.389,
+      "llm_inference_sec": 21.138,
+      "total_sec": 22.111
+    },
+    {
+      "url": "file:///<repo>/testbed/page_22.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.576,
+      "rag_retrieval_sec": 0.394,
+      "llm_inference_sec": 19.643,
+      "total_sec": 20.613
+    },
+    {
+      "url": "file:///<repo>/testbed/page_23.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.586,
+      "rag_retrieval_sec": 0.413,
+      "llm_inference_sec": 23.974,
+      "total_sec": 24.972
+    },
+    {
+      "url": "file:///<repo>/testbed/page_23.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.416,
+      "llm_inference_sec": 23.016,
+      "total_sec": 24.003
+    },
+    {
+      "url": "file:///<repo>/testbed/page_23.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.572,
+      "rag_retrieval_sec": 0.409,
+      "llm_inference_sec": 30.378,
+      "total_sec": 31.359
+    },
+    {
+      "url": "file:///<repo>/testbed/page_24.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.583,
+      "rag_retrieval_sec": 0.376,
+      "llm_inference_sec": 20.901,
+      "total_sec": 21.86
+    },
+    {
+      "url": "file:///<repo>/testbed/page_24.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.598,
+      "rag_retrieval_sec": 0.408,
+      "llm_inference_sec": 23.505,
+      "total_sec": 24.512
+    },
+    {
+      "url": "file:///<repo>/testbed/page_24.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.582,
+      "rag_retrieval_sec": 0.414,
+      "llm_inference_sec": 26.096,
+      "total_sec": 27.092
+    },
+    {
+      "url": "file:///<repo>/testbed/page_25.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.583,
+      "rag_retrieval_sec": 0.423,
+      "llm_inference_sec": 25.311,
+      "total_sec": 26.317
+    },
+    {
+      "url": "file:///<repo>/testbed/page_25.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.564,
+      "rag_retrieval_sec": 0.432,
+      "llm_inference_sec": 23.415,
+      "total_sec": 24.411
+    },
+    {
+      "url": "file:///<repo>/testbed/page_25.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.578,
+      "rag_retrieval_sec": 0.41,
+      "llm_inference_sec": 21.796,
+      "total_sec": 22.785
+    },
+    {
+      "url": "file:///<repo>/testbed/page_26.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.568,
+      "rag_retrieval_sec": 0.425,
+      "llm_inference_sec": 30.814,
+      "total_sec": 31.806
+    },
+    {
+      "url": "file:///<repo>/testbed/page_26.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.578,
+      "rag_retrieval_sec": 0.398,
+      "llm_inference_sec": 23.819,
+      "total_sec": 24.795
+    },
+    {
+      "url": "file:///<repo>/testbed/page_26.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.574,
+      "rag_retrieval_sec": 0.377,
+      "llm_inference_sec": 26.093,
+      "total_sec": 27.043
+    },
+    {
+      "url": "file:///<repo>/testbed/page_27.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.59,
+      "rag_retrieval_sec": 0.42,
+      "llm_inference_sec": 16.306,
+      "total_sec": 17.315
+    },
+    {
+      "url": "file:///<repo>/testbed/page_27.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.608,
+      "rag_retrieval_sec": 0.406,
+      "llm_inference_sec": 18.389,
+      "total_sec": 19.403
+    },
+    {
+      "url": "file:///<repo>/testbed/page_27.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.58,
+      "rag_retrieval_sec": 0.392,
+      "llm_inference_sec": 21.514,
+      "total_sec": 22.487
+    },
+    {
+      "url": "file:///<repo>/testbed/page_28.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.577,
+      "rag_retrieval_sec": 0.462,
+      "llm_inference_sec": 22.86,
+      "total_sec": 23.899
+    },
+    {
+      "url": "file:///<repo>/testbed/page_28.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.574,
+      "rag_retrieval_sec": 0.393,
+      "llm_inference_sec": 22.511,
+      "total_sec": 23.478
+    },
+    {
+      "url": "file:///<repo>/testbed/page_28.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.57,
+      "rag_retrieval_sec": 0.361,
+      "llm_inference_sec": 23.022,
+      "total_sec": 23.953
+    },
+    {
+      "url": "file:///<repo>/testbed/page_29.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.593,
+      "rag_retrieval_sec": 0.393,
+      "llm_inference_sec": 20.471,
+      "total_sec": 21.456
+    },
+    {
+      "url": "file:///<repo>/testbed/page_29.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.568,
+      "rag_retrieval_sec": 0.374,
+      "llm_inference_sec": 23.785,
+      "total_sec": 24.726
+    },
+    {
+      "url": "file:///<repo>/testbed/page_29.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.572,
+      "rag_retrieval_sec": 0.395,
+      "llm_inference_sec": 23.391,
+      "total_sec": 24.358
+    },
+    {
+      "url": "file:///<repo>/testbed/page_30.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.587,
+      "rag_retrieval_sec": 0.407,
+      "llm_inference_sec": 22.246,
+      "total_sec": 23.24
+    },
+    {
+      "url": "file:///<repo>/testbed/page_30.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.575,
+      "rag_retrieval_sec": 0.468,
+      "llm_inference_sec": 23.32,
+      "total_sec": 24.363
+    },
+    {
+      "url": "file:///<repo>/testbed/page_30.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.573,
+      "rag_retrieval_sec": 0.385,
+      "llm_inference_sec": 27.304,
+      "total_sec": 28.262
+    },
+    {
+      "url": "file:///<repo>/testbed/page_31.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.39,
+      "llm_inference_sec": 30.192,
+      "total_sec": 31.153
+    },
+    {
+      "url": "file:///<repo>/testbed/page_31.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.574,
+      "rag_retrieval_sec": 0.412,
+      "llm_inference_sec": 14.776,
+      "total_sec": 15.763
+    },
+    {
+      "url": "file:///<repo>/testbed/page_31.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.576,
+      "rag_retrieval_sec": 0.4,
+      "llm_inference_sec": 23.917,
+      "total_sec": 24.893
+    },
+    {
+      "url": "file:///<repo>/testbed/page_32.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.392,
+      "llm_inference_sec": 27.805,
+      "total_sec": 28.768
+    },
+    {
+      "url": "file:///<repo>/testbed/page_32.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.587,
+      "rag_retrieval_sec": 0.401,
+      "llm_inference_sec": 15.986,
+      "total_sec": 16.973
+    },
+    {
+      "url": "file:///<repo>/testbed/page_32.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.572,
+      "rag_retrieval_sec": 0.408,
+      "llm_inference_sec": 17.297,
+      "total_sec": 18.277
+    },
+    {
+      "url": "file:///<repo>/testbed/page_33.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.597,
+      "rag_retrieval_sec": 0.428,
+      "llm_inference_sec": 20.309,
+      "total_sec": 21.333
+    },
+    {
+      "url": "file:///<repo>/testbed/page_33.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.578,
+      "rag_retrieval_sec": 0.408,
+      "llm_inference_sec": 20.236,
+      "total_sec": 21.221
+    },
+    {
+      "url": "file:///<repo>/testbed/page_33.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.587,
+      "rag_retrieval_sec": 0.385,
+      "llm_inference_sec": 24.896,
+      "total_sec": 25.868
+    },
+    {
+      "url": "file:///<repo>/testbed/page_34.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.582,
+      "rag_retrieval_sec": 0.421,
+      "llm_inference_sec": 22.898,
+      "total_sec": 23.902
+    },
+    {
+      "url": "file:///<repo>/testbed/page_34.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.571,
+      "rag_retrieval_sec": 0.397,
+      "llm_inference_sec": 16.499,
+      "total_sec": 17.467
+    },
+    {
+      "url": "file:///<repo>/testbed/page_34.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.578,
+      "rag_retrieval_sec": 0.399,
+      "llm_inference_sec": 24.034,
+      "total_sec": 25.011
+    },
+    {
+      "url": "file:///<repo>/testbed/page_35.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.589,
+      "rag_retrieval_sec": 0.389,
+      "llm_inference_sec": 39.956,
+      "total_sec": 40.934
+    },
+    {
+      "url": "file:///<repo>/testbed/page_35.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.579,
+      "rag_retrieval_sec": 0.478,
+      "llm_inference_sec": 24.549,
+      "total_sec": 25.606
+    },
+    {
+      "url": "file:///<repo>/testbed/page_35.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.574,
+      "rag_retrieval_sec": 0.434,
+      "llm_inference_sec": 28.09,
+      "total_sec": 29.098
+    },
+    {
+      "url": "file:///<repo>/testbed/page_36.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.573,
+      "rag_retrieval_sec": 0.418,
+      "llm_inference_sec": 25.681,
+      "total_sec": 26.672
+    },
+    {
+      "url": "file:///<repo>/testbed/page_36.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.565,
+      "rag_retrieval_sec": 0.409,
+      "llm_inference_sec": 30.828,
+      "total_sec": 31.802
+    },
+    {
+      "url": "file:///<repo>/testbed/page_36.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.585,
+      "rag_retrieval_sec": 0.407,
+      "llm_inference_sec": 25.636,
+      "total_sec": 26.628
+    },
+    {
+      "url": "file:///<repo>/testbed/page_37.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.575,
+      "rag_retrieval_sec": 0.406,
+      "llm_inference_sec": 16.099,
+      "total_sec": 17.08
+    },
+    {
+      "url": "file:///<repo>/testbed/page_37.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.729,
+      "rag_retrieval_sec": 0.508,
+      "llm_inference_sec": 21.014,
+      "total_sec": 22.25
+    },
+    {
+      "url": "file:///<repo>/testbed/page_37.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.676,
+      "rag_retrieval_sec": 0.489,
+      "llm_inference_sec": 23.081,
+      "total_sec": 24.246
+    },
+    {
+      "url": "file:///<repo>/testbed/page_38.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.633,
+      "rag_retrieval_sec": 0.466,
+      "llm_inference_sec": 19.365,
+      "total_sec": 20.464
+    },
+    {
+      "url": "file:///<repo>/testbed/page_38.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.651,
+      "rag_retrieval_sec": 0.439,
+      "llm_inference_sec": 25.643,
+      "total_sec": 26.733
+    },
+    {
+      "url": "file:///<repo>/testbed/page_38.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.763,
+      "rag_retrieval_sec": 0.439,
+      "llm_inference_sec": 21.896,
+      "total_sec": 23.098
+    },
+    {
+      "url": "file:///<repo>/testbed/page_39.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.65,
+      "rag_retrieval_sec": 0.569,
+      "llm_inference_sec": 16.135,
+      "total_sec": 17.354
+    },
+    {
+      "url": "file:///<repo>/testbed/page_39.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.716,
+      "rag_retrieval_sec": 0.581,
+      "llm_inference_sec": 25.076,
+      "total_sec": 26.374
+    },
+    {
+      "url": "file:///<repo>/testbed/page_39.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.724,
+      "rag_retrieval_sec": 0.495,
+      "llm_inference_sec": 24.871,
+      "total_sec": 26.09
+    },
+    {
+      "url": "file:///<repo>/testbed/page_40.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.556,
+      "rag_retrieval_sec": 0.443,
+      "llm_inference_sec": 21.86,
+      "total_sec": 22.859
+    },
+    {
+      "url": "file:///<repo>/testbed/page_40.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.681,
+      "rag_retrieval_sec": 0.57,
+      "llm_inference_sec": 24.496,
+      "total_sec": 25.746
+    },
+    {
+      "url": "file:///<repo>/testbed/page_40.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.652,
+      "rag_retrieval_sec": 0.46,
+      "llm_inference_sec": 27.713,
+      "total_sec": 28.825
+    },
+    {
+      "url": "file:///<repo>/testbed/page_41.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.863,
+      "rag_retrieval_sec": 0.691,
+      "llm_inference_sec": 25.364,
+      "total_sec": 26.917
+    },
+    {
+      "url": "file:///<repo>/testbed/page_41.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.673,
+      "rag_retrieval_sec": 0.455,
+      "llm_inference_sec": 16.907,
+      "total_sec": 18.035
+    },
+    {
+      "url": "file:///<repo>/testbed/page_41.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.661,
+      "rag_retrieval_sec": 0.461,
+      "llm_inference_sec": 22.209,
+      "total_sec": 23.33
+    },
+    {
+      "url": "file:///<repo>/testbed/page_42.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.627,
+      "rag_retrieval_sec": 0.483,
+      "llm_inference_sec": 27.279,
+      "total_sec": 28.39
+    },
+    {
+      "url": "file:///<repo>/testbed/page_42.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.624,
+      "rag_retrieval_sec": 0.412,
+      "llm_inference_sec": 16.971,
+      "total_sec": 18.008
+    },
+    {
+      "url": "file:///<repo>/testbed/page_42.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.721,
+      "rag_retrieval_sec": 0.436,
+      "llm_inference_sec": 18.818,
+      "total_sec": 19.976
+    },
+    {
+      "url": "file:///<repo>/testbed/page_43.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.763,
+      "rag_retrieval_sec": 0.461,
+      "llm_inference_sec": 26.851,
+      "total_sec": 28.075
+    },
+    {
+      "url": "file:///<repo>/testbed/page_43.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.64,
+      "rag_retrieval_sec": 0.444,
+      "llm_inference_sec": 21.655,
+      "total_sec": 22.74
+    },
+    {
+      "url": "file:///<repo>/testbed/page_43.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.633,
+      "rag_retrieval_sec": 0.551,
+      "llm_inference_sec": 27.803,
+      "total_sec": 28.987
+    },
+    {
+      "url": "file:///<repo>/testbed/page_44.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.719,
+      "rag_retrieval_sec": 0.584,
+      "llm_inference_sec": 110.409,
+      "total_sec": 111.712
+    },
+    {
+      "url": "file:///<repo>/testbed/page_44.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.691,
+      "rag_retrieval_sec": 0.7,
+      "llm_inference_sec": 18.333,
+      "total_sec": 19.724
+    },
+    {
+      "url": "file:///<repo>/testbed/page_44.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.679,
+      "rag_retrieval_sec": 0.456,
+      "llm_inference_sec": 23.689,
+      "total_sec": 24.823
+    },
+    {
+      "url": "file:///<repo>/testbed/page_45.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.677,
+      "rag_retrieval_sec": 0.563,
+      "llm_inference_sec": 22.312,
+      "total_sec": 23.552
+    },
+    {
+      "url": "file:///<repo>/testbed/page_45.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.666,
+      "rag_retrieval_sec": 0.657,
+      "llm_inference_sec": 22.094,
+      "total_sec": 23.417
+    },
+    {
+      "url": "file:///<repo>/testbed/page_45.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.574,
+      "rag_retrieval_sec": 0.398,
+      "llm_inference_sec": 21.489,
+      "total_sec": 22.461
+    },
+    {
+      "url": "file:///<repo>/testbed/page_46.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.74,
+      "rag_retrieval_sec": 0.545,
+      "llm_inference_sec": 23.742,
+      "total_sec": 25.028
+    },
+    {
+      "url": "file:///<repo>/testbed/page_46.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.649,
+      "rag_retrieval_sec": 0.418,
+      "llm_inference_sec": 20.782,
+      "total_sec": 21.849
+    },
+    {
+      "url": "file:///<repo>/testbed/page_46.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.703,
+      "rag_retrieval_sec": 0.522,
+      "llm_inference_sec": 31.925,
+      "total_sec": 33.15
+    },
+    {
+      "url": "file:///<repo>/testbed/page_47.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.663,
+      "rag_retrieval_sec": 0.568,
+      "llm_inference_sec": 26.41,
+      "total_sec": 27.641
+    },
+    {
+      "url": "file:///<repo>/testbed/page_47.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.664,
+      "rag_retrieval_sec": 0.552,
+      "llm_inference_sec": 22.625,
+      "total_sec": 23.841
+    },
+    {
+      "url": "file:///<repo>/testbed/page_47.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.649,
+      "rag_retrieval_sec": 0.642,
+      "llm_inference_sec": 19.419,
+      "total_sec": 20.71
+    },
+    {
+      "url": "file:///<repo>/testbed/page_48.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.641,
+      "rag_retrieval_sec": 0.616,
+      "llm_inference_sec": 16.365,
+      "total_sec": 17.622
+    },
+    {
+      "url": "file:///<repo>/testbed/page_48.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.668,
+      "rag_retrieval_sec": 0.776,
+      "llm_inference_sec": 23.481,
+      "total_sec": 24.924
+    },
+    {
+      "url": "file:///<repo>/testbed/page_48.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.7,
+      "rag_retrieval_sec": 0.569,
+      "llm_inference_sec": 23.539,
+      "total_sec": 24.808
+    },
+    {
+      "url": "file:///<repo>/testbed/page_49.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.654,
+      "rag_retrieval_sec": 0.586,
+      "llm_inference_sec": 23.52,
+      "total_sec": 24.76
+    },
+    {
+      "url": "file:///<repo>/testbed/page_49.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.619,
+      "rag_retrieval_sec": 0.604,
+      "llm_inference_sec": 20.573,
+      "total_sec": 21.796
+    },
+    {
+      "url": "file:///<repo>/testbed/page_49.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.643,
+      "rag_retrieval_sec": 0.4,
+      "llm_inference_sec": 21.391,
+      "total_sec": 22.434
+    },
+    {
+      "url": "file:///<repo>/testbed/page_50.html",
+      "repeat": 1,
+      "data_acquisition_sec": 0.639,
+      "rag_retrieval_sec": 0.593,
+      "llm_inference_sec": 17.717,
+      "total_sec": 18.949
+    },
+    {
+      "url": "file:///<repo>/testbed/page_50.html",
+      "repeat": 2,
+      "data_acquisition_sec": 0.675,
+      "rag_retrieval_sec": 0.452,
+      "llm_inference_sec": 25.682,
+      "total_sec": 26.81
+    },
+    {
+      "url": "file:///<repo>/testbed/page_50.html",
+      "repeat": 3,
+      "data_acquisition_sec": 0.707,
+      "rag_retrieval_sec": 0.589,
+      "llm_inference_sec": 28.754,
+      "total_sec": 30.05
+    }
+  ]
+}

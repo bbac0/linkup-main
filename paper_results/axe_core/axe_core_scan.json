@@ -1,0 +1,2091 @@
+[
+  {
+    "page_id": "page_001",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_002",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_003",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_004",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_005",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_006",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_007",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_008",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_009",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_010",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_011",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_012",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_013",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_014",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_015",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_016",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_017",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_018",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_019",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_020",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_021",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_022",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_023",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_024",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_025",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_026",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_027",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_028",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_029",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_030",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_031",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_032",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_033",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_034",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_035",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_036",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_037",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_038",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_039",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_040",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_041",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_042",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_043",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_044",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_045",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_046",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_047",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_048",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_049",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_050",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_051",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_052",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_053",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_054",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_055",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_056",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_057",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_058",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_059",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_060",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_061",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_062",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_063",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_064",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_065",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_066",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_067",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_068",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_069",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_070",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_071",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_072",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_073",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_074",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_075",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_076",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_077",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_078",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_079",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_080",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_081",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_082",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_083",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_084",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_085",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_086",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_087",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_088",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_089",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_090",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_091",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_092",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_093",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_094",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_095",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_096",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_097",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_098",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_099",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_100",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_101",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_102",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_103",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_104",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_105",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_106",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_107",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_108",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_109",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_110",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_111",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_112",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_113",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_114",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_115",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_116",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_117",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_118",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_119",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_120",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_121",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_122",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_123",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_124",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_125",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_126",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_127",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_128",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_129",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_130",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_131",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_132",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_133",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_134",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_135",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_136",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_137",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_138",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_139",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_140",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_141",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_142",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_143",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_144",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_145",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_146",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_147",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_148",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_149",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_150",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_151",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_152",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_153",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_154",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_155",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_156",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_157",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_158",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_159",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_160",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_161",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_162",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_163",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_164",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_165",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_166",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_167",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_168",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_169",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_170",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_171",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_172",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_173",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_174",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_175",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_176",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_177",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_178",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_179",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_180",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_181",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_182",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_183",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_184",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_185",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_186",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_187",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_188",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping",
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_189",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_190",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_191",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_192",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_193",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Standard Terminology Violation",
+      "Mobile Layout Breakage"
+    ],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_194",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 1
+  },
+  {
+    "page_id": "page_195",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 2
+  },
+  {
+    "page_id": "page_196",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Duplicate ID Markup Error",
+      "Poor Contrast Ratio"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_197",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_198",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Button Area Clipping"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast",
+      "label",
+      "page-has-heading-one"
+    ],
+    "axe_violation_count": 3
+  },
+  {
+    "page_id": "page_199",
+    "has_gt_defect": false,
+    "gt_defect_types": [],
+    "axe_violation_rule_ids": [],
+    "axe_violation_count": 0
+  },
+  {
+    "page_id": "page_200",
+    "has_gt_defect": true,
+    "gt_defect_types": [
+      "Poor Contrast Ratio",
+      "Standard Terminology Violation"
+    ],
+    "axe_violation_rule_ids": [
+      "color-contrast"
+    ],
+    "axe_violation_count": 1
+  }
+]

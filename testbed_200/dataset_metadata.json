@@ -1,0 +1,2718 @@
+[
+  {
+    "page_id": "page_001.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_002.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_003.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_004.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_005.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_006.html",
+    "base_template": "search_result",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_007.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_008.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_009.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_010.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_011.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_012.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_013.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_014.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_015.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_016.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_017.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_018.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_019.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_020.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_021.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_022.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_023.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_024.html",
+    "base_template": "detail_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_025.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_026.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_027.html",
+    "base_template": "faq_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_028.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_029.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_030.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_031.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_032.html",
+    "base_template": "board_list",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_033.html",
+    "base_template": "login_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_034.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_035.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_036.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_037.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_038.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_039.html",
+    "base_template": "terms_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_040.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_041.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_042.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_043.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_044.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_045.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_046.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_047.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_048.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_049.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_050.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_051.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_052.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_053.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_054.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_055.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_056.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_057.html",
+    "base_template": "faq_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_058.html",
+    "base_template": "form_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_059.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_060.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_061.html",
+    "base_template": "portal_main",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_062.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_063.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_064.html",
+    "base_template": "detail_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_065.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_066.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_067.html",
+    "base_template": "faq_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_068.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_069.html",
+    "base_template": "terms_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_070.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_071.html",
+    "base_template": "portal_main",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_072.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_073.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_074.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_075.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_076.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_077.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_078.html",
+    "base_template": "form_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_079.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_080.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_081.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_082.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_083.html",
+    "base_template": "login_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_084.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_085.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_086.html",
+    "base_template": "search_result",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_087.html",
+    "base_template": "faq_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_088.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_089.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_090.html",
+    "base_template": "contact_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_091.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_092.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_093.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_094.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_095.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_096.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_097.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_098.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_099.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_100.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_101.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_102.html",
+    "base_template": "board_list",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_103.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_104.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_105.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_106.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_107.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_108.html",
+    "base_template": "form_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_109.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_110.html",
+    "base_template": "contact_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_111.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_112.html",
+    "base_template": "board_list",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_113.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_114.html",
+    "base_template": "detail_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_115.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_116.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_117.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_118.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_119.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_120.html",
+    "base_template": "contact_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_121.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_122.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_123.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_124.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_125.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_126.html",
+    "base_template": "search_result",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_127.html",
+    "base_template": "faq_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_128.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_129.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_130.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_131.html",
+    "base_template": "portal_main",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_132.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_133.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_134.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_135.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_136.html",
+    "base_template": "search_result",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_137.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_138.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_139.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_140.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_141.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_142.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_143.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_144.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_145.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_146.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_147.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_148.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_149.html",
+    "base_template": "terms_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_150.html",
+    "base_template": "contact_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_151.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_152.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_153.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_154.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_155.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_156.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_157.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_158.html",
+    "base_template": "form_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_159.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_160.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_161.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_162.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_163.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_164.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_165.html",
+    "base_template": "dashboard",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_166.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_167.html",
+    "base_template": "faq_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_168.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_169.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_170.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_171.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_172.html",
+    "base_template": "board_list",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_173.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_174.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_175.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_176.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_177.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_178.html",
+    "base_template": "form_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_179.html",
+    "base_template": "terms_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_180.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_181.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  },
+  {
+    "page_id": "page_182.html",
+    "base_template": "board_list",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_183.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_184.html",
+    "base_template": "detail_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_185.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_186.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_187.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_188.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      },
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_189.html",
+    "base_template": "terms_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_190.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_191.html",
+    "base_template": "portal_main",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      }
+    ]
+  },
+  {
+    "page_id": "page_192.html",
+    "base_template": "board_list",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_193.html",
+    "base_template": "login_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      },
+      {
+        "id": "DEF_VIS_02",
+        "category": "Visual",
+        "type": "Mobile Layout Breakage"
+      }
+    ]
+  },
+  {
+    "page_id": "page_194.html",
+    "base_template": "detail_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_195.html",
+    "base_template": "dashboard",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_196.html",
+    "base_template": "search_result",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_TEC_01",
+        "category": "Technical",
+        "type": "Duplicate ID Markup Error"
+      },
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      }
+    ]
+  },
+  {
+    "page_id": "page_197.html",
+    "base_template": "faq_page",
+    "has_defect": true,
+    "defect_count": 1,
+    "defects": [
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_198.html",
+    "base_template": "form_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_VIS_03",
+        "category": "Visual",
+        "type": "Button Area Clipping"
+      }
+    ]
+  },
+  {
+    "page_id": "page_199.html",
+    "base_template": "terms_page",
+    "has_defect": false,
+    "defect_count": 0,
+    "defects": []
+  },
+  {
+    "page_id": "page_200.html",
+    "base_template": "contact_page",
+    "has_defect": true,
+    "defect_count": 2,
+    "defects": [
+      {
+        "id": "DEF_VIS_01",
+        "category": "Visual",
+        "type": "Poor Contrast Ratio"
+      },
+      {
+        "id": "DEF_OPS_01",
+        "category": "Guideline",
+        "type": "Standard Terminology Violation"
+      }
+    ]
+  }
+]

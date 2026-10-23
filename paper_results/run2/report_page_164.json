@@ -1,0 +1,88 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 2,
+  "tech_faults": 2,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_164.html] HTML `<style>` 태그 내에 `html, body, div, main, header` 요소에 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !important;` 스타일이 강제로 적용되어 있습니다. 이로 인해 모든 화면에서 가로 스크롤이 발생하며, 반응형 웹 디자인을 심각하게 저해하고 모바일 및 태블릿 환경에서의 사용성을 극도로 떨어뜨립니다.",
+      "suggestion": "해당 고정 너비 및 스크롤 강제 스타일을 즉시 제거해야 합니다. 다양한 기기 환경에 맞춰 콘텐츠가 유동적으로 배치되도록 반응형 웹 디자인 원칙(예: CSS Flexbox, Grid, 미디어 쿼리)을 적용하여 모든 사용자가 최적화된 화면을 볼 수 있도록 개선하세요.",
+      "source_file": "General Web Standards",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_164.html] \"로그인\" 링크와 \"발급 신청\" 버튼이 기본 브라우저 스타일을 따르고 있어, 정부 웹사이트의 통일된 시각적 디자인 가이드라인을 준수하지 않을 수 있습니다. 이는 사용자에게 일관성 없는 경험을 제공하며, 브랜드 신뢰도를 저하시킬 수 있습니다.",
+      "suggestion": "정부 표준 디자인 시스템에 맞춰 링크와 버튼에 대한 명확하고 일관된 스타일(색상, 폰트, 크기, 호버/포커스 상태 등)을 적용하여 시각적 통일성을 확보해야 합니다. 특히 버튼은 클릭 가능한 요소임을 명확히 인지할 수 있도록 디자인해야 합니다.",
+      "source_file": "General Web Standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/testbed_200/page_164.html] \"발급 수수료 안내입니다.\"라는 문구만 제시되어 있을 뿐, 실제 주민등록표등본 발급에 필요한 수수료 정보, 구체적인 신청 절차, 필요 서류, 처리 기간 등 필수적인 정보가 누락되어 있습니다. 사용자는 서비스를 이용하기 위해 추가 정보를 찾아야 하는 불편함을 겪게 됩니다.",
+      "suggestion": "사용자가 서비스를 원활하게 이용할 수 있도록 발급 수수료, 신청 방법, 구비 서류, 처리 시간 등 모든 관련 정보를 명확하고 상세하게 제공해야 합니다. 별도의 안내 페이지로 연결하거나 해당 페이지 내에 정보를 추가하여 사용자의 정보 탐색 노력을 최소화하세요.",
+      "source_file": "General Web Standards",
+      "page_number": []
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 97,
+    "기술": 97
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_164.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_164.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_164.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

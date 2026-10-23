@@ -1,0 +1,70 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 1,
+  "ops_faults": 0,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 스크린샷과 HTML 소스 코드를 분석한 결과, HTML 마크업 오류와 심각한 웹 접근성 문제가 발견되었습니다. 특히 버튼 스타일링은 사용자 인터페이스를 거의 사용할 수 없게 만들고 있어 즉각적인 개선이 필요합니다. 전반적인 사용자 경험과 기술 표준 준수를 위한 개선이 시급합니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_188.html] HTML 문서 내에서 'id' 속성 값 'main-banner'가 두 번 사용되어 중복되었습니다. 'id'는 문서 내에서 고유해야 합니다.",
+      "suggestion": "각 'id' 속성 값은 문서 내에서 고유해야 합니다. 중복된 'id'를 수정하거나 다른 식별자를 사용하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_188.html] 입력 필드(<input type=\"text\">)에 'autocomplete' 속성이 설정되어 있지 않아 사용자 편의성 및 보안에 취약할 수 있습니다.",
+      "suggestion": "개인 정보 입력 필드에는 적절한 'autocomplete' 속성(예: 'name')을 추가하여 사용자 경험을 개선하고 자동 완성 기능을 활성화하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_188.html] 버튼 요소의 CSS 스타일(height: 2px, font-size: 0px, overflow: hidden 등)이 버튼을 시각적으로 숨기고 텍스트를 읽을 수 없게 만들어 웹 접근성을 심각하게 저해합니다.",
+      "suggestion": "버튼의 'height', 'font-size', 'line-height', 'padding', 'overflow' 속성을 제거하거나 적절한 값으로 수정하여 버튼이 시각적으로 명확하게 보이고 텍스트 콘텐츠가 접근 가능하도록 하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12,
+        13
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_188.html] 입력 필드의 테두리 색상이 빨간색으로 설정되어 있어, 오류 상태가 아님에도 불구하고 사용자에게 혼란을 줄 수 있습니다.",
+      "suggestion": "오류 상태가 아닌 경우, 입력 필드의 테두리 색상을 정부 표준 가이드라인에 맞는 기본 색상(예: 회색 또는 파란색 계열)으로 변경하여 사용자 경험을 개선하세요. 오류 상태일 경우에만 빨간색을 사용하고, 명확한 오류 메시지를 함께 제공해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 100,
+    "기술": 90
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_188.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_188.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

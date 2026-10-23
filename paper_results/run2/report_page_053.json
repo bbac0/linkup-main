@@ -1,0 +1,69 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 1,
+  "ops_faults": 0,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트는 심각한 접근성 및 반응형 디자인 문제를 포함하고 있습니다. 특히, 텍스트 가독성이 매우 낮고, 모든 화면에서 강제로 가로 스크롤이 발생하여 사용자 경험이 크게 저해됩니다. 입력 필드에 대한 적절한 레이블링과 자동 완성 기능도 누락되어 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_053.html] 웹사이트의 모든 텍스트 색상(#e5e5e5)이 배경색(#ffffff)과 거의 동일하여 가독성이 매우 낮습니다. 이는 WCAG 2.1 AA 명도 대비 기준(일반 텍스트 4.5:1 이상)을 충족하지 못합니다.",
+      "suggestion": "텍스트와 배경색의 명도 대비를 WCAG 2.1 AA 기준에 맞춰 조정하세요. 예를 들어, 텍스트 색상을 #333333 등으로 변경하여 시각적 가독성을 확보해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_053.html] HTML, body 등 주요 요소에 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !important;` 속성이 적용되어 모든 화면에서 강제로 가로 스크롤이 발생하며, 반응형 디자인을 지원하지 않습니다.",
+      "suggestion": "고정된 너비 설정을 제거하고, 다양한 화면 크기에 맞춰 유연하게 레이아웃이 조정되도록 반응형 웹 디자인을 적용하세요. `width: 100%;` 또는 `max-width`를 사용하여 유동적으로 만드세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        13
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_053.html] \"아이디\" 입력 필드에 시각적인 플레이스홀더만 제공되고, 스크린 리더 사용자를 위한 명시적인 `<label>` 요소가 누락되었습니다. 이는 웹 접근성 지침을 위반합니다.",
+      "suggestion": "`<input>` 요소에 연결된 `<label>` 요소를 추가하여 웹 접근성을 향상시키세요. `for` 속성과 `id` 속성을 사용하여 연결할 수 있습니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        14
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_053.html] \"아이디\" 입력 필드에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성(브라우저 자동 완성) 및 보안(필드 목적 힌트)이 저하됩니다.",
+      "suggestion": "\"아이디\" 입력 필드에 `autocomplete=\"username\"` 속성을 추가하여 브라우저의 자동 완성 기능을 지원하고 사용자 경험을 개선하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 100,
+    "기술": 90
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_053.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_053.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

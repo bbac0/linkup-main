@@ -1,0 +1,61 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 0,
+  "ops_faults": 0,
+  "tech_faults": 4,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 HTML 코드에는 ID 중복, 고정된 너비로 인한 반응형 문제, 그리고 웹 접근성 및 사용자 경험을 저해하는 요소들이 발견되었습니다. 이는 정부 웹사이트 표준 및 최신 웹 개발 트렌드에 부합하지 않습니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_123.html] HTML 문서 내에서 'main-banner' ID가 두 번 사용되어 중복되었습니다. ID는 문서 내에서 고유해야 합니다.",
+      "suggestion": "중복된 'main-banner' ID를 고유한 값으로 수정하거나, 여러 요소에 적용해야 할 경우 클래스(class)를 사용하세요.",
+      "source_file": "HTML 표준",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_123.html] CSS 인라인 스타일로 인해 `html`, `body`, `div`, `main`, `header` 요소의 너비가 3000px로 고정되어 있으며, 강제로 가로 스크롤(`overflow-x: scroll`)이 발생합니다. 이는 모바일 및 다양한 화면 크기에서의 접근성과 사용성을 심각하게 저해합니다.",
+      "suggestion": "`width`, `min-width`, `overflow-x` 속성을 제거하고, 반응형 웹 디자인 원칙에 따라 유동적인 레이아웃을 구현하여 모든 기기에서 최적화된 화면을 제공해야 합니다.",
+      "source_file": "웹 접근성 가이드라인",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_123.html] 로그인 입력 필드(`input type=\"text\"`)에 `autocomplete` 속성이 설정되어 있지 않아 사용자 편의성 및 보안 측면에서 개선이 필요합니다.",
+      "suggestion": "`autocomplete=\"username\"`과 같이 적절한 값을 설정하여 사용자가 이전에 입력한 정보를 쉽게 채울 수 있도록 하고, 브라우저의 자동 완성 기능을 활용하도록 권장합니다.",
+      "source_file": "웹 접근성 가이드라인",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_123.html] 로그인 입력 필드(`input type=\"text\"`)가 `placeholder` 텍스트에만 의존하고 있으며, 시각적으로 숨겨진 `label` 요소가 없어 스크린 리더 사용자에게 접근성이 떨어집니다.",
+      "suggestion": "`<label for=\"id-input\">아이디</label>`와 같이 명시적인 `label` 요소를 추가하고, `input` 요소에 해당 `id`를 연결하여 웹 접근성을 향상시키세요. `placeholder`는 보조적인 정보로 활용해야 합니다.",
+      "source_file": "웹 접근성 가이드라인",
+      "page_number": []
+    }
+  ],
+  "scores": {
+    "디자인": 100,
+    "운영": 100,
+    "기술": 87
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_123.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_123.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

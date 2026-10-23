@@ -1,0 +1,115 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 2,
+  "tech_faults": 4,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_051.html] HTML, body, div, main, header 요소에 고정된 3000px 너비와 강제 가로 스크롤(`overflow-x: scroll !important`)이 적용되어 있어 반응형 웹 디자인을 심각하게 저해합니다.",
+      "suggestion": "고정된 너비 설정을 제거하고, `width: 100%` 또는 `max-width`와 같은 유동적인 단위를 사용하여 다양한 화면 크기에 대응하도록 수정해야 합니다. `overflow-x: scroll !important` 속성도 제거해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15,
+        16
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_051.html] `id=\"main-banner\"` 속성이 여러 요소에 중복 사용되었습니다. HTML `id` 속성은 문서 내에서 고유해야 합니다.",
+      "suggestion": "각 배너 요소에 고유한 `id`를 부여하거나, `class` 속성을 사용하여 스타일링 및 스크립트 처리를 해야 합니다. `id` 중복은 웹 접근성 및 스크립트 동작에 문제를 일으킬 수 있습니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        20
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_051.html] 웹사이트의 전체적인 레이아웃과 콘텐츠 구성이 매우 미니멀하여 2026년 기준 정부 서비스 포털로서의 정보 제공 및 사용자 경험이 부족합니다.",
+      "suggestion": "사용자에게 필요한 주요 정보와 기능을 명확하게 배치하고, 시각적 계층 구조를 강화하여 정보 접근성을 높여야 합니다. 최신 정부 웹사이트 디자인 트렌드를 반영하여 사용자 친화적인 인터페이스를 구축하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        5,
+        6
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_051.html] 제공된 HTML 코드만으로는 웹 접근성 표준(KWCAG 2.2 또는 WCAG 2.1/2.2) 준수 여부를 완전히 판단하기 어렵지만, `id` 중복과 같은 기본 마크업 오류는 접근성에도 영향을 미칠 수 있습니다. 또한, 이미지에 대한 대체 텍스트(`alt` 속성)나 ARIA 속성 등 추가적인 접근성 고려 사항이 보이지 않습니다.",
+      "suggestion": "모든 UI 요소에 대해 웹 접근성 지침(예: KWCAG 2.2)을 철저히 준수해야 합니다. 특히, 이미지에는 의미 있는 `alt` 텍스트를 제공하고, 동적인 콘텐츠나 복잡한 UI 컴포넌트에는 적절한 WAI-ARIA 속성을 적용하여 스크린 리더 사용자가 정보를 정확히 인지할 수 있도록 해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        25,
+        26
+      ]
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/testbed_200/page_051.html] 2026년 10월 20일 기준으로, '주요 서비스', '로그인', '신청하기', '배너'와 같은 최소한의 텍스트만으로는 정부 서비스 포털로서의 최신 정보 제공 및 운영 현황을 파악하기 어렵습니다.",
+      "suggestion": "웹사이트에 제공되는 모든 콘텐츠(뉴스, 공지사항, 서비스 안내 등)가 최신 정보를 반영하고 있는지 정기적으로 검토하고 업데이트해야 합니다. 사용자에게 유용한 최신 정보를 지속적으로 제공하여 신뢰도를 높이세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        10
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 97,
+    "기술": 93
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_051.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 5
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_051.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_051.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

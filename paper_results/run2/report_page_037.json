@@ -1,0 +1,94 @@
+{
+  "status": "success",
+  "total_count": 45,
+  "design_faults": 2,
+  "ops_faults": 1,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_037.html] 텍스트(#e5e5e5)와 배경(#ffffff)의 명도 대비가 매우 낮아 가독성이 심각하게 떨어집니다. 이는 시각 장애인뿐만 아니라 일반 사용자에게도 불편을 초래합니다.",
+      "suggestion": "텍스트 색상을 #333333 또는 #000000과 같이 배경과 충분히 대비되는 색상으로 변경하여 WCAG 2.1 AA 기준인 최소 4.5:1의 명도 대비를 준수해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        1
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_037.html] 버튼 및 관련 클래스(`button`, `.btn`, `.login-btn`, `.apply-btn`)에 적용된 CSS 스타일(`height: 2px`, `font-size: 0px`, `line-height: 0`, `padding: 0`, `overflow: hidden`)로 인해 버튼이 시각적으로 숨겨지거나 클릭할 수 없게 됩니다. 이는 심각한 기능적 오류 및 접근성 문제입니다.",
+      "suggestion": "버튼의 정상적인 시각적 표현과 상호작용을 위해 해당 CSS 속성들을 제거하거나 적절한 값으로 수정해야 합니다. 특히 `!important` 사용은 지양해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        10
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_037.html] 모든 요소에 `!important`를 사용하여 색상을 강제하는 `* { color: #e5e5e5 !important; background-color: #ffffff !important; }` 스타일은 CSS 유지보수를 어렵게 하고, 특정 요소에 대한 스타일 재정의를 방해합니다.",
+      "suggestion": "`!important` 사용을 최소화하고, 필요한 요소에만 구체적인 선택자를 사용하여 스타일을 적용하세요. 전역 스타일은 신중하게 정의해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        11
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 95,
+    "운영": 98,
+    "기술": 92
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_037.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_037.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_037.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

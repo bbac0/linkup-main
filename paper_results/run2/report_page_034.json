@@ -1,0 +1,103 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 3,
+  "ops_faults": 1,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트 스크린샷과 HTML 소스 코드를 분석한 결과, 기본적인 웹 표준은 준수하고 있으나, 웹 접근성 및 시맨틱 마크업 측면에서 개선이 필요한 부분이 확인되었습니다. 특히, 페이지의 주요 제목 구조와 버튼 디자인 일관성 확보가 중요합니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_034.html] 페이지의 주요 콘텐츠 제목인 '주민등록표등본 발급'이 `<h2>` 태그로 마크업되어 있습니다. 일반적으로 페이지의 가장 중요한 제목은 `<h1>` 태그를 사용하는 것이 웹 접근성과 검색 엔진 최적화(SEO)에 더 유리합니다.",
+      "suggestion": "'주민등록표등본 발급'을 `<h1>` 태그로 변경하여 페이지의 콘텐츠 계층 구조를 명확히 하고, 스크린 리더 사용자 및 검색 엔진에 더 정확한 정보를 제공하도록 개선하세요.",
+      "source_file": "N/A",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_034.html] '발급 신청' 버튼이 기본 브라우저 스타일을 따르고 있어, 정부 웹사이트의 통일된 디자인 시스템이나 브랜드 가이드라인에 부합하지 않을 수 있습니다.",
+      "suggestion": "정부 표준 디자인 가이드라인(예: 색상, 폰트, 크기, 호버/포커스 상태)을 적용하여 버튼의 시각적 일관성을 확보하고 사용자에게 신뢰감을 주도록 개선하세요.",
+      "source_file": "N/A",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_034.html] <header> 내의 '접속하기' 링크가 내비게이션 역할을 하는 경우, <nav> 요소로 감싸지 않아 의미론적 구조가 불분명할 수 있습니다.",
+      "suggestion": "'접속하기' 링크가 주요 내비게이션 요소라면, <nav> 태그로 감싸서 웹 접근성을 향상시키고 문서의 구조를 명확히 하세요.",
+      "source_file": "N/A",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 오류 페이지가 웹사이트의 전반적인 디자인 및 브랜딩과 일관성이 없습니다. 정부 웹사이트는 일관된 시각적 아이덴티티를 유지해야 합니다.",
+      "suggestion": "정부 웹사이트의 표준 디자인 가이드라인에 따라 로고, 색상, 레이아웃 등을 적용하여 사용자에게 일관된 경험을 제공해야 합니다. 최소한의 브랜딩 요소를 포함하여 사용자가 여전히 정부 웹사이트 내에 있음을 인지할 수 있도록 해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 오류 페이지가 사용자에게 다음 행동에 대한 명확한 안내나 유용한 링크(예: 홈페이지로 이동, 검색)를 제공하지 않아 사용자 경험이 저해됩니다.",
+      "suggestion": "사용자가 혼란을 겪지 않도록 홈페이지 링크, 검색 기능 또는 자주 묻는 질문(FAQ) 링크 등을 포함하여 안내를 강화해야 합니다. 이는 사용자가 웹사이트를 계속 탐색할 수 있도록 돕습니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 정부 웹사이트의 주 사용 언어가 한국어임을 고려할 때, 오류 메시지가 영어로만 제공되어 한국어 사용자에게 불편을 줄 수 있습니다.",
+      "suggestion": "오류 메시지를 한국어로 제공하거나, 다국어 지원 기능을 통해 사용자가 선호하는 언어로 메시지를 볼 수 있도록 해야 합니다. 이는 웹 접근성 및 사용자 편의성 측면에서 중요합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 모바일 기기에서의 적절한 화면 표시를 위한 viewport meta 태그가 HTML `<head>` 섹션에 누락되었습니다. 이는 다양한 기기에서 웹 페이지가 올바르게 렌더링되지 않을 수 있음을 의미합니다.",
+      "suggestion": "`<head>` 태그 내에 `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`를 추가하여 다양한 기기에서 최적화된 화면을 제공하고 반응형 웹 디자인의 기본을 준수해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 95,
+    "운영": 98,
+    "기술": 95
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_034.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_034.html",
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_034.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

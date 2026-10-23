@@ -1,0 +1,88 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 1,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_056.html] 웹페이지의 `html`, `body`, `div`, `main`, `header` 요소에 고정된 너비(3000px)와 가로 스크롤(`overflow-x: scroll`)이 강제되어 있어, 모든 기기에서 반응형 디자인을 지원하지 않으며 사용자 경험을 저해합니다.",
+      "suggestion": "CSS에서 `width: 3000px !important; min-width: 3000px !important; overflow-x: scroll !important;` 속성을 제거하고, 다양한 화면 크기에 유연하게 대응하는 반응형 디자인을 적용하세요. (예: `width: 100%; max-width: 1200px;` 등)",
+      "source_file": null,
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_056.html] 검색 입력 필드(`input type=\"text\"`)에 접근성을 위한 `label` 또는 `aria-label` 속성이 누락되어 있으며, `autocomplete` 속성이 설정되어 있지 않습니다.",
+      "suggestion": "입력 필드에 `<label for='input-id'>민원</label>` 또는 `aria-label='검색어 입력'`을 추가하여 스크린 리더 사용자가 필드의 목적을 알 수 있도록 하고, `autocomplete='off'` 또는 `autocomplete='on'` 등 적절한 값을 설정하여 사용자 편의성 및 보안을 강화하세요.",
+      "source_file": null,
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_056.html] 입력 필드에 '민원'이라는 `value`가 기본으로 채워져 있으나, 이것이 검색어인지, 검색 필드의 레이블인지 명확하지 않아 사용자에게 혼란을 줄 수 있습니다.",
+      "suggestion": "만약 '민원'이 검색어 예시라면 `placeholder` 속성을 사용하고, 실제 검색 필드라면 명확한 레이블을 제공하세요. 검색 결과 페이지에서 이전 검색어를 표시하는 용도라면 `<span>` 태그 등으로 변경하여 입력 필드가 아님을 명확히 하는 것이 좋습니다.",
+      "source_file": null,
+      "page_number": []
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 98,
+    "기술": 95
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_056.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_056.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_056.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

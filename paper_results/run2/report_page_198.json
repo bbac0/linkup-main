@@ -1,0 +1,88 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 3,
+  "ops_faults": 0,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 스크린샷과 HTML 코드를 분석한 결과, 심각한 웹 접근성 및 사용성 문제가 발견되었습니다. 특히 텍스트 명도 대비 부족과 버튼 스타일링 오류로 인해 사용자 경험이 크게 저하될 것으로 예상됩니다. 전반적인 디자인 및 기술 표준 준수 여부를 재검토해야 합니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_198.html] '성명' 레이블을 포함한 모든 텍스트의 색상(#e5e5e5)과 배경색(#ffffff) 간의 명도 대비가 WCAG 2.1 AA 기준(4.5:1)에 미달하여 가독성이 심각하게 저하됩니다.",
+      "suggestion": "텍스트 색상을 #333333 또는 #000000과 같이 대비가 높은 색상으로 변경하여 시각적 가독성을 확보해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_198.html] '제출하기' 버튼을 포함한 모든 버튼 요소의 `height`, `font-size`, `padding`이 비정상적으로 설정(예: `height: 2px`, `font-size: 0px`)되어 버튼이 시각적으로 인지 불가능하며 클릭할 수 없는 상태입니다.",
+      "suggestion": "버튼의 최소 크기, 폰트 크기, 패딩을 사용자 인터랙션이 가능하도록 적절한 값(예: `height: 40px`, `font-size: 16px`, `padding: 8px 16px`)으로 수정해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12,
+        13
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_198.html] 입력 필드의 기본 테두리 색상이 빨간색으로 설정되어 있어, 사용자가 오류 상태로 오인하거나 불필요한 시각적 혼란을 야기할 수 있습니다.",
+      "suggestion": "일반적인 입력 필드의 테두리 색상은 중립적인 회색 계열을 사용하고, 오류 발생 시에만 빨간색을 사용하여 시각적 피드백을 명확히 구분해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_198.html] '성명' 레이블과 해당 `<input type=\"text\">` 필드가 `for` 및 `id` 속성을 통해 명시적으로 연결되어 있지 않아 스크린 리더 사용자의 접근성이 저하됩니다.",
+      "suggestion": "`<label for=\"name\">성명</label><input type=\"text\" id=\"name\">`와 같이 `for`와 `id` 속성을 사용하여 레이블과 입력 필드를 연결하여 웹 접근성을 확보해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_198.html] '성명' 입력 필드에 `autocomplete` 속성이 누락되어 있어, 사용자가 이전에 입력한 정보를 활용하기 어렵고 사용자 경험이 저하됩니다.",
+      "suggestion": "`<input type=\"text\" autocomplete=\"name\">`과 같이 `autocomplete` 속성을 추가하여 자동 완성 기능을 제공하고 사용자 편의성을 높여야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        16
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_198.html] CSS 코드에 `!important` 선언이 과도하게 사용되어 스타일의 우선순위 관리가 복잡해지고, 향후 유지보수 및 확장이 어렵습니다.",
+      "suggestion": "`!important` 사용을 최소화하고, CSS 선택자 우선순위 규칙을 따르거나 더 구체적인 선택자를 사용하여 스타일을 적용하도록 코드를 리팩토링해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        20
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 90,
+    "운영": 100,
+    "기술": 90
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_198.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 6
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_198.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

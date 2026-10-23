@@ -1,0 +1,95 @@
+{
+  "status": "success",
+  "total_count": 60,
+  "design_faults": 2,
+  "ops_faults": 1,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 404 에러 페이지는 매우 기본적인 정보만을 제공하며, 사용자 경험(UX) 측면에서 개선이 시급합니다. 디자인 요소, 사용자 친화적인 안내, 그리고 다음 행동을 위한 명확한 경로가 부족하여 사용자의 이탈을 유발할 수 있습니다.",
+  "issues": [
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/login] 404 에러 페이지의 디자인이 너무 단순하여 웹사이트의 브랜드 아이덴티티를 반영하지 못하고, 사용자에게 불친절하게 느껴질 수 있습니다.",
+      "suggestion": "웹사이트의 전반적인 디자인 테마를 적용하여 일관성을 유지하고, 사용자에게 친근한 '보이스 앤 톤'으로 메시지를 개선하며, 시각적으로 더 매력적인 레이아웃을 구성하세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "운영",
+      "description": "[http://localhost:8080/login] 에러 페이지가 오류 코드와 메시지만을 제공하고, 사용자가 다음 행동을 취할 수 있는 명확한 안내나 링크(예: 홈페이지, 검색, 문의)가 없습니다.",
+      "suggestion": "사용자가 홈페이지로 돌아가거나, 검색을 시도하거나, 관련 페이지를 찾을 수 있도록 링크를 제공하여 이탈률을 줄이고 사용자 편의성을 높이세요.",
+      "source_file": "General web standards",
+      "page_number": []
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/login] 에러 페이지가 사용자에게 다음 행동에 대한 명확한 지침을 제공하지 않아 웹 접근성 측면에서 개선이 필요합니다. 특히 보조 기술 사용자가 길을 잃기 쉽습니다.",
+      "suggestion": "홈페이지 링크, 검색 기능, 또는 자주 찾는 페이지 링크 등을 포함하여 모든 사용자가 쉽게 탐색하고 문제를 해결할 수 있도록 안내를 강화하세요.",
+      "source_file": "General web accessibility guidelines",
+      "page_number": []
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_106.html] 웹사이트의 모든 텍스트(예: '민원', '로그인', '검색 결과 항목 1')가 배경색과 명도 대비가 매우 낮아 가독성이 심각하게 떨어집니다. 현재 텍스트 색상(#e5e5e5)과 배경색(#ffffff)의 명도 대비는 약 1.1:1로, 웹 접근성 지침(WCAG 2.1 AA)의 최소 기준인 4.5:1에 크게 미달합니다.",
+      "suggestion": "텍스트 색상을 배경색과 충분한 명도 대비(최소 4.5:1 이상)를 가지도록 변경해야 합니다. 예를 들어, `#333333` 또는 `#000000`과 같은 어두운 색상을 사용하여 모든 사용자가 콘텐츠를 명확하게 읽을 수 있도록 개선하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15,
+        20
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_106.html] HTML 소스 코드에서 `id=\"main-banner\"` 속성이 두 번 사용되어 중복됩니다. `id` 속성은 HTML 문서 내에서 고유해야 하는 표준 규칙을 위반합니다.",
+      "suggestion": "중복된 `id=\"main-banner\"` 중 하나를 제거하거나 다른 고유한 `id`로 변경하여 HTML 유효성을 확보해야 합니다. 이는 JavaScript를 통한 요소 제어 시 오류를 유발할 수 있습니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        30
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_106.html] `<input type=\"text\" value=\"민원\">` 요소에 `autocomplete` 속성이 설정되어 있지 않습니다. 이는 사용자 편의성(자동 완성 기능)을 저해하고, 일부 브라우저에서 보안 경고를 유발할 수 있습니다.",
+      "suggestion": "입력 필드의 목적에 맞는 `autocomplete` 속성(예: 검색 필드이므로 `autocomplete=\"search\"` 또는 자동 완성을 원치 않는 경우 `autocomplete=\"off\"`)을 추가하여 사용자 경험을 개선하고 웹 표준을 준수하세요.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        25
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 98,
+    "기술": 95
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_106.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 3
+    },
+    {
+      "id": "http://localhost:8080/login",
+      "label": "/login",
+      "parent": "http://localhost:8080/testbed_200/page_106.html",
+      "faults": 3
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/login",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    },
+    {
+      "url": "http://localhost:8080/testbed_200/page_106.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

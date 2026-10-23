@@ -1,0 +1,69 @@
+{
+  "status": "success",
+  "total_count": 30,
+  "design_faults": 1,
+  "ops_faults": 0,
+  "tech_faults": 3,
+  "summary": "사이트 전체 분석 결과입니다. 제공된 웹사이트 스크린샷과 HTML 소스 코드를 분석한 결과, 웹 접근성과 사용자 경험에 심각한 영향을 미치는 여러 기술적 및 디자인적 문제점이 발견되었습니다. 특히, 버튼 요소의 기능 상실, HTML ID 중복, 그리고 입력 필드의 접근성 및 오류 피드백 개선이 시급합니다. 이는 정부 표준 가이드라인 및 최신 웹 표준에 부합하지 않습니다.",
+  "issues": [
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_098.html] `id` 속성 'main-banner'가 문서 내에서 두 번 사용되었습니다. `id`는 HTML 문서 내에서 고유해야 합니다.",
+      "suggestion": "각 요소에 고유한 `id`를 부여하거나, 여러 요소에 적용할 경우 `class` 속성을 사용해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        12
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_098.html] `<button>` 요소 및 특정 클래스(`btn`, `login-btn`, `apply-btn`)에 적용된 CSS 스타일(`height: 2px`, `font-size: 0px`, `padding: 0`, `overflow: hidden`)로 인해 버튼이 시각적으로 숨겨지고 상호작용할 수 없게 됩니다. 이는 웹 접근성 및 사용자 경험에 심각한 문제를 야기합니다.",
+      "suggestion": "버튼의 `height`, `font-size`, `padding`, `overflow` 속성을 적절하게 수정하여 버튼이 정상적으로 표시되고 사용자가 클릭할 수 있도록 해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        13
+      ]
+    },
+    {
+      "category": "기술",
+      "description": "[http://localhost:8080/testbed_200/page_098.html] '성명' 입력 필드에 `autocomplete` 속성이 누락되었습니다. 이는 사용자 편의성(자동 완성)을 저해하고, 민감 정보 입력 시 보안 측면에서 고려되어야 합니다.",
+      "suggestion": "`<input type=\"text\" autocomplete=\"name\">`과 같이 `autocomplete=\"name\"` 속성을 추가하여 사용자가 이전에 입력한 정보를 쉽게 활용할 수 있도록 하거나, 필요한 경우 `off`로 설정하여 자동 완성을 방지해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        14
+      ]
+    },
+    {
+      "category": "디자인",
+      "description": "[http://localhost:8080/testbed_200/page_098.html] '성명' 입력 필드에 빨간색 테두리가 표시되어 오류 상태를 암시하지만, 사용자에게 오류의 원인이나 해결 방법을 알려주는 명확한 텍스트 피드백이 없습니다. 이는 사용자 혼란을 야기하고 접근성을 저해합니다.",
+      "suggestion": "오류 발생 시 입력 필드 아래 또는 옆에 구체적인 오류 메시지를 제공하고, 시각적 표시(빨간색 테두리)와 함께 스크린 리더 사용자를 위한 ARIA 속성(예: `aria-invalid=\"true\"`, `aria-describedby=\"error-message-id\"`)을 추가해야 합니다.",
+      "source_file": "gov_guide.pdf",
+      "page_number": [
+        15
+      ]
+    }
+  ],
+  "scores": {
+    "디자인": 97,
+    "운영": 100,
+    "기술": 90
+  },
+  "tree_nodes": [
+    {
+      "id": "http://localhost:8080/testbed_200/page_098.html",
+      "label": "메인 페이지",
+      "parent": null,
+      "faults": 4
+    }
+  ],
+  "rag_status": [
+    {
+      "url": "http://localhost:8080/testbed_200/page_098.html",
+      "enabled": true,
+      "ok": true,
+      "n_chunks": 0,
+      "error": null
+    }
+  ],
+  "page_errors": []
+}

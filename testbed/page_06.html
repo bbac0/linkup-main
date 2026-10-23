@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX 테스트베드</title>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; }
+        header { background: #003366; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; }
+        nav a { color: white; margin-left: 15px; text-decoration: none; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        .banner { background: #eef2f7; padding: 40px; border-radius: 8px; margin-bottom: 20px; }
+        .board { border-top: 2px solid #003366; width: 100%; border-collapse: collapse; }
+        .board th, .board td { border-bottom: 1px solid #ddd; padding: 12px; text-align: left; }
+        footer { background: #333; color: #ccc; padding: 20px; text-align: center; margin-top: 40px; }
+    </style>
+<style>@media (max-width: 600px) { .container { width: 1400px !important; } }</style>
+</head>
+<body>
+    <header>
+        <h2>공공 민원 서비스</h2>
+        <nav>
+            <a href="#">민원신청</a>
+            <a href="#">정보공개</a>
+            <a href="#">로그인</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="banner">
+            <h1>2026년 정부 UI/UX 표준 통합 가이드</h1>
+            <p>테스트용 페이지</p>
+            <button style="background:#003366; color:#fff; padding:10px 20px; border:none; border-radius:4px;">신청하기</button>
+        </div>
+        <h3>주요 공지사항</h3>
+        <table class="board">
+            <thead>
+                <tr><th>번호</th><th>제목</th><th>작성일</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>시스템 점검 안내</td><td>2026-08-01</td></tr>
+                <tr><td>2</td><td>UI/UX 가이드라인 개정 개요</td><td>2026-07-15</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Copyright © 2026 대한민국 정부. All rights reserved.</p>
+    </footer>
+</body>
+</html>
