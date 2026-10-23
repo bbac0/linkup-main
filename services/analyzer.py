@@ -1,17 +1,23 @@
-import google.generativeai as genai 
+import google.generativeai as genai
 import streamlit as st
 import os
 import time
 import json
 import re
 import asyncio
+import random
+import threading
 
 from datetime import datetime
-from PyPDF2 import PdfReader 
+from PyPDF2 import PdfReader
 from playwright.async_api import async_playwright
-from urllib.parse import urlparse 
+from urllib.parse import urlparse
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
+
+
+RAG_QUERY = "웹 UI/UX 표준 가이드라인 공통 규정"
+RAG_K = 4
 
 
 def calculate_score(total, fault_count):
@@ -19,34 +25,67 @@ def calculate_score(total, fault_count):
     raw_score = (1 - fault_count / total) * 100
     return int(max(0, round(raw_score)))
 
+_VECTOR_STORE = None
+_VECTOR_LOCK = threading.RLock()
+
+def get_vector_store():
+    global _VECTOR_STORE
+    with _VECTOR_LOCK:
+        if _VECTOR_STORE is None:
+            embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
+            _VECTOR_STORE = Chroma(persist_directory="./chroma_db", embedding_function=embeddings)
+        return _VECTOR_STORE
+
+
+def retrieve_context():
+    info = {"enabled": os.getenv("DISABLE_RAG") != "1", "ok": False, "n_chunks": 0, "error": None}
+    if not info["enabled"]:
+        return "", info
+    try:
+        with _VECTOR_LOCK:
+            vector_store = get_vector_store()
+            docs = vector_store.similarity_search(RAG_QUERY, k=RAG_K)
+        context_list = []
+        for doc in docs:
+            page_num = doc.metadata.get('page', 0) + 1
+            source_file = os.path.basename(doc.metadata.get('source', '정부가이드라인.pdf'))
+            context_list.append(f"[{source_file} - {page_num}페이지]\n{doc.page_content}")
+        info.update(ok=True, n_chunks=len(docs))
+        return "\n\n".join(context_list), info
+    except Exception as e:
+        print(f"베이스 DB 검색 실패: {e}")
+        info["error"] = str(e)
+        return "", info
+
+
+def generate_with_retry(model, analysis_input, retries=4):
+    for attempt in range(1, retries + 1):
+        try:
+            return model.generate_content(analysis_input)
+        except Exception as e:
+            msg = str(e).lower()
+            transient = any(k in msg for k in ("429", "rate", "quota", "503", "unavailable", "overloaded", "deadline"))
+            if not transient or attempt == retries:
+                raise
+            time.sleep(min(30, 2 ** attempt) + random.uniform(0, 1))
+
+
 def analyze_with_gemini(html_content: str, screenshot_path: str, pdf_paths: list) -> dict:
 
     if not html_content or len(html_content) < 100:
         print(f"경고: HTML 내용이 너무 짧거나 비어있습니다. (길이: {len(html_content)})")
     if not os.path.exists(screenshot_path):
         print(f"경고: 스크린샷 파일을 찾을 수 없습니다: {screenshot_path}")
-    
+
     start_time = time.time()
 
     # API 세팅
     api_key = os.getenv("GEMINI_API_KEY")
     genai.configure(api_key=api_key)
     os.environ["GOOGLE_API_KEY"] = api_key
-    
-    # 베이스 DB 검색 로직
-    retrieved_context = ""
-    try:
-        embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
-        vector_store = Chroma(persist_directory="./chroma_db", embedding_function=embeddings)
-        docs = vector_store.similarity_search("웹 UI/UX 표준 가이드라인 공통 규정", k=4)
-        context_list = []
-        for doc in docs:
-            page_num = doc.metadata.get('page', 0) + 1 
-            source_file = os.path.basename(doc.metadata.get('source', '정부가이드라인.pdf'))
-            context_list.append(f"[{source_file} - {page_num}페이지]\n{doc.page_content}")
-        retrieved_context = "\n\n".join(context_list)
-    except Exception as e:
-        print(f"베이스 DB 검색 실패: {e}")
+
+    # 베이스 DB 검색 로직  
+    retrieved_context, rag_info = retrieve_context()
 
     # 커스텀 PDF 추출 로직
     user_custom_context = ""
@@ -61,11 +100,11 @@ def analyze_with_gemini(html_content: str, screenshot_path: str, pdf_paths: list
                         user_custom_context += f"[{pdf_name} - {i+1}페이지]\n{page.extract_text()}\n"
                 except Exception as e:
                     print(f"사용자 PDF 읽기 실패({path}): {e}")
-        
+
     image_file = genai.upload_file(screenshot_path)
-    
+
     today = datetime.now().strftime("%Y년 %m월 %d일")
-    
+
     prompt = f"""
     너는 전문적인 UI/UX 및 코드 품질 검수관이야.
     첨부된 '모든' 가이드라인 문서(PDF)를 절대적인 기준으로 삼아, 
@@ -121,31 +160,38 @@ def analyze_with_gemini(html_content: str, screenshot_path: str, pdf_paths: list
     [HTML 소스코드 일부]
     {html_content[:5000]}
     """
-    
+
     generation_config = genai.types.GenerationConfig(
         temperature=0.0,
         response_mime_type="application/json"
     )
-    
+
     model = genai.GenerativeModel(
         model_name="models/gemini-2.5-flash",
         generation_config=generation_config
     )
-    
+
     analysis_input = [image_file, prompt]
-    response = model.generate_content(analysis_input)
-    
+    try:
+        response = generate_with_retry(model, analysis_input)
+    except Exception:
+        try:
+            genai.delete_file(image_file.name)
+        except Exception:
+            pass
+        raise
+
     raw_text = response.text
     clean_json = raw_text.strip()
-    
+
     try:
         result_dict = json.loads(clean_json)
         issues = result_dict.get("issues", [])
-        
+
         for issue in issues:
             if issue.get("category") == "접근성":
                 issue["category"] = "기술"
-                
+
         d_f = len([i for i in issues if i.get("category") == "디자인"])
         o_f = len([i for i in issues if i.get("category") == "운영"])
         t_f = len([i for i in issues if i.get("category") == "기술"])
@@ -162,33 +208,37 @@ def analyze_with_gemini(html_content: str, screenshot_path: str, pdf_paths: list
             "운영": calculate_score(result_dict["total_count"], o_f),
             "기술": calculate_score(result_dict["total_count"], t_f)
         }
-        
+        result_dict["rag"] = rag_info      # [PATCH 2]
+
         end_time = time.time()
         total_duration = end_time - start_time
         print(f"분석 소요 시간: {total_duration:.2f}초")
-        
+
         return result_dict
-            
+
     except Exception as e:
         print(f"JSON 파싱 에러: {e}")
         return {
-            "status": "error", "message": str(e), "issues": [],
+            "status": "error", "message": f"JSON 파싱 에러: {e}", "issues": [],
             "scores": {"디자인": 0, "운영": 0, "기술": 0},
-            "design_faults": 0, "ops_faults": 0, "tech_faults": 0, "total_faults": 0, "total_count": 0
+            "design_faults": 0, "ops_faults": 0, "tech_faults": 0, "total_faults": 0, "total_count": 0,
+            "rag": rag_info
         }
-    finally: 
+    finally:
         try:
             genai.delete_file(image_file.name)
         except:
             pass
 
-def merge_results(results, tree_nodes=None):
-    if not results: 
+
+def merge_results(results, tree_nodes=None, page_errors=None):
+    if not results:
         return {
-            "status": "error", "message": "분석 결과 데이터가 없습니다.", 
-            "scores": {"디자인": 0, "운영": 0, "기술": 0}, "issues": [], "tree_nodes": []
+            "status": "error", "message": "분석 결과 데이터가 없습니다.",
+            "scores": {"디자인": 0, "운영": 0, "기술": 0}, "issues": [], "tree_nodes": [],
+            "page_errors": page_errors or []
         }
-    
+
     total_checked = sum(r.get("total_count", 30) for r in results)
     d_faults = sum(r.get("design_faults", 0) for r in results)
     o_faults = sum(r.get("ops_faults", 0) for r in results)
@@ -207,7 +257,7 @@ def merge_results(results, tree_nodes=None):
     if tree_nodes:
         for node in tree_nodes:
             node["faults"] = fault_map.get(node["id"], 0)
-    
+
     combined = {
         "status": "success",
         "total_count": total_checked,
@@ -221,21 +271,25 @@ def merge_results(results, tree_nodes=None):
             "운영": avg_o_score,
             "기술": avg_t_score
         },
-        "tree_nodes": tree_nodes or [] # 트리 시각화 데이터 구조
+        "tree_nodes": tree_nodes or [],  # 트리 시각화 데이터 구조
+        "rag_status": [{"url": r.get("url"), **(r.get("rag") or {})} for r in results],
+        "page_errors": page_errors or []
     }
-    
+
     for r in results:
         url_label = r.get("url", "알 수 없는 페이지")
         for issue in r.get("issues", []):
             issue["description"] = f"[{url_label}] {issue.get('description')}"
             combined["issues"].append(issue)
-            
+
     return combined
+
 
 async def run_analysis_flow(target_url, is_any_checked, upload_file):
     all_page_results = []
-    tree_nodes = [] # 트리 구조 수집 리스트
-    
+    page_errors = []   
+    tree_nodes = []  # 트리 구조 수집 리스트
+
     print("\n" + "="*50)
     print(f"사이트 분석 시작")
     print(f"대상 URL: {target_url}")
@@ -243,40 +297,93 @@ async def run_analysis_flow(target_url, is_any_checked, upload_file):
 
     async with async_playwright() as p:
         print("브라우저 실행 중")
-        browser = await p.chromium.launch(headless=True) 
-        context = await browser.new_context(viewport={'width': 1280, 'height': 800}) 
-        
+        browser = await p.chromium.launch(headless=True)
+        # 브라우저 차단 방지를 위한 User-Agent 설정
+        context = await browser.new_context(
+            viewport={'width': 1280, 'height': 800},
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+
         try:
             print("메인 페이지 접속 및 하위 링크 수집 시작...")
             yield {"progress": 5, "text": "링크 수집 중..."}
             main_page = await context.new_page()
             await main_page.goto(target_url, wait_until="networkidle", timeout=30000)
-            
-            parsed_url = urlparse(target_url)
-            base_domain = parsed_url.netloc
-            
-            hrefs = await main_page.evaluate("() => Array.from(document.querySelectorAll('a')).map(el => el.href)")
-            
-            targets = [target_url]
+
+            # 페이지 하단까지 스크롤하여 동적 로딩 메뉴/푸터 링크 활성화
+            await main_page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            await asyncio.sleep(1)
+
+            # 입력 URL 정규화
+            clean_target_url = target_url.split("#")[0].rstrip("/")
+            parsed_url = urlparse(clean_target_url)
+
+            # 루트 도메인 추출 함수
+            def get_root_domain(netloc):
+                parts = netloc.split(".")
+                return ".".join(parts[-2:]) if len(parts) >= 2 else netloc
+
+            base_root_domain = get_root_domain(parsed_url.netloc)
+
+            # href뿐만 아니라 onclick, data-url 등 다양한 속성에서 URL을 파싱하는 JS
+            extracted_urls = await main_page.evaluate("""() => {
+                const urls = new Set();
+                
+                document.querySelectorAll('a').forEach(el => {
+                    // 1. 일반 href
+                    if (el.href) urls.add(el.href);
+                    
+                    // 2. onclick 속성 내부 URL/경로 파싱
+                    const onclickAttr = el.getAttribute('onclick') || '';
+                    const match = onclickAttr.match(/['"](\\/[^'"]+|https?:\\/\\/[^'"]+)['"]/);
+                    if (match) {
+                        try {
+                            const fullUrl = new URL(match[1], window.location.href).href;
+                            urls.add(fullUrl);
+                        } catch(e) {}
+                    }
+
+                    // 3. data-href, data-url 속성
+                    const dataUrl = el.getAttribute('data-href') || el.getAttribute('data-url');
+                    if (dataUrl) {
+                        try {
+                            urls.add(new URL(dataUrl, window.location.href).href);
+                        } catch(e) {}
+                    }
+                });
+                
+                return Array.from(urls);
+            }""")
+
+            targets = [clean_target_url]
             # Root 노드 등록
             tree_nodes.append({
-                "id": target_url, 
-                "label": "메인 페이지", 
+                "id": clean_target_url,
+                "label": "메인 페이지",
                 "parent": None
             })
 
-            for href in hrefs:
+            print(f"메인 페이지에서 수집된 총 원본 URL 개수: {len(extracted_urls)}")
+
+            for href in extracted_urls:
+                if not href or href.startswith("javascript:") or href.startswith("mailto:") or href.startswith("tel:"):
+                    continue
+
                 clean_url = href.split("#")[0].rstrip("/")
-                if urlparse(clean_url).netloc == base_domain and clean_url not in targets:
-                    if len(targets) >= 3: break
+                href_netloc = urlparse(clean_url).netloc
+
+                # 동일 루트 도메인 검사 및 중복 제외
+                if href_netloc and get_root_domain(href_netloc) == base_root_domain and clean_url not in targets:
+                    if len(targets) >= 5:
+                        break
                     targets.append(clean_url)
                     path_label = urlparse(clean_url).path or clean_url
                     tree_nodes.append({
-                        "id": clean_url, 
-                        "label": path_label, 
-                        "parent": target_url
+                        "id": clean_url,
+                        "label": path_label,
+                        "parent": clean_target_url
                     })
-            
+
             print(f"수집 완료. 총 {len(targets)}개 페이지 분석 예정")
             yield {"progress": 15, "text": f"{len(targets)}개 페이지 분석 시작..."}
             for t in targets: print(f"   > {t}")
@@ -288,12 +395,12 @@ async def run_analysis_flow(target_url, is_any_checked, upload_file):
                 shot_path = os.path.abspath(f"temp_shot_{idx}.png")
                 try:
                     print(f"\n [{idx+1}/{len(targets)}] 페이지 분석 시작: {url}")
-                    await page.goto(url, wait_until="networkidle", timeout=30000) 
+                    await page.goto(url, wait_until="networkidle", timeout=30000)
                     await asyncio.sleep(3)
-                    
+
                     await page.screenshot(path=shot_path)
-                    html_data = await page.content() 
-                    
+                    html_data = await page.content()
+
                     retry = 0
                     while not os.path.exists(shot_path) and retry < 10:
                         await asyncio.sleep(0.1)
@@ -308,14 +415,14 @@ async def run_analysis_flow(target_url, is_any_checked, upload_file):
                     return res
                 except Exception as e:
                     print(f" {url} 분석 중 에러 발생: {e}")
-                    return {"status": "error", "url": url, "issues": []}
+                    return {"status": "error", "url": url, "message": str(e), "issues": []}   # [PATCH 3]
                 finally:
-                    if os.path.exists(shot_path): 
+                    if os.path.exists(shot_path):
                         try: os.remove(shot_path)
                         except: pass
                     await page.close()
 
-            print("\n모든 수집된 페이지의 Gemini 분석 가동 준비 및 AI 추론을 시작")
+            print("\n수집된 모든 페이지의 AI 추론 시작")
 
             tasks = [asyncio.create_task(analyze_single_page(idx, url)) for idx, url in enumerate(targets)]
 
@@ -324,6 +431,8 @@ async def run_analysis_flow(target_url, is_any_checked, upload_file):
                 result = await future
                 if result.get("status") != "error":
                     all_page_results.append(result)
+                else:   # [PATCH 3]
+                    page_errors.append({"url": result.get("url"), "message": result.get("message", "")})
                 complete_count += 1
                 progress_count = 15 + int((complete_count / len(targets)) * 75)
                 yield {"progress": min(progress_count, 90), "text": f"{complete_count}/{len(targets)} 완료..."}
@@ -334,7 +443,7 @@ async def run_analysis_flow(target_url, is_any_checked, upload_file):
 
             if all_page_results:
                 yield {"progress": 95, "text": "페이지 분석 완료, 결과 통합 중..."}
-                final_report = merge_results(all_page_results, tree_nodes)
+                final_report = merge_results(all_page_results, tree_nodes, page_errors)
                 await asyncio.sleep(0.5)
                 yield {"progress": 100, "text": "분석 완료", "result": final_report}
             else:

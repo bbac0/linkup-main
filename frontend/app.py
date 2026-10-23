@@ -182,8 +182,8 @@ if "analysis_result" in st.session_state:
                             page = issue.get("page_number")
                             source_name = SOURCE_MAP.get(source)
                             
-                            st.markdown(f"{issue.get("description")}")
-                            st.info(f"{issue.get("suggestion")}")
+                            st.markdown(issue.get("description", ""))
+                            st.info(issue.get("suggestion", ""))
                             if source and str(source).strip().upper() not in ["", "NONE", "NULL", "N/A"]:
                                 source_name = SOURCE_MAP.get(source, "")
                                 if source_name:

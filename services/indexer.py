@@ -18,6 +18,8 @@ def create_vector_db():
     ]
     
     all_splits = []
+
+    # 청크 사이즈 : 1000, 오버랩 : 100
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     
     for pdf_path in pdf_files:
